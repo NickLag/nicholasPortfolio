@@ -6,6 +6,7 @@ html {
     --sombra: #696969;
     --azul: #4772ff;
     --texto: black;
+    --piscada: #2447bb;
 }
  
 body {
@@ -564,9 +565,6 @@ body {
     color: lightblue;
 }
 
-
-/*nao atualizado */
-
 .socorro {
     position: absolute;
     left: 0%;
@@ -701,10 +699,7 @@ body {
     margin-top: -5%;
     margin-left: 40%;
     border-radius: 50px;
-}
-
-.progress:not(.pgseis) {
-    border: 0.4vw solid var(--azul);
+    border: 0.4vw solid var(--azul); 
 }
 
 .pgum {
@@ -833,7 +828,6 @@ body {
 }
 
 .blocotres {
-    border: 1px solid gold;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
     "g1 g2 g3"
@@ -841,7 +835,33 @@ body {
 }
 
 .blocotres > div {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.template {
+    width: 80%;
+    height: 60%;
+    margin: 10% 10% 10% 10%;
     border: 1px solid black;
+    flex: 1 0 auto;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+.template:hover {
+    width: 90%;
+    height: 70%;
+    margin: 5% 5% 5% 5%;
+}
+
+.titulo-site {
+    padding-left: 5%;
+}
+
+.titulo-site > p {
+    position: relative;
+    top: 40%;
 }
 
 .g1 { grid-area: g1;}
@@ -851,6 +871,119 @@ body {
 .g5 { grid-area: g5;}
 .g6 { grid-area: g6;}
 
+.fundo-modal {
+    display: none;
+    position: fixed;
+    z-index: 990;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.116);
+}
+
+.modal {
+    position: fixed;
+    z-index: 999;
+    height: 80%;
+    width: 80%;
+    left: 10%;
+    top: 10%;
+    background-color: var(--fundo);
+    border-radius: 20px;
+    box-shadow: 0px 1px 20px 1px var(--sombra);
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.cima {
+    height: 10%;
+    align-content: center;
+}
+
+.close-modal {
+    position: relative;
+    left: 96%;
+    width: 2%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    color: var(--texto);
+}
+
+.baixo {
+    height: 90%;
+    border-top: 1px solid black;
+    align-content: center;
+}
+
+.todo {
+    height: 80%;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.interativo {
+    width: 80%;
+    margin-left: 10%;
+    height: 80%;
+    background-image: url('368747905_618447380391939_899445883402682981_n.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pagina {
+    margin: 4% 42.5% 0% 42.5%;
+    height: 10%;
+    width: 15%;
+    cursor: pointer;
+    border: none;
+    background-color: var(--azul);
+    color: var(--corpo);
+    font-family: fodase;
+    border-radius: 5px;
+}
+
+.pagina:active {
+    background-color: var(--piscada);
+
+}
+
+.botoes {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.previous, .next {
+    height: 20%;
+    aspect-ratio: 1/1;
+    background-color: #7c7c7c73;
+    cursor: pointer;
+}
+
+.previous:active, .next:active {
+    background-color: #49494973;
+}
+
+.prev-svg, .next-svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 60%;
+    margin: 20% 20% 20% 20%;
+    cursor: pointer;
+}
 
 @media screen and (min-aspect-ratio: 3/2) {
     .downarrow {

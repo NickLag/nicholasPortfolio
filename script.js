@@ -278,3 +278,11 @@ function instagram() {
 function linkedin() {
     window.open('https://www.linkedin.com/in/nicholaslagareiro/');
 }
+
+function closeModal() {
+    document.getElementById('fundo-modal').style.display = "none";
+}
+
+function openModal() {
+    document.getElementById('fundo-modal').style.display = "block";
+}

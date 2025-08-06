@@ -75,7 +75,7 @@
         <div class="options" id="options">
             <a class="op pri" onclick="ladoum()" id="testeum">Sobre mim</a>
             <a class="op seg" onclick="ladodois()" id="testedois">Resumo</a>
-            <a class="op ter" onclick="ladotres()" id="testetres">Portfolio</a>
+            <a class="op ter" onclick="ladotres()" id="testetres">Portfólio</a>
             <a class="op qua" onclick="ladoquatro()" id="testequatro">Contato</a>
         </div>
         <div class="header direita" id="direita">
@@ -199,15 +199,33 @@
                     </div>
                 </div>
             </div>
-            <p class="title titleum" id="titletres">Portfolio</p>
+            <p class="title titleum" id="titletres">Portfólio</p>
             <div class="linha linhatres" id="linhatres"></div>
             <div class="blocotres bloco" id="blocotres">
-                <div class="g1"></div>
-                <div class="g2"></div>
-                <div class="g3"></div>
-                <div class="g4"></div>
-                <div class="g5"></div>
-                <div class="g6"></div>
+                <div class="g1">
+                    <div class="titulo-site"><p>Certificados</p></div>
+                    <div class="template tmpum" onclick="openModal()"></div>
+                </div>
+                <div class="g2">
+                    <div class="titulo-site"><p>G-vote</p></div>
+                    <div class="template tmpdois" onclick="openModal()"></div>
+                </div>
+                <div class="g3">
+                    <div class="titulo-site"><p>Agroexport Solution</p></div>
+                    <div class="template tmptres" onclick="openModal()"></div>
+                </div>
+                <div class="g4">
+                    <div class="titulo-site"><p>GC Official Design</p></div>
+                    <div class="template tmpquatro" onclick="openModal()"></div>
+                </div>
+                <div class="g5">
+                    <div class="titulo-site"><p>Imovel Guide Teste</p></div>
+                    <div class="template tmpcinco" onclick="openModal()"></div>
+                </div>
+                <div class="g6">
+                    <div class="titulo-site"><p>Code Pen Projects</p></div>
+                    <div class="template tmpseis" onclick="openModal()"></div>
+                </div>
             </div>
             <p class="title titleum" id="titlequatro">Contato</p>
             <div class="linha linhaquatro" id="linhaquatro"></div>
@@ -218,7 +236,7 @@
                 <div class="easteregg">
                     <span id="brazil">São Paulo, Brasil</span><br>
                     <span>Santos - 11030-570</span><br>
-                    <span>Aparecida, Rua General Rondon 14</span><br>
+                    <span>Aparecida, Rua General Rondon</span><br>
                 </div>
                 <div class="bolacinco"></div>
                 <div class="tel"><span id="phone">Telefone & E-mail</span></div>
@@ -238,6 +256,24 @@
                         <a href="https://www.linkedin.com/in/nicholaslagareiro/" class="links insta">linkedin.com/in/nicholaslagareiro</a>
                     </div>
                 </div>
+                </div>
+            </div>
+            <div class="fundo-modal" id="fundo-modal">
+                <div class="modal">
+                    <div class="cima">
+                        <img onclick="closeModal()" src="x-symbol-svgrepo-com.svg" class="close-modal">
+                    </div>
+                    <div class="baixo">
+                        <div class="todo">
+                            <div class="interativo">
+                                <div class="botoes">
+                                    <div class="previous"><img onclick="previous()" src="arrowleft.svg" class="prev-svg"></div>
+                                    <div class="next"><img onclick="next()" src="arrowright.svg" class="next-svg"></div>
+                                </div>
+                            </div>
+                            <button class="pagina">Ir à página</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
