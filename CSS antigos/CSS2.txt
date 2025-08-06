@@ -1,0 +1,1581 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */ 
+@media (min-width: 992px) {
+    html {
+        --fundo: snow;
+        --corpo: white;
+        --borda: #696969;
+        --sombra: #696969;
+        --azul: #4772ff;
+        --texto: black;
+    }
+    
+    body {
+        background-color: var(--fundo);
+    }
+    
+    .downarrow {
+        display: none;
+    }
+    
+    @font-face {
+        font-family:'fodase';
+        src:url("RedditMono-VariableFont_wght.ttf");
+    }
+    
+    .header {
+        background-color: var(--corpo);
+        position: absolute;
+        top: 10%;
+        height: 85%;
+        border: 1px solid var(--borda);
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px var(--sombra);
+        animation-duration: 1000ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+    
+    .direita {
+        left: 27.5%;
+        width: 67.5%;
+        animation-name: aumentar;
+    }
+    
+    .esquerda {
+        left: 5%;
+        width: 20%;
+        animation-name: esquerda;
+        z-index: 2;
+    }
+    
+    @keyframes esquerda {
+        0% {
+            left: -25%;
+        }
+        100% {
+            left: 5%;
+        }
+    }
+    
+    @keyframes aumentar {
+        0% {
+            height: 8.5%;
+            width: 6.75%;
+        }
+        
+        100% {
+            height: 85%;
+            width: 67.5%;
+        }
+    }
+    
+    .options {
+        position: absolute;
+        width: 40%;
+        top: 10%;
+        height: 0%;
+        right: 4.9%;
+        z-index: 1;
+        animation-name: descer;
+        animation-delay: 1000ms;
+        animation-duration: 750ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: fodase;
+    }
+    
+    @keyframes descer {
+        0% {
+            height: 0%;
+            border-bottom: 1px solid var(--borda);
+            border-left: 1px solid var(--borda);
+            border-bottom-left-radius: 10px;
+        }
+        100% {
+            height: 7.5%;
+            border-bottom: 1px solid var(--borda);
+            border-left: 1px solid var(--borda);
+            border-bottom-left-radius: 10px;
+        }
+    }
+    
+    .op {
+        margin: 3% 5% 5% 5%;
+        visibility: hidden;
+        cursor: pointer;
+        animation-name: cor;
+        animation-fill-mode: forwards;
+        animation-delay: 1750ms;
+        animation-duration: 2ms;
+        transition: font-size 250ms;
+        text-decoration: none;
+        color: var(--texto);
+        border-bottom: 1px solid;
+        padding-bottom: 4%;
+        user-select: none;
+    }
+    
+    .espacol {
+        font-family: fodase;
+        position: absolute;
+        left: 1%;
+        top: 1%;
+        width: 5%;
+        top: 2%;
+        z-index: 3;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .traco, .pt {
+        padding-left: 7.5%;
+    }
+    
+    .traco {
+        color: var(--texto);
+    }
+    
+    .en {
+        cursor: pointer;
+        color: var(--texto);
+    }
+    
+    .pt {
+        cursor: pointer;
+        color: var(--azul);
+    }
+    
+    @keyframes cor {
+        0% {
+            visibility: hidden;
+        }
+        100% {
+            visibility: visible;
+        }
+    }
+    
+    .op:hover {
+        font-size: 150%;
+        margin: 2% 1% 2% 1%;
+        padding-bottom: 6%;
+    } 
+    
+    .sumindo {
+        position: absolute;
+        background-color: var(--corpo);
+        border-top: 1px solid var(--corpo);
+        width: 38%;
+        height: 3%;
+        right: 6%;
+        top: 11%;
+        animation-name: subir;
+        animation-delay: 1750ms;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes subir {
+        0% {
+            height: 3%;
+            z-index: 2;
+        }
+        100% {
+            height: 0%;
+        }
+    }
+    
+    .pri {
+        color: var(--azul);
+        border-bottom-color: var(--azul);
+        font-weight: bolder;
+    }
+    
+    .bloco {
+        position: absolute;
+        top: 15%;
+        width: 90%;
+        height: 80%;
+        left: 5%;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+    }
+    
+    .blocoum {
+        border: 1px solid black; 
+    }
+    
+    .blocodois {
+        border: 1px solid navy;  
+    }
+    
+    .blocotres {
+        border: 1px solid gold;  
+    }
+    
+    @keyframes aparecer {
+        0% {
+            left: -90%;
+        }
+        100% {
+            left: 5%;
+        }
+    }
+    
+    .blank {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 27.5%;
+        background-color: var(--fundo);
+        z-index: 2;
+    }
+    
+    .linha {
+        position: absolute;
+        z-index: 1;
+        top: 10%;
+        left: 5%;
+        width: 15%;
+        height: 1%;
+        border-radius: 20px;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+        background-color: var(--azul);
+    }
+    
+    #blocoum {
+        display: block;
+    }
+    
+    .title {
+        position: absolute;
+        left: 5%;
+        top: 1%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 150%;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+    }
+    
+    .linhaum, #titleum {
+        display: block;
+        animation-name: sim;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes sim {
+        0% {
+            opacity: 0%;
+        } 
+        100% {
+            opacity: 100%;
+        }
+    }
+    
+    .seletor {
+        position: absolute;
+        right: 5%;
+        top: 1%;
+        width: 8%;
+        height: 6%;
+    }
+    
+    .divisao {
+        position: absolute;
+        background-color: #696969;
+        width: 1%;
+        height: 97.5%;
+        top: 5%;
+        left: 49.5%;
+    }
+    
+    .selecaoum {
+        position: absolute;
+        background-color: white;
+        border-radius: 50px;
+        top: 10%;
+        left: 5%;
+        width: 40%;
+        height: 80%;
+        border: 1px solid black;
+    }
+    
+    .selecaodois {
+        position: absolute;
+        background-color: black;
+        border-radius: 50px;
+        top: 10%;
+        right: 5%;
+        width: 40%;
+        height: 80%;
+        border: 1px solid white;
+    }
+    
+    .invum, .invdois {
+        position: absolute;
+        border-radius: 50px;
+        top: 10%;
+        width: 40%;
+        height: 80%;
+        z-index: 2;
+        cursor: pointer;
+    }
+    
+    .invum {
+        left: 5%;
+    }
+    
+    .invdois {
+        right: 5%;
+    }
+    
+    .lua, .sol {
+        position: absolute;
+        width: 80%;
+        top: 5%;
+        height: 90%;
+        left: 10%;
+    }
+    
+    .luaamarela {
+        display: none;
+    }
+    
+    .luapreta {
+        display: block;
+    }
+    
+    .solazul {
+        display: block;
+    }
+    
+    .solbranco {
+        display: none;
+    }
+    
+    .circulo {
+        position: absolute;
+        border: 2px solid #b6b6b6;
+        top: 7.5%;
+        left: 15%;
+        width: 70%;
+        height: 30%;
+        border-radius: 100%;
+    }
+    
+    .nick {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
+    
+    .textos {
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        height: 52.5%;
+        bottom: 5%;
+        font-family: fodase;
+        color: var(--texto);
+    }
+    
+    .nome {
+        position: absolute;
+        width: 110%;
+        height: 7.5%;
+        font-size: 1.40em;
+        color: var(--azul);
+    }
+    
+    .infos {
+        position: absolute;
+        top: 15%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+        line-height: 150%;
+        margin-left: 7.5%;
+    }
+    
+    .bolaquatro {
+        position: absolute;
+        top: 11%;
+        left: 9%;
+        height: 1.5%;
+        width: 0.8%;
+        background-color: var(--azul);
+        border-radius: 100%;
+    }
+    
+    .palavra {
+        position: absolute;
+        top: 9%;
+        left: 11%;
+        width: 10%;
+        height: 5%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 125%;
+    }
+    
+    .tel {
+        position: absolute;
+        top: 38%;
+        left: 11%;
+        width: 50%;
+        height: 5%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 125%;
+    }
+    
+    .bolacinco {
+        position: absolute;
+        top: 40%;
+        left: 9%;
+        height: 1.5%;
+        width: 0.8%;
+        background-color: var(--azul);
+        border-radius: 100%;
+    }
+    
+    .easteregg {
+        position: absolute;
+        font-family: fodase;
+        color: var(--texto);
+        top: 17%;
+        left: 12%;
+        line-height: 175%;
+    }
+    
+    .num {
+        position: absolute;
+        font-family: fodase;
+        color: var(--texto);
+        top: 46%;
+        left: 12%;
+        line-height: 175%;
+    }
+    
+    .redes {
+        position: absolute;
+        bottom: 5.5%;
+        left: 7.5%;
+        width: 5%;
+        height: 30%;
+    }
+    
+    .links {
+        color: var(--azul);
+        cursor: pointer;  
+    }
+    
+    .links:visited {
+        color: var(--azul);
+    }
+    
+    .links {
+        position: absolute;
+        left: 120%;
+        font-family: fodase;
+    }
+    
+    .links:active {
+        color: lightblue;
+    }
+    
+    .linkedin {
+        top: 6.5%;
+    }
+    
+    .github {
+        top: 39.5%;
+    }
+    
+    .insta {
+        bottom: 9.5%;
+    }
+    
+    .rd {
+        cursor: pointer;
+    }
+    
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    html {
+        --fundo: snow;
+        --corpo: white;
+        --borda: #696969;
+        --sombra: #696969;
+        --azul: #4772ff;
+        --texto: black;
+    }
+    
+    body {
+        background-color: var(--fundo);
+    }
+    
+    .downarrow {
+        display: none;
+    }
+    
+    @font-face {
+        font-family:'fodase';
+        src:url("RedditMono-VariableFont_wght.ttf");
+    }
+    
+    .header {
+        background-color: var(--corpo);
+        position: absolute;
+        top: 10%;
+        height: 85%;
+        border: 1px solid var(--borda);
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px var(--sombra);
+        animation-duration: 1000ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+    
+    .direita {
+        left: 27.5%;
+        width: 67.5%;
+        animation-name: aumentar;
+    }
+    
+    .esquerda {
+        left: 5%;
+        width: 20%;
+        animation-name: esquerda;
+        z-index: 2;
+    }
+    
+    @keyframes esquerda {
+        0% {
+            left: -25%;
+        }
+        100% {
+            left: 5%;
+        }
+    }
+    
+    @keyframes aumentar {
+        0% {
+            height: 8.5%;
+            width: 6.75%;
+        }
+        
+        100% {
+            height: 85%;
+            width: 67.5%;
+        }
+    }
+    
+    .options {
+        position: absolute;
+        width: 40%;
+        top: 10%;
+        height: 0%;
+        right: 4.9%;
+        z-index: 1;
+        animation-name: descer;
+        animation-delay: 1000ms;
+        animation-duration: 750ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: fodase;
+    }
+    
+    @keyframes descer {
+        0% {
+            height: 0%;
+            border-bottom: 1px solid var(--borda);
+            border-left: 1px solid var(--borda);
+            border-bottom-left-radius: 10px;
+        }
+        100% {
+            height: 7.5%;
+            border-bottom: 1px solid var(--borda);
+            border-left: 1px solid var(--borda);
+            border-bottom-left-radius: 10px;
+        }
+    }
+    
+    .op {
+        margin: 3% 5% 5% 5%;
+        visibility: hidden;
+        cursor: pointer;
+        animation-name: cor;
+        animation-fill-mode: forwards;
+        animation-delay: 1750ms;
+        animation-duration: 2ms;
+        transition: font-size 250ms;
+        text-decoration: none;
+        color: var(--texto);
+        border-bottom: 1px solid;
+        padding-bottom: 4%;
+        user-select: none;
+    }
+    
+    .espacol {
+        font-family: fodase;
+        position: absolute;
+        left: 1%;
+        top: 1%;
+        width: 5%;
+        top: 2%;
+        z-index: 3;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .traco, .pt {
+        padding-left: 7.5%;
+    }
+    
+    .traco {
+        color: var(--texto);
+    }
+    
+    .en {
+        cursor: pointer;
+        color: var(--texto);
+    }
+    
+    .pt {
+        cursor: pointer;
+        color: var(--azul);
+    }
+    
+    @keyframes cor {
+        0% {
+            visibility: hidden;
+        }
+        100% {
+            visibility: visible;
+        }
+    }
+    
+    .op:hover {
+        font-size: 150%;
+        margin: 2% 1% 2% 1%;
+        padding-bottom: 6%;
+    } 
+    
+    .sumindo {
+        position: absolute;
+        background-color: var(--corpo);
+        border-top: 1px solid var(--corpo);
+        width: 38%;
+        height: 3%;
+        right: 6%;
+        top: 11%;
+        animation-name: subir;
+        animation-delay: 1750ms;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes subir {
+        0% {
+            height: 3%;
+            z-index: 2;
+        }
+        100% {
+            height: 0%;
+        }
+    }
+    
+    .pri {
+        color: var(--azul);
+        border-bottom-color: var(--azul);
+        font-weight: bolder;
+    }
+    
+    .bloco {
+        position: absolute;
+        top: 15%;
+        width: 90%;
+        height: 80%;
+        left: 5%;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+    }
+    
+    .blocoum {
+        border: 1px solid black; 
+    }
+    
+    .blocodois {
+        border: 1px solid navy;  
+    }
+    
+    .blocotres {
+        border: 1px solid gold;  
+    }
+    
+    @keyframes aparecer {
+        0% {
+            left: -90%;
+        }
+        100% {
+            left: 5%;
+        }
+    }
+    
+    .blank {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 27.5%;
+        background-color: var(--fundo);
+        z-index: 2;
+    }
+    
+    .linha {
+        position: absolute;
+        z-index: 1;
+        top: 10%;
+        left: 5%;
+        width: 15%;
+        height: 1%;
+        border-radius: 20px;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+        background-color: var(--azul);
+    }
+    
+    #blocoum {
+        display: block;
+    }
+    
+    .title {
+        position: absolute;
+        left: 5%;
+        top: 1%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 150%;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+    }
+    
+    .linhaum, #titleum {
+        display: block;
+        animation-name: sim;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes sim {
+        0% {
+            opacity: 0%;
+        } 
+        100% {
+            opacity: 100%;
+        }
+    }
+    
+    .seletor {
+        position: absolute;
+        right: 5%;
+        top: 1%;
+        width: 8%;
+        height: 6%;
+    }
+    
+    .divisao {
+        position: absolute;
+        background-color: #696969;
+        width: 1%;
+        height: 97.5%;
+        top: 5%;
+        left: 49.5%;
+    }
+    
+    .selecaoum {
+        position: absolute;
+        background-color: white;
+        border-radius: 50px;
+        top: 10%;
+        left: 5%;
+        width: 40%;
+        height: 80%;
+        border: 1px solid black;
+    }
+    
+    .selecaodois {
+        position: absolute;
+        background-color: black;
+        border-radius: 50px;
+        top: 10%;
+        right: 5%;
+        width: 40%;
+        height: 80%;
+        border: 1px solid white;
+    }
+    
+    .invum, .invdois {
+        position: absolute;
+        border-radius: 50px;
+        top: 10%;
+        width: 40%;
+        height: 80%;
+        z-index: 2;
+        cursor: pointer;
+    }
+    
+    .invum {
+        left: 5%;
+    }
+    
+    .invdois {
+        right: 5%;
+    }
+    
+    .lua, .sol {
+        position: absolute;
+        width: 80%;
+        top: 5%;
+        height: 90%;
+        left: 10%;
+    }
+    
+    .luaamarela {
+        display: none;
+    }
+    
+    .luapreta {
+        display: block;
+    }
+    
+    .solazul {
+        display: block;
+    }
+    
+    .solbranco {
+        display: none;
+    }
+    
+    .circulo {
+        position: absolute;
+        border: 2px solid #b6b6b6;
+        top: 7.5%;
+        left: 15%;
+        width: 70%;
+        height: 30%;
+        border-radius: 100%;
+    }
+    
+    .nick {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
+    
+    .textos {
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        height: 52.5%;
+        bottom: 5%;
+        font-family: fodase;
+        color: var(--texto);
+    }
+    
+    .nome {
+        position: absolute;
+        width: 110%;
+        height: 7.5%;
+        font-size: 1.40em;
+        color: var(--azul);
+    }
+    
+    .infos {
+        position: absolute;
+        top: 15%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+        line-height: 150%;
+        margin-left: 7.5%;
+    }
+    
+    .bolaquatro {
+        position: absolute;
+        top: 11%;
+        left: 9%;
+        height: 1.5%;
+        width: 0.8%;
+        background-color: var(--azul);
+        border-radius: 100%;
+    }
+    
+    .palavra {
+        position: absolute;
+        top: 9%;
+        left: 11%;
+        width: 10%;
+        height: 5%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 125%;
+    }
+    
+    .tel {
+        position: absolute;
+        top: 38%;
+        left: 11%;
+        width: 50%;
+        height: 5%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 125%;
+    }
+    
+    .bolacinco {
+        position: absolute;
+        top: 40%;
+        left: 9%;
+        height: 1.5%;
+        width: 0.8%;
+        background-color: var(--azul);
+        border-radius: 100%;
+    }
+    
+    .easteregg {
+        position: absolute;
+        font-family: fodase;
+        color: var(--texto);
+        top: 17%;
+        left: 12%;
+        line-height: 175%;
+    }
+    
+    .num {
+        position: absolute;
+        font-family: fodase;
+        color: var(--texto);
+        top: 46%;
+        left: 12%;
+        line-height: 175%;
+    }
+    
+    .redes {
+        position: absolute;
+        bottom: 5.5%;
+        left: 7.5%;
+        width: 5%;
+        height: 30%;
+    }
+    
+    .links {
+        color: var(--azul);
+        cursor: pointer;  
+    }
+    
+    .links:visited {
+        color: var(--azul);
+    }
+    
+    .links {
+        position: absolute;
+        left: 120%;
+        font-family: fodase;
+    }
+    
+    .links:active {
+        color: lightblue;
+    }
+    
+    .linkedin {
+        top: 6.5%;
+    }
+    
+    .github {
+        top: 39.5%;
+    }
+    
+    .insta {
+        bottom: 9.5%;
+    }
+    
+    .rd {
+        cursor: pointer;
+    }
+    
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    html {
+        --fundo: snow;
+        --corpo: white;
+        --borda: #696969;
+        --sombra: #696969;
+        --azul: #4772ff;
+        --texto: black;
+    }
+    
+    body {
+        background-color: var(--fundo);
+    }
+    
+    .downarrow {
+        display: none;
+    }
+    
+    @font-face {
+        font-family:'fodase';
+        src:url("RedditMono-VariableFont_wght.ttf");
+    }
+    
+    .header {
+        background-color: var(--corpo);
+        position: absolute;
+        top: 10%;
+        height: 85%;
+        border: 1px solid var(--borda);
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px var(--sombra);
+        animation-duration: 1000ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+    
+    .direita {
+        left: 27.5%;
+        width: 67.5%;
+        animation-name: aumentar;
+    }
+    
+    .esquerda {
+        left: 5%;
+        width: 20%;
+        animation-name: esquerda;
+        z-index: 2;
+    }
+    
+    @keyframes esquerda {
+        0% {
+            left: -25%;
+        }
+        100% {
+            left: 5%;
+        }
+    }
+    
+    @keyframes aumentar {
+        0% {
+            height: 8.5%;
+            width: 6.75%;
+        }
+        
+        100% {
+            height: 85%;
+            width: 67.5%;
+        }
+    }
+    
+    .options {
+        position: absolute;
+        width: 40%;
+        top: 10%;
+        height: 0%;
+        right: 4.9%;
+        z-index: 1;
+        animation-name: descer;
+        animation-delay: 1000ms;
+        animation-duration: 750ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: fodase;
+    }
+    
+    @keyframes descer {
+        0% {
+            height: 0%;
+            border-bottom: 1px solid var(--borda);
+            border-left: 1px solid var(--borda);
+            border-bottom-left-radius: 10px;
+        }
+        100% {
+            height: 7.5%;
+            border-bottom: 1px solid var(--borda);
+            border-left: 1px solid var(--borda);
+            border-bottom-left-radius: 10px;
+        }
+    }
+    
+    .op {
+        margin: 3% 5% 5% 5%;
+        visibility: hidden;
+        cursor: pointer;
+        animation-name: cor;
+        animation-fill-mode: forwards;
+        animation-delay: 1750ms;
+        animation-duration: 2ms;
+        transition: font-size 250ms;
+        text-decoration: none;
+        color: var(--texto);
+        border-bottom: 1px solid;
+        padding-bottom: 4%;
+        user-select: none;
+    }
+    
+    .espacol {
+        font-family: fodase;
+        position: absolute;
+        left: 1%;
+        top: 1%;
+        width: 5%;
+        top: 2%;
+        z-index: 3;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .traco, .pt {
+        padding-left: 7.5%;
+    }
+    
+    .traco {
+        color: var(--texto);
+    }
+    
+    .en {
+        cursor: pointer;
+        color: var(--texto);
+    }
+    
+    .pt {
+        cursor: pointer;
+        color: var(--azul);
+    }
+    
+    @keyframes cor {
+        0% {
+            visibility: hidden;
+        }
+        100% {
+            visibility: visible;
+        }
+    }
+    
+    .op:hover {
+        font-size: 150%;
+        margin: 2% 1% 2% 1%;
+        padding-bottom: 6%;
+    } 
+    
+    .sumindo {
+        position: absolute;
+        background-color: var(--corpo);
+        border-top: 1px solid var(--corpo);
+        width: 38%;
+        height: 3%;
+        right: 6%;
+        top: 11%;
+        animation-name: subir;
+        animation-delay: 1750ms;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes subir {
+        0% {
+            height: 3%;
+            z-index: 2;
+        }
+        100% {
+            height: 0%;
+        }
+    }
+    
+    .pri {
+        color: var(--azul);
+        border-bottom-color: var(--azul);
+        font-weight: bolder;
+    }
+    
+    .bloco {
+        position: absolute;
+        top: 15%;
+        width: 90%;
+        height: 80%;
+        left: 5%;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+    }
+    
+    .blocoum {
+        border: 1px solid black; 
+    }
+    
+    .blocodois {
+        border: 1px solid navy;  
+    }
+    
+    .blocotres {
+        border: 1px solid gold;  
+    }
+    
+    @keyframes aparecer {
+        0% {
+            left: -90%;
+        }
+        100% {
+            left: 5%;
+        }
+    }
+    
+    .blank {
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        height: 100%;
+        width: 27.5%;
+        background-color: var(--fundo);
+        z-index: 2;
+    }
+    
+    .linha {
+        position: absolute;
+        z-index: 1;
+        top: 10%;
+        left: 5%;
+        width: 15%;
+        height: 1%;
+        border-radius: 20px;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+        background-color: var(--azul);
+    }
+    
+    #blocoum {
+        display: block;
+    }
+    
+    .title {
+        position: absolute;
+        left: 5%;
+        top: 1%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 150%;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+    }
+    
+    .linhaum, #titleum {
+        display: block;
+        animation-name: sim;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes sim {
+        0% {
+            opacity: 0%;
+        } 
+        100% {
+            opacity: 100%;
+        }
+    }
+    
+    .seletor {
+        position: absolute;
+        right: 5%;
+        top: 1%;
+        width: 8%;
+        height: 6%;
+    }
+    
+    .divisao {
+        position: absolute;
+        background-color: #696969;
+        width: 1%;
+        height: 97.5%;
+        top: 5%;
+        left: 49.5%;
+    }
+    
+    .selecaoum {
+        position: absolute;
+        background-color: white;
+        border-radius: 50px;
+        top: 10%;
+        left: 5%;
+        width: 40%;
+        height: 80%;
+        border: 1px solid black;
+    }
+    
+    .selecaodois {
+        position: absolute;
+        background-color: black;
+        border-radius: 50px;
+        top: 10%;
+        right: 5%;
+        width: 40%;
+        height: 80%;
+        border: 1px solid white;
+    }
+    
+    .invum, .invdois {
+        position: absolute;
+        border-radius: 50px;
+        top: 10%;
+        width: 40%;
+        height: 80%;
+        z-index: 2;
+        cursor: pointer;
+    }
+    
+    .invum {
+        left: 5%;
+    }
+    
+    .invdois {
+        right: 5%;
+    }
+    
+    .lua, .sol {
+        position: absolute;
+        width: 80%;
+        top: 5%;
+        height: 90%;
+        left: 10%;
+    }
+    
+    .luaamarela {
+        display: none;
+    }
+    
+    .luapreta {
+        display: block;
+    }
+    
+    .solazul {
+        display: block;
+    }
+    
+    .solbranco {
+        display: none;
+    }
+    
+    .circulo {
+        position: absolute;
+        border: 2px solid #b6b6b6;
+        top: 7.5%;
+        left: 15%;
+        width: 70%;
+        height: 30%;
+        border-radius: 100%;
+    }
+    
+    .nick {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
+    
+    .textos {
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        height: 52.5%;
+        bottom: 5%;
+        font-family: fodase;
+        color: var(--texto);
+    }
+    
+    .nome {
+        position: absolute;
+        width: 110%;
+        height: 7.5%;
+        font-size: 1.40em;
+        color: var(--azul);
+    }
+    
+    .infos {
+        position: absolute;
+        top: 15%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+        line-height: 150%;
+        margin-left: 7.5%;
+    }
+    
+    .bolaquatro {
+        position: absolute;
+        top: 11%;
+        left: 9%;
+        height: 1.5%;
+        width: 0.8%;
+        background-color: var(--azul);
+        border-radius: 100%;
+    }
+    
+    .palavra {
+        position: absolute;
+        top: 9%;
+        left: 11%;
+        width: 10%;
+        height: 5%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 125%;
+    }
+    
+    .tel {
+        position: absolute;
+        top: 38%;
+        left: 11%;
+        width: 50%;
+        height: 5%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 125%;
+    }
+    
+    .bolacinco {
+        position: absolute;
+        top: 40%;
+        left: 9%;
+        height: 1.5%;
+        width: 0.8%;
+        background-color: var(--azul);
+        border-radius: 100%;
+    }
+    
+    .easteregg {
+        position: absolute;
+        font-family: fodase;
+        color: var(--texto);
+        top: 17%;
+        left: 12%;
+        line-height: 175%;
+    }
+    
+    .num {
+        position: absolute;
+        font-family: fodase;
+        color: var(--texto);
+        top: 46%;
+        left: 12%;
+        line-height: 175%;
+    }
+    
+    .redes {
+        position: absolute;
+        bottom: 5.5%;
+        left: 7.5%;
+        width: 5%;
+        height: 30%;
+    }
+    
+    .links {
+        color: var(--azul);
+        cursor: pointer;  
+    }
+    
+    .links:visited {
+        color: var(--azul);
+    }
+    
+    .links {
+        position: absolute;
+        left: 120%;
+        font-family: fodase;
+    }
+    
+    .links:active {
+        color: lightblue;
+    }
+    
+    .linkedin {
+        top: 6.5%;
+    }
+    
+    .github {
+        top: 39.5%;
+    }
+    
+    .insta {
+        bottom: 9.5%;
+    }
+    
+    .rd {
+        cursor: pointer;
+    }
+    
+}

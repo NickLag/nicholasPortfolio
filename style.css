@@ -107,10 +107,6 @@ body {
     display: none;
 }
 
-.blocotres {
-    border: 1px solid gold;  
-}
-
 .linha {
     position: absolute;
     z-index: 1;
@@ -720,7 +716,7 @@ body {
 }
 
 .pgtres {
-    width: 8%;
+    width: 20%;
 }
 
 .pgquatro {
@@ -728,7 +724,11 @@ body {
 }
 
 .pgcinco {
-    width: 4%;
+    width: 20%;
+}
+
+.pgseis {
+    width: 10%;
 }
 
 .pgsete {
@@ -831,6 +831,26 @@ body {
 .error {
     display: none;
 }
+
+.blocotres {
+    border: 1px solid gold;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "g1 g2 g3"
+    "g4 g5 g6";
+}
+
+.blocotres > div {
+    border: 1px solid black;
+}
+
+.g1 { grid-area: g1;}
+.g2 { grid-area: g2;}
+.g3 { grid-area: g3;}
+.g4 { grid-area: g4;}
+.g5 { grid-area: g5;}
+.g6 { grid-area: g6;}
+
 
 @media screen and (min-aspect-ratio: 3/2) {
     .downarrow {

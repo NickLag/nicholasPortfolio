@@ -1,0 +1,3363 @@
+@media only screen
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { /* Iphone SE, 6, 6S, 7, 8 */
+    html {
+        --celular: #fffdfd;
+    }
+
+    .bolaquatro {
+        position: absolute;
+        top: 11%;
+        left: 9%;
+        height: 1.75%;
+        width: 2%;
+        background-color: var(--azul);
+        border-radius: 100%;
+    }
+    
+    .palavra {
+        position: absolute;
+        top: 9%;
+        left: 13%;
+        width: 10%;
+        height: 5%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 225%;
+    }
+    
+    .tel {
+        position: absolute;
+        top: 38%;
+        left: 13%;
+        width: 50%;
+        height: 5%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 225%;
+    }
+    
+    .bolacinco {
+        position: absolute;
+        top: 40%;
+        left: 9%;
+        height: 1.75%;
+        width: 2%;
+        background-color: var(--azul);
+        border-radius: 100%;
+    }
+    
+    .easteregg {
+        position: absolute;
+        font-family: fodase;
+        color: var(--texto);
+        font-size: 175%;
+        top: 17%;
+        left: 13%;
+        line-height: 175%;
+    }
+    
+    .num {
+        position: absolute;
+        font-family: fodase;
+        font-size: 175%;
+        color: var(--texto);
+        top: 46%;
+        left: 13%;
+        line-height: 175%;
+    }
+    
+    .redes {
+        position: absolute;
+        bottom: 5.5%;
+        left: 7.5%;
+        width: 10%;
+        height: 30%;
+    }
+    
+    .links {
+        color: var(--azul);
+        cursor: pointer;  
+    }
+    
+    .links:visited {
+        color: var(--azul);
+    }
+    
+    .links {
+        position: absolute;
+        left: 120%;
+        font-family: fodase;
+        font-size: 175%;
+    }
+    
+    .links:active {
+        color: lightblue;
+    }
+    
+    .linkedin {
+        top: 10%;
+    }
+    
+    .github {
+        top: 55%;
+    }
+    
+    .insta {
+        bottom: -17%;
+    }
+    
+    .rd {
+        cursor: pointer;
+        width: 92px;
+        height: 92px;
+    }
+
+    .circulo {
+        position: absolute;
+        border: 2px solid #b6b6b6;
+        top: 8%;
+        left: 30%;
+        width: 40%;
+        height: 40%;
+        border-radius: 100%;
+        animation-name: comeco;
+        animation-duration: 4000ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+    
+    .nick {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
+    
+    .textos {
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        height: 40%;
+        bottom: 7%;
+        font-family: fodase;
+        color: var(--texto);
+        animation-name: comeco;
+        animation-duration: 4000ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes comeco {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+
+    @keyframes oi {
+        0% {
+            opacity: 100%;
+        }
+        100% {
+            opacity: 0%;
+        }
+    }
+
+    @keyframes desoi {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+    
+    .nome {
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        font-size: 3em;
+        text-align: center;
+        color: var(--azul);
+        bottom: 95%;
+    }
+    
+    .infos {
+        position: absolute;
+        top: 15%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+        line-height: 150%;
+        margin-left: 7.5%;
+        margin-bottom: 3%;
+        font-size: 2em;
+    }
+
+    .espacol {
+        font-family: fodase;
+        position: absolute;
+        left: 5%;
+        top: 2%;
+        width: 10%;
+        height: 2%;
+        z-index: 3;
+        font-size: 2em;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .traco, .pt {
+        padding-left: 7.5%;
+    }
+    
+    .traco {
+        color: var(--texto);
+    }
+    
+    .en {
+        cursor: pointer;
+        color: var(--texto);
+    }
+    
+    .pt {
+        cursor: pointer;
+        color: var(--azul);
+    }
+
+    body {
+        background-color: var(--celular);
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+
+    .header {
+        background-color: var(--corpo);
+        position: absolute;
+        left: 2%;
+        width: 96%;
+        border: 1px solid var(--borda);
+        border-radius: 50px;
+        box-shadow: none;
+        animation-duration: 1000ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+
+    .direita {
+        top: 71%;
+        height: 74%;
+        animation-name: crescer;
+        margin-bottom: 2%;
+    }
+    
+    .esquerda {
+        top: 2%;
+        height: 60%;
+        animation-name: segcrescer;
+        z-index: 2;
+    }
+
+    .downarrow {
+        rotate: 90deg;
+        position: absolute;
+        top: 3%;
+        right: 5%;
+        width: 5%;
+        height: 5%;
+        z-index: 3;
+        cursor: pointer;
+        opacity: 0%;
+        animation-name: meudeus;
+        animation-delay: 1s;
+        animation-duration: 500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+
+    .blue {
+        display: block;
+    }
+
+    .yellow {
+        display: none;
+    }
+
+    @keyframes meudeus {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+
+    .buceta {
+        position: absolute;
+        top: 3%;
+        right: 5%;
+        width: 5%;
+        height: 5%;
+        z-index: 3;
+        cursor: pointer;
+        z-index: 4;
+    }
+
+    @keyframes encolher {
+        0% {
+            rotate: 90deg;
+        }
+        100% {
+            rotate: 270deg;
+        }
+    }
+
+    @keyframes desencolher {
+        0% {
+            rotate: 270deg;
+        }
+        100% {
+            rotate: 90deg;
+        }
+    }
+
+    @keyframes diminuir {
+        0% {
+            height: 60%;
+        }
+        100% {
+            height: 20%;
+        }
+    }
+
+    @keyframes aumentar {
+        0% {
+            height: 20%;
+        }
+        100% {
+            height: 67%;
+        }
+    }
+    
+    @keyframes esquerda {
+        0% {
+            left: -100%;
+        }
+        100% {
+            left: 2%;
+        }
+    }
+    
+    @keyframes crescer {
+        0% {
+            height: 7.4%;
+            width: 9.6%;
+            margin-bottom: 2%;
+        }
+        
+        100% {
+            height: 74%;
+            width: 96%;
+            margin-bottom: 2%;
+        }
+    }
+    
+    @keyframes segcrescer {
+        0% {
+            height: 6%;
+            width: 9.6%;
+        }
+        
+        100% {
+            height: 67%;
+            width: 96%;
+        }
+    }
+
+    .options {
+        position: absolute;
+        width: 96%;
+        top: 73%;
+        height: 0%;
+        right: 2%;
+        z-index: 1;
+        animation-name: descer;
+        animation-delay: 1000ms;
+        animation-duration: 750ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: fodase;
+    }
+    
+    @keyframes descer {
+        0% {
+            height: 0%;
+            border-bottom: 1px solid var(--borda);
+        }
+        100% {
+            height: 7.5%;
+            border-bottom: 1px solid var(--borda);
+        }
+    }
+    
+    .op {
+        margin: 3% 3% 5% 3%;
+        visibility: hidden;
+        cursor: pointer;
+        animation-name: cor;
+        animation-fill-mode: forwards;
+        animation-delay: 1750ms;
+        animation-duration: 2ms;
+        transition: font-size 250ms;
+        text-decoration: none;
+        color: var(--texto);
+        border-bottom: 1px solid;
+        padding-bottom: 4%;
+        user-select: none;
+        font-size: 225%;
+    }
+    
+    .op:hover {
+        font-size: 250%;
+        margin: 2% 1% 4% 1%;
+        padding-bottom: 6%;
+    } 
+    
+    .sumindo {
+        position: absolute;
+        background-color: var(--corpo);
+        border-top: 1px solid var(--corpo);
+        width: 94%;
+        height: 8%;
+        right: 3%;
+        top: 75%;
+        animation-name: subir;
+        animation-delay: 1750ms;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes subir {
+        0% {
+            height: 3%;
+            z-index: 2;
+        }
+        100% {
+            height: 0%;
+        }
+    }
+    
+    @keyframes aparecer {
+        0% {
+            left: -90%;
+        }
+        100% {
+            left: 5%;
+        }
+    }
+    
+    .blank {
+        position: absolute;
+        top: 71%;
+        left: 0%;
+        height: 76%;
+        width: 1.8%;
+        background-color: var(--celular);
+        z-index: 2;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        margin-bottom: 2%;
+    }
+
+    @keyframes elevar {
+        0% {
+            top: 64%;
+        }
+        100% {
+            top: 24%;
+        }
+    }
+
+    @keyframes deselevar {
+        0% {
+            top: 24%;
+        }
+        100% {
+            top: 71%;
+        }
+    }
+
+    @keyframes doiselevar {
+        0% {
+            top: 66%;
+        }
+        100% {
+            top: 26%;
+        }
+    }
+
+    @keyframes doisdeselevar {
+        0% {
+            top: 26%;
+        }
+        100% {
+            top: 73%;
+        }
+    }
+
+    .linha {
+        position: absolute;
+        z-index: 1;
+        top: 23.5%;
+        left: 5%;
+        width: 30%;
+        height: 1%;
+        border-radius: 20px;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+        background-color: var(--azul);
+    }
+
+    .pri {
+        color: #4772ff;
+        border-bottom-color: var(--azul);
+        font-weight: bolder;
+    }
+
+    .bloco {
+        position: absolute;
+        top: 25%;
+        width: 90%;
+        height: 70%;
+        left: 5%;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+    }
+    
+    .blocoum {
+        border: 1px solid black; 
+    }
+    
+    .blocodois {
+        border: 1px solid navy;  
+    }
+    
+    .blocotres {
+        border: 1px solid gold;  
+    }
+    
+    #blocoum {
+        display: block;
+    }
+    
+    .title {
+        position: absolute;
+        left: 5%;
+        top: 12.5%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 300%;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+    }
+    
+    .linhaum, #titleum {
+        display: block;
+        animation-name: sim;
+        animation-fill-mode: forwards;
+    }
+
+    .seletor {
+        position: fixed;
+        right: 40%;
+        top: 1%;
+        width: 20%;
+        height: 6%;
+        z-index: 3;
+    }
+    
+    .divisao {
+        position: absolute;
+        background-color: #696969;
+        width: 1%;
+        height: 97.5%;
+        top: 5%;
+        left: 49.5%;
+    }
+    
+    .selecaoum {
+        position: absolute;
+        background-color: white;
+        border-radius: 50px;
+        top: 10%;
+        left: 5%;
+        width: 40%;
+        height: 80%;
+        border: 1px solid black;
+    }
+    
+    .selecaodois {
+        position: absolute;
+        background-color: black;
+        border-radius: 50px;
+        top: 10%;
+        right: 5%;
+        width: 40%;
+        height: 80%;
+        border: 1px solid white;
+    }
+    
+    .invum, .invdois {
+        position: absolute;
+        border-radius: 50px;
+        top: 10%;
+        width: 40%;
+        height: 80%;
+        z-index: 4;
+        cursor: pointer;
+    }
+    
+    .invum {
+        left: 5%;
+    }
+    
+    .invdois {
+        right: 5%;
+    }
+    
+    .lua, .sol {
+        position: absolute;
+        width: 80%;
+        top: 5%;
+        height: 90%;
+        left: 10%;
+    }
+    
+    .luaamarela {
+        display: none;
+    }
+    
+    .luapreta {
+        display: block;
+    }
+    
+    .solazul {
+        display: block;
+    }
+    
+    .solbranco {
+        display: none;
+    }
+}
+
+@media only screen
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { /* Iphone 6+, 7+, 8+ */
+    html {
+        --celular: #fffdfd;
+    }
+
+    .bolaquatro {
+        position: absolute;
+        top: 11%;
+        left: 9%;
+        height: 1.75%;
+        width: 2%;
+        background-color: var(--azul);
+        border-radius: 100%;
+    }
+    
+    .palavra {
+        position: absolute;
+        top: 9%;
+        left: 13%;
+        width: 10%;
+        height: 5%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 225%;
+    }
+    
+    .tel {
+        position: absolute;
+        top: 38%;
+        left: 13%;
+        width: 50%;
+        height: 5%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 225%;
+    }
+    
+    .bolacinco {
+        position: absolute;
+        top: 40%;
+        left: 9%;
+        height: 1.75%;
+        width: 2%;
+        background-color: var(--azul);
+        border-radius: 100%;
+    }
+    
+    .easteregg {
+        position: absolute;
+        font-family: fodase;
+        color: var(--texto);
+        font-size: 175%;
+        top: 17%;
+        left: 13%;
+        line-height: 175%;
+    }
+    
+    .num {
+        position: absolute;
+        font-family: fodase;
+        font-size: 175%;
+        color: var(--texto);
+        top: 46%;
+        left: 13%;
+        line-height: 175%;
+    }
+    
+    .redes {
+        position: absolute;
+        bottom: 5.5%;
+        left: 7.5%;
+        width: 10%;
+        height: 30%;
+    }
+    
+    .links {
+        color: var(--azul);
+        cursor: pointer;  
+    }
+    
+    .links:visited {
+        color: var(--azul);
+    }
+    
+    .links {
+        position: absolute;
+        left: 120%;
+        font-family: fodase;
+        font-size: 175%;
+    }
+    
+    .links:active {
+        color: lightblue;
+    }
+    
+    .linkedin {
+        top: 10%;
+    }
+    
+    .github {
+        top: 45%;
+    }
+    
+    .insta {
+        bottom: 8%;
+    }
+    
+    .rd {
+        cursor: pointer;
+        width: 92px;
+        height: 92px;
+    }
+
+    .circulo {
+        position: absolute;
+        border: 2px solid #b6b6b6;
+        top: 10%;
+        left: 25%;
+        width: 50%;
+        height: 40%;
+        border-radius: 100%;
+        animation-name: comeco;
+        animation-duration: 4000ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+    
+    .nick {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
+    
+    .textos {
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        height: 40%;
+        bottom: 5%;
+        font-family: fodase;
+        color: var(--texto);
+        animation-name: comeco;
+        animation-duration: 4000ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+ 
+    @keyframes comeco {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+
+    @keyframes oi {
+        0% {
+            opacity: 100%;
+        }
+        100% {
+            opacity: 0%;
+        }
+    }
+
+    @keyframes desoi {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+    
+    .nome {
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        font-size: 3em;
+        text-align: center;
+        color: var(--azul);
+        bottom: 95%;
+    }
+    
+    .infos {
+        position: absolute;
+        top: 15%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+        line-height: 150%;
+        margin-left: 7.5%;
+        font-size: 2em;
+    }
+
+    .espacol {
+        font-family: fodase;
+        position: absolute;
+        left: 5%;
+        top: 2%;
+        width: 10%;
+        height: 2%;
+        z-index: 3;
+        font-size: 2em;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .traco, .pt {
+        padding-left: 7.5%;
+    }
+    
+    .traco {
+        color: var(--texto);
+    }
+    
+    .en {
+        cursor: pointer;
+        color: var(--texto);
+    }
+    
+    .pt {
+        cursor: pointer;
+        color: var(--azul);
+    }
+
+
+    body {
+        background-color: var(--celular);
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+
+    .header {
+        background-color: var(--corpo);
+        position: absolute;
+        left: 2%;
+        width: 96%;
+        border: 1px solid var(--borda);
+        border-radius: 50px;
+        box-shadow: none;
+        animation-duration: 1000ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+
+    .direita {
+        top: 64%;
+        height: 74%;
+        animation-name: crescer;
+        margin-bottom: 2%;
+    }
+    
+    .esquerda {
+        top: 2%;
+        height: 60%;
+        animation-name: segcrescer;
+        z-index: 2;
+    }
+
+    .downarrow {
+        display: block;
+        position: absolute;
+        top: 3%;
+        right: 5%;
+        width: 5%;
+        height: 5%;
+        z-index: 3;
+        cursor: pointer;
+        opacity: 0%;
+        animation-name: meudeus;
+        animation-delay: 1s;
+        animation-duration: 500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+    
+    .blue {
+        display: block;
+    }
+
+    .yellow {
+        display: none;
+    }
+
+    @keyframes meudeus {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+
+    .buceta {
+        position: absolute;
+        top: 3%;
+        right: 5%;
+        width: 5%;
+        height: 5%;
+        z-index: 3;
+        cursor: pointer;
+        z-index: 4;
+    }
+
+    @keyframes encolher {
+        0% {
+            rotate: 0deg;
+        }
+        100% {
+            rotate: 180deg;
+        }
+    }
+
+    @keyframes desencolher {
+        0% {
+            rotate: 180deg;
+        }
+        100% {
+            rotate: 0deg;
+        }
+    }
+
+    @keyframes diminuir {
+        0% {
+            height: 60%;
+        }
+        100% {
+            height: 20%;
+        }
+    }
+
+    @keyframes aumentar {
+        0% {
+            height: 20%;
+        }
+        100% {
+            height: 60%;
+        }
+    }
+    
+    @keyframes esquerda {
+        0% {
+            left: -100%;
+        }
+        100% {
+            left: 2%;
+        }
+    }
+    
+    @keyframes crescer {
+        0% {
+            height: 7.4%;
+            width: 9.6%;
+            margin-bottom: 2%;
+        }
+        
+        100% {
+            height: 74%;
+            width: 96%;
+            margin-bottom: 2%;
+        }
+    }
+    
+    @keyframes segcrescer {
+        0% {
+            height: 6%;
+            width: 9.6%;
+        }
+        
+        100% {
+            height: 60%;
+            width: 96%;
+        }
+    }
+
+    .options {
+        position: absolute;
+        width: 96%;
+        top: 66%;
+        height: 0%;
+        right: 2%;
+        z-index: 1;
+        animation-name: descer;
+        animation-delay: 1000ms;
+        animation-duration: 750ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: fodase;
+    }
+    
+    @keyframes descer {
+        0% {
+            height: 0%;
+            border-bottom: 1px solid var(--borda);
+        }
+        100% {
+            height: 7.5%;
+            border-bottom: 1px solid var(--borda);
+        }
+    }
+    
+    .op {
+        margin: 3% 3% 5% 3%;
+        visibility: hidden;
+        cursor: pointer;
+        animation-name: cor;
+        animation-fill-mode: forwards;
+        animation-delay: 1750ms;
+        animation-duration: 2ms;
+        transition: font-size 250ms;
+        text-decoration: none;
+        color: var(--texto);
+        border-bottom: 1px solid;
+        padding-bottom: 4%;
+        user-select: none;
+        font-size: 225%;
+    }
+    
+    .op:hover {
+        font-size: 250%;
+        margin: 2% 1% 4% 1%;
+        padding-bottom: 6%;
+    } 
+    
+    .sumindo {
+        position: absolute;
+        background-color: var(--corpo);
+        border-top: 1px solid var(--corpo);
+        width: 94%;
+        height: 8%;
+        right: 3%;
+        top: 68%;
+        animation-name: subir;
+        animation-delay: 1750ms;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes subir {
+        0% {
+            height: 3%;
+            z-index: 2;
+        }
+        100% {
+            height: 0%;
+        }
+    }
+    
+    @keyframes aparecer {
+        0% {
+            left: -90%;
+        }
+        100% {
+            left: 5%;
+        }
+    }
+    
+    .blank {
+        position: absolute;
+        top: 64%;
+        left: 0%;
+        height: 76%;
+        width: 1.8%;
+        background-color: var(--celular);
+        z-index: 2;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        margin-bottom: 2%;
+    }
+
+    @keyframes elevar {
+        0% {
+            top: 64%;
+        }
+        100% {
+            top: 24%;
+        }
+    }
+
+    @keyframes deselevar {
+        0% {
+            top: 24%;
+        }
+        100% {
+            top: 64%;
+        }
+    }
+
+    @keyframes doiselevar {
+        0% {
+            top: 66%;
+        }
+        100% {
+            top: 26%;
+        }
+    }
+
+    @keyframes doisdeselevar {
+        0% {
+            top: 26%;
+        }
+        100% {
+            top: 66%;
+        }
+    }
+
+    .linha {
+        position: absolute;
+        z-index: 1;
+        top: 21.5%;
+        left: 5%;
+        width: 30%;
+        height: 1%;
+        border-radius: 20px;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+        background-color: var(--azul);
+    }
+
+    .pri {
+        color: var(--azul);
+        border-bottom-color: var(--azul);
+        font-weight: bolder;
+    }
+
+    .bloco {
+        position: absolute;
+        top: 25%;
+        width: 90%;
+        height: 70%;
+        left: 5%;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+    }
+    
+    .blocoum {
+        border: 1px solid black; 
+    }
+    
+    .blocodois {
+        border: 1px solid navy;  
+    }
+    
+    .blocotres {
+        border: 1px solid gold;  
+    }
+
+    #blocoum {
+        display: block;
+    }
+    
+    .title {
+        position: absolute;
+        left: 5%;
+        top: 12.5%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 300%;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+    }
+    
+    .linhaum, #titleum {
+        display: block;
+        animation-name: sim;
+        animation-fill-mode: forwards;
+    }
+ 
+    .seletor {
+        position: fixed;
+        right: 40%;
+        top: 1%;
+        width: 20%;
+        height: 6%;
+        z-index: 3;
+    }
+    
+    .divisao {
+        position: absolute;
+        background-color: #696969;
+        width: 1%;
+        height: 97.5%;
+        top: 5%;
+        left: 49.5%;
+    }
+    
+    .selecaoum {
+        position: absolute;
+        background-color: white;
+        border-radius: 50px;
+        top: 10%;
+        left: 5%;
+        width: 40%;
+        height: 80%;
+        border: 1px solid black;
+    }
+    
+    .selecaodois {
+        position: absolute;
+        background-color: black;
+        border-radius: 50px;
+        top: 10%;
+        right: 5%;
+        width: 40%;
+        height: 80%;
+        border: 1px solid white;
+    }
+    
+    .invum, .invdois {
+        position: absolute;
+        border-radius: 50px;
+        top: 10%;
+        width: 40%;
+        height: 80%;
+        z-index: 4;
+        cursor: pointer;
+    }
+    
+    .invum {
+        left: 5%;
+    }
+    
+    .invdois {
+        right: 5%;
+    }
+    
+    .lua, .sol {
+        position: absolute;
+        width: 80%;
+        top: 5%;
+        height: 90%;
+        left: 10%;
+    }
+    
+    .luaamarela {
+        display: none;
+    }
+    
+    .luapreta {
+        display: block;
+    }
+    
+    .solazul {
+        display: block;
+    }
+    
+    .solbranco {
+        display: none;
+    }
+}   
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) 
+  and (-webkit-device-pixel-ratio: 2) 
+  and (device-aspect-ratio: 2/3) { /* Iphone 4 */
+    html {
+        --celular: var(--celular);
+    }
+
+    .bolaquatro {
+        position: absolute;
+        top: 11%;
+        left: 9%;
+        height: 1.75%;
+        width: 2%;
+        background-color: var(--azul);
+        border-radius: 100%;
+    }
+    
+    .palavra {
+        position: absolute;
+        top: 9%;
+        left: 13%;
+        width: 10%;
+        height: 5%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 225%;
+    }
+    
+    .tel {
+        position: absolute;
+        top: 38%;
+        left: 13%;
+        width: 50%;
+        height: 5%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 225%;
+    }
+    
+    .bolacinco {
+        position: absolute;
+        top: 40%;
+        left: 9%;
+        height: 1.75%;
+        width: 2%;
+        background-color: var(--azul);
+        border-radius: 100%;
+    }
+    
+    .easteregg {
+        position: absolute;
+        font-family: fodase;
+        color: var(--texto);
+        font-size: 175%;
+        top: 17%;
+        left: 13%;
+        line-height: 175%;
+    }
+    
+    .num {
+        position: absolute;
+        font-family: fodase;
+        font-size: 175%;
+        color: var(--texto);
+        top: 46%;
+        left: 13%;
+        line-height: 175%;
+    }
+    
+    .redes {
+        position: absolute;
+        bottom: 5.5%;
+        left: 7.5%;
+        width: 10%;
+        height: 30%;
+    }
+    
+    .links {
+        color: var(--azul);
+        cursor: pointer;  
+    }
+    
+    .links:visited {
+        color: var(--azul);
+    }
+    
+    .links {
+        position: absolute;
+        left: 120%;
+        font-family: fodase;
+        font-size: 175%;
+    }
+    
+    .links:active {
+        color: lightblue;
+    }
+    
+    .linkedin {
+        top: 10%;
+    }
+    
+    .github {
+        top: 53%;
+    }
+    
+    .insta {
+        top: 95%;
+    }
+    
+    .rd {
+        cursor: pointer;
+        width: 92px;
+        height: 92px;
+    }
+
+    .circulo {
+        position: absolute;
+        border: 2px solid #b6b6b6;
+        top: 10%;
+        left: 30%;
+        width: 40%;
+        height: 40%;
+        border-radius: 100%;
+        animation-name: comeco;
+        animation-duration: 4000ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+    
+    .nick {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
+    
+    .textos {
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        height: 40%;
+        bottom: 5%;
+        font-family: fodase;
+        color: var(--texto);
+        animation-name: comeco;
+        animation-duration: 4000ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes comeco {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+
+    @keyframes oi {
+        0% {
+            opacity: 100%;
+        }
+        100% {
+            opacity: 0%;
+        }
+    }
+
+    @keyframes desoi {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+    
+    .nome {
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        font-size: 2.75em;
+        text-align: center;
+        color: var(--azul);
+        bottom: 95%;
+    }
+    
+    .infos {
+        position: absolute;
+        top: 15%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+        line-height: 150%;
+        margin-left: 7.5%;
+        font-size: 1.75em;
+    }
+
+    .espacol {
+        font-family: fodase;
+        position: absolute;
+        left: 5%;
+        top: 2%;
+        width: 10%;
+        height: 2%;
+        z-index: 3;
+        font-size: 2em;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .traco, .pt {
+        padding-left: 7.5%;
+    }
+    
+    .traco {
+        color: var(--texto);
+    }
+    
+    .en {
+        cursor: pointer;
+        color: var(--texto);
+    }
+    
+    .pt {
+        cursor: pointer;
+        color: var(--azul);
+    }
+
+    body {
+        background-color: var(--celular);
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+
+    .header {
+        background-color: var(--corpo);
+        position: absolute;
+        left: 2%;
+        width: 96%;
+        border: 1px solid #696969;
+        border-radius: 50px;
+        box-shadow: none;
+        animation-duration: 1000ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+
+    .direita {
+        top: 64%;
+        height: 74%;
+        animation-name: crescer;
+        margin-bottom: 2%;
+    }
+    
+    .esquerda {
+        top: 2%;
+        height: 60%;
+        animation-name: segcrescer;
+        z-index: 2;
+    }
+
+    .downarrow {
+        display: block;
+        position: absolute;
+        top: 3%;
+        right: 5%;
+        width: 5%;
+        height: 5%;
+        z-index: 3;
+        cursor: pointer;
+        opacity: 0%;
+        animation-name: meudeus;
+        animation-delay: 1s;
+        animation-duration: 500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+    
+    .blue {
+        display: block;
+    }
+
+    .yellow {
+        display: none;
+    }
+
+    @keyframes meudeus {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+
+    .buceta {
+        position: absolute;
+        top: 3%;
+        right: 5%;
+        width: 5%;
+        height: 5%;
+        z-index: 3;
+        cursor: pointer;
+        z-index: 4;
+    }
+
+    @keyframes encolher {
+        0% {
+            rotate: 0deg;
+        }
+        100% {
+            rotate: 180deg;
+        }
+    }
+
+    @keyframes desencolher {
+        0% {
+            rotate: 180deg;
+        }
+        100% {
+            rotate: 0deg;
+        }
+    }
+
+    @keyframes diminuir {
+        0% {
+            height: 60%;
+        }
+        100% {
+            height: 20%;
+        }
+    }
+
+    @keyframes aumentar {
+        0% {
+            height: 20%;
+        }
+        100% {
+            height: 60%;
+        }
+    }
+    
+    @keyframes esquerda {
+        0% {
+            left: -100%;
+        }
+        100% {
+            left: 2%;
+        }
+    }
+    
+    @keyframes crescer {
+        0% {
+            height: 7.4%;
+            width: 9.6%;
+            margin-bottom: 2%;
+        }
+        
+        100% {
+            height: 74%;
+            width: 96%;
+            margin-bottom: 2%;
+        }
+    }
+    
+    @keyframes segcrescer {
+        0% {
+            height: 6%;
+            width: 9.6%;
+        }
+        
+        100% {
+            height: 60%;
+            width: 96%;
+        }
+    }
+
+    .options {
+        position: absolute;
+        width: 96%;
+        top: 66%;
+        height: 0%;
+        right: 2%;
+        z-index: 1;
+        animation-name: descer;
+        animation-delay: 1000ms;
+        animation-duration: 750ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: fodase;
+    }
+    
+    @keyframes descer {
+        0% {
+            height: 0%;
+            border-bottom: 1px solid var(--borda);
+        }
+        100% {
+            height: 7.5%;
+            border-bottom: 1px solid var(--borda);
+        }
+    }
+    
+    .op {
+        margin: 3% 3% 3% 3%;
+        visibility: hidden;
+        cursor: pointer;
+        animation-name: cor;
+        animation-fill-mode: forwards;
+        animation-delay: 1;
+        animation-duration: 2ms;
+        transition: font-size 250ms;
+        text-decoration: none;
+        color: var(--texto);
+        border-bottom: 1px solid;
+        padding-bottom: 4%;
+        user-select: none;
+        font-size: 225%;
+    }
+    
+    .op:hover {
+        font-size: 250%;
+        margin: 2% 1% 2% 1%;
+        padding-bottom: 6%;
+    } 
+    
+    .sumindo {
+        position: absolute; 
+        background-color: var(--corpo);
+        border-top: 1px solid var(--corpo);
+        width: 94%;
+        height: 8%;
+        right: 3%;
+        top: 68%;
+        animation-name: subir;
+        animation-delay: 1750ms;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes subir {
+        0% {
+            height: 3%;
+            z-index: 2;
+        }
+        100% {
+            height: 0%;
+        }
+    }
+    
+    @keyframes aparecer {
+        0% {
+            left: -90%;
+        }
+        100% {
+            left: 5%;
+        }
+    }
+    
+    .blank {
+        position: absolute;
+        top: 64%;
+        left: 0%;
+        height: 76%;
+        width: 1.8%;
+        background-color: var(--celular);
+        z-index: 2;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        margin-bottom: 2%;
+    }
+
+    @keyframes elevar {
+        0% {
+            top: 64%;
+        }
+        100% {
+            top: 24%;
+        }
+    }
+
+    @keyframes deselevar {
+        0% {
+            top: 24%;
+        }
+        100% {
+            top: 64%;
+        }
+    }
+
+    @keyframes doiselevar {
+        0% {
+            top: 66%;
+        }
+        100% {
+            top: 26%;
+        }
+    }
+
+    @keyframes doisdeselevar {
+        0% {
+            top: 26%;
+        }
+        100% {
+            top: 66%;
+        }
+    }
+
+    .linha {
+        position: absolute;
+        z-index: 1;
+        top: 21.5%;
+        left: 5%;
+        width: 30%;
+        height: 1%;
+        border-radius: 20px;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+        background-color: var(--azul);
+    }
+
+    .pri {
+        color: var(--azul);
+        border-bottom-color: var(--azul);
+        font-weight: bolder;
+    }
+
+    .bloco {
+        position: absolute;
+        top: 25%;
+        width: 90%;
+        height: 70%;
+        left: 5%;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+    }
+    
+    .blocoum {
+        border: 1px solid black; 
+    }
+    
+    .blocodois {
+        border: 1px solid navy;  
+    }
+    
+    .blocotres {
+        border: 1px solid gold;  
+    }
+
+    #blocoum {
+        display: block;
+    }
+    
+    .title {
+        position: absolute;
+        left: 5%;
+        top: 11%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 300%;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+    }
+    
+    .linhaum, #titleum {
+        display: block;
+        animation-name: sim;
+        animation-fill-mode: forwards;
+    }
+    
+    .seletor {
+        position: fixed;
+        right: 40%;
+        top: 1%;
+        width: 20%;
+        height: 6%;
+        z-index: 3;
+    }
+    
+    .divisao {
+        position: absolute;
+        background-color: #696969;
+        width: 1%;
+        height: 97.5%;
+        top: 5%;
+        left: 49.5%;
+    }
+    
+    .selecaoum {
+        position: absolute;
+        background-color: white;
+        border-radius: 50px;
+        top: 10%;
+        left: 5%;
+        width: 40%;
+        height: 80%;
+        border: 1px solid black;
+    }
+    
+    .selecaodois {
+        position: absolute;
+        background-color: black;
+        border-radius: 50px;
+        top: 10%;
+        right: 5%;
+        width: 40%;
+        height: 80%;
+        border: 1px solid white;
+    }
+    
+    .invum, .invdois {
+        position: absolute;
+        border-radius: 50px;
+        top: 10%;
+        width: 40%;
+        height: 80%;
+        z-index: 4;
+        cursor: pointer;
+    }
+    
+    .invum {
+        left: 5%;
+    }
+    
+    .invdois {
+        right: 5%;
+    }
+    
+    .lua, .sol {
+        position: absolute;
+        width: 80%;
+        top: 5%;
+        height: 90%;
+        left: 10%;
+    }
+    
+    .luaamarela {
+        display: none;
+    }
+    
+    .luapreta {
+        display: block;
+    }
+    
+    .solazul {
+        display: block;
+    }
+    
+    .solbranco {
+        display: none;
+    }
+}
+
+@media screen and (device-aspect-ratio: 40 / 71) { /* Iphone 5/SE */
+    html {
+        --celular: var(--celular);
+    }
+
+    .bolaquatro {
+        position: absolute;
+        top: 11%;
+        left: 9%;
+        height: 1.75%;
+        width: 2%;
+        background-color: var(--azul);
+        border-radius: 100%;
+    }
+    
+    .palavra {
+        position: absolute;
+        top: 9%;
+        left: 13%;
+        width: 10%;
+        height: 5%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 225%;
+    }
+    
+    .tel {
+        position: absolute;
+        top: 38%;
+        left: 13%;
+        width: 50%;
+        height: 5%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 225%;
+    }
+    
+    .bolacinco {
+        position: absolute;
+        top: 40%;
+        left: 9%;
+        height: 1.75%;
+        width: 2%;
+        background-color: var(--azul);
+        border-radius: 100%;
+    }
+    
+    .easteregg {
+        position: absolute;
+        font-family: fodase;
+        color: var(--texto);
+        font-size: 175%;
+        top: 17%;
+        left: 13%;
+        line-height: 175%;
+    }
+    
+    .num {
+        position: absolute;
+        font-family: fodase;
+        font-size: 175%;
+        color: var(--texto);
+        top: 46%;
+        left: 13%;
+        line-height: 175%;
+    }
+    
+    .redes {
+        position: absolute;
+        bottom: 5.5%;
+        left: 7.5%;
+        width: 10%;
+        height: 30%;
+    }
+    
+    .links {
+        color: var(--azul);
+        cursor: pointer;  
+    }
+    
+    .links:visited {
+        color: var(--azul);
+    }
+    
+    .links {
+        position: absolute;
+        left: 120%;
+        font-family: fodase;
+        font-size: 175%;
+    }
+    
+    .links:active {
+        color: lightblue;
+    }
+    
+    .linkedin {
+        top: 10%;
+    }
+    
+    .github {
+        top: 45%;
+    }
+    
+    .insta {
+        bottom: 8%;
+    }
+    
+    .rd {
+        cursor: pointer;
+        width: 92px;
+        height: 92px;
+    }
+
+    .circulo {
+        position: absolute;
+        border: 2px solid #b6b6b6;
+        top: 10%;
+        left: 25%;
+        width: 45%;
+        height: 40%;
+        border-radius: 100%;
+        animation-name: comeco;
+        animation-duration: 4000ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+    
+    .nick {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
+    
+    .textos {
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        height: 40%;
+        bottom: 5%;
+        font-family: fodase;
+        color: var(--texto);
+        animation-name: comeco;
+        animation-duration: 4000ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes comeco {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+
+    @keyframes oi {
+        0% {
+            opacity: 100%;
+        }
+        100% {
+            opacity: 0%;
+        }
+    }
+
+    @keyframes desoi {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+    
+    .nome {
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        font-size: 3em;
+        text-align: center;
+        color: var(--azul);
+        bottom: 95%;
+    }
+    
+    .infos {
+        position: absolute;
+        top: 15%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: space-between;
+        line-height: 150%;
+        margin-left: 7.5%;
+        font-size: 2em;
+    }
+
+    .espacol {
+        font-family: fodase;
+        position: absolute;
+        left: 6%;
+        top: 2%;
+        width: 10%;
+        height: 2%;
+        z-index: 3;
+        font-size: 2em;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .traco, .pt {
+        padding-left: 7.5%;
+    }
+    
+    .traco {
+        color: var(--texto);
+    }
+    
+    .en {
+        cursor: pointer;
+        color: var(--texto);
+    }
+    
+    .pt {
+        cursor: pointer;
+        color: var(--azul);
+    }
+
+    body {
+        background-color: var(--celular);
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+
+    .header {
+        background-color: var(--corpo);
+        position: absolute;
+        left: 2%;
+        width: 96%;
+        border: 1px solid var(--borda);
+        border-radius: 50px;
+        box-shadow: none;
+        animation-duration: 1000ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+
+    .direita {
+        top: 64%;
+        height: 74%;
+        animation-name: crescer;
+        margin-bottom: 2%;
+    }
+    
+    .esquerda {
+        top: 2%;
+        height: 60%;
+        animation-name: segcrescer;
+        z-index: 2;
+    }
+
+    .downarrow {
+        display: block;
+        position: absolute;
+        top: 3%;
+        right: 5%;
+        width: 5%;
+        height: 5%;
+        z-index: 3;
+        cursor: pointer;
+        opacity: 0%;
+        animation-name: meudeus;
+        animation-delay: 1s;
+        animation-duration: 500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+    
+    .blue {
+        display: block;
+    }
+
+    .yellow {
+        display: none;
+    }
+
+    @keyframes meudeus {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+
+    .buceta {
+        position: absolute;
+        top: 3%;
+        right: 5%;
+        width: 5%;
+        height: 5%;
+        z-index: 3;
+        cursor: pointer;
+        z-index: 4;
+    }
+
+    @keyframes encolher {
+        0% {
+            rotate: 0deg;
+        }
+        100% {
+            rotate: 180deg;
+        }
+    }
+
+    @keyframes desencolher {
+        0% {
+            rotate: 180deg;
+        }
+        100% {
+            rotate: 0deg;
+        }
+    }
+
+    @keyframes diminuir {
+        0% {
+            height: 60%;
+        }
+        100% {
+            height: 20%;
+        }
+    }
+
+    @keyframes aumentar {
+        0% {
+            height: 20%;
+        }
+        100% {
+            height: 60%;
+        }
+    }
+    
+    @keyframes esquerda {
+        0% {
+            left: -100%;
+        }
+        100% {
+            left: 2%;
+        }
+    }
+    
+    @keyframes crescer {
+        0% {
+            height: 7.4%;
+            width: 9.6%;
+            margin-bottom: 2%;
+        }
+        
+        100% {
+            height: 74%;
+            width: 96%;
+            margin-bottom: 2%;
+        }
+    }
+    
+    @keyframes segcrescer {
+        0% {
+            height: 6%;
+            width: 9.6%;
+        }
+        
+        100% {
+            height: 60%;
+            width: 96%;
+        }
+    }
+
+    .options {
+        position: absolute;
+        width: 96%;
+        top: 66%;
+        height: 0%;
+        right: 2%;
+        z-index: 1;
+        animation-name: descer;
+        animation-delay: 1000ms;
+        animation-duration: 750ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-family: fodase;
+    }
+    
+    @keyframes descer {
+        0% {
+            height: 0%;
+            border-bottom: 1px solid var(--borda);
+        }
+        100% {
+            height: 7.5%;
+            border-bottom: 1px solid var(--borda);
+        }
+    }
+    
+    .op {
+        margin: 3% 3% 5% 3%;
+        visibility: hidden;
+        cursor: pointer;
+        animation-name: cor;
+        animation-fill-mode: forwards;
+        animation-delay: 1750ms;
+        animation-duration: 2ms;
+        transition: font-size 250ms;
+        text-decoration: none;
+        color: var(--texto);
+        border-bottom: 1px solid;
+        padding-bottom: 4%;
+        user-select: none;
+        font-size: 225%;
+    }
+    
+    .op:hover {
+        font-size: 250%;
+        margin: 2% 1% 4% 1%;
+        padding-bottom: 6%;
+    } 
+    
+    .sumindo {
+        position: absolute;
+        background-color: var(--corpo);
+        border-top: 1px solid var(--corpo);
+        width: 94%;
+        height: 8%;
+        right: 3%;
+        top: 68%;
+        animation-name: subir;
+        animation-delay: 1750ms;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes subir {
+        0% {
+            height: 3%;
+            z-index: 2;
+        }
+        100% {
+            height: 0%;
+        }
+    }
+    
+    @keyframes aparecer {
+        0% {
+            left: -90%;
+        }
+        100% {
+            left: 5%;
+        }
+    }
+    
+    .blank {
+        position: absolute;
+        top: 64%;
+        left: 0%;
+        height: 76%;
+        width: 1.8%;
+        background-color: var(--celular);
+        z-index: 2;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        margin-bottom: 2%;
+    }
+
+    @keyframes elevar {
+        0% {
+            top: 64%;
+        }
+        100% {
+            top: 24%;
+        }
+    }
+
+    @keyframes deselevar {
+        0% {
+            top: 24%;
+        }
+        100% {
+            top: 64%;
+        }
+    }
+
+    @keyframes doiselevar {
+        0% {
+            top: 66%;
+        }
+        100% {
+            top: 26%;
+        }
+    }
+
+    @keyframes doisdeselevar {
+        0% {
+            top: 26%;
+        }
+        100% {
+            top: 66%;
+        }
+    }
+
+    .linha {
+        position: absolute;
+        z-index: 1;
+        top: 21.5%;
+        left: 5%;
+        width: 30%;
+        height: 1%;
+        border-radius: 20px;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+        background-color: var(--azul);
+    }
+
+    .pri {
+        color: var(--azul);
+        border-bottom-color: var(--azul);
+        font-weight: bolder;
+    }
+
+    .bloco {
+        position: absolute;
+        top: 25%;
+        width: 90%;
+        height: 70%;
+        left: 5%;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+    }
+    
+    .blocoum {
+        border: 1px solid black; 
+    }
+    
+    .blocodois {
+        border: 1px solid navy;  
+    }
+    
+    .blocotres {
+        border: 1px solid gold;  
+    }
+
+    #blocoum {
+        display: block;
+    }
+    
+    .title {
+        position: absolute;
+        left: 5%;
+        top: 12.5%;
+        font-family: fodase;
+        color: var(--azul);
+        font-weight: bolder;
+        font-size: 300%;
+        animation-duration: 1500ms;
+        animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+        animation-fill-mode: forwards;
+        z-index: 1;
+        display: none;
+    }
+    
+    .linhaum, #titleum {
+        display: block;
+        animation-name: sim;
+        animation-fill-mode: forwards;
+    }
+    
+    .seletor {
+        position: fixed;
+        right: 40%;
+        top: 1%;
+        width: 20%;
+        height: 6%;
+        z-index: 3;
+    }
+    
+    .divisao {
+        position: absolute;
+        background-color: #696969;
+        width: 1%;
+        height: 97.5%;
+        top: 5%;
+        left: 49.5%;
+    }
+    
+    .selecaoum {
+        position: absolute;
+        background-color: white;
+        border-radius: 50px;
+        top: 10%;
+        left: 5%;
+        width: 40%;
+        height: 80%;
+        border: 1px solid black;
+    }
+    
+    .selecaodois {
+        position: absolute;
+        background-color: black;
+        border-radius: 50px;
+        top: 10%;
+        right: 5%;
+        width: 40%;
+        height: 80%;
+        border: 1px solid white;
+    }
+    
+    .invum, .invdois {
+        position: absolute;
+        border-radius: 50px;
+        top: 10%;
+        width: 40%;
+        height: 80%;
+        z-index: 4;
+        cursor: pointer;
+    }
+    
+    .invum {
+        left: 5%;
+    }
+    
+    .invdois {
+        right: 5%;
+    }
+    
+    .lua, .sol {
+        position: absolute;
+        width: 80%;
+        top: 5%;
+        height: 90%;
+        left: 10%;
+    }
+    
+    .luaamarela {
+        display: none;
+    }
+    
+    .luapreta {
+        display: block;
+    }
+    
+    .solazul {
+        display: block;
+    }
+    
+    .solbranco {
+        display: none;
+    }
+}
+
+@media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) { /* Iphone X */
+        html {
+            --celular: var(--celular);
+        }
+
+        .bolaquatro {
+            position: absolute;
+            top: 10.5%;
+            left: 9%;
+            height: 1.75%;
+            width: 2%;
+            background-color: var(--azul);
+            border-radius: 100%;
+        }
+        
+        .palavra {
+            position: absolute;
+            top: 9%;
+            left: 13%;
+            width: 10%;
+            height: 5%;
+            font-family: fodase;
+            color: var(--azul);
+            font-weight: bolder;
+            font-size: 225%;
+        }
+        
+        .tel {
+            position: absolute;
+            top: 38%;
+            left: 13%;
+            width: 50%;
+            height: 5%;
+            font-family: fodase;
+            color: var(--azul);
+            font-weight: bolder;
+            font-size: 225%;
+        }
+        
+        .bolacinco {
+            position: absolute;
+            top: 39.5%;
+            left: 9%;
+            height: 1.75%;
+            width: 2%;
+            background-color: var(--azul);
+            border-radius: 100%;
+        }
+        
+        .easteregg {
+            position: absolute;
+            font-family: fodase;
+            color: var(--texto);
+            font-size: 200%;
+            top: 17%;
+            left: 13%;
+            line-height: 175%;
+        }
+        
+        .num {
+            position: absolute;
+            font-family: fodase;
+            font-size: 200%;
+            color: var(--texto);
+            top: 46%;
+            left: 13%;
+            line-height: 175%;
+        }
+        
+        .redes {
+            position: absolute;
+            bottom: 5.5%;
+            left: 7.5%;
+            width: 10%;
+            height: 30%;
+        }
+        
+        .links {
+            color: var(--azul);
+            cursor: pointer;  
+        }
+        
+        .links:visited {
+            color: var(--azul);
+        }
+        
+        .links {
+            position: absolute;
+            left: 120%;
+            font-family: fodase;
+            font-size: 175%;
+        }
+        
+        .links:active {
+            color: lightblue;
+        }
+        
+        .linkedin {
+            top: 7%;
+        }
+        
+        .github {
+            top: 37%;
+        }
+        
+        .insta {
+            bottom: 22%;
+        }
+        
+        .rd {
+            cursor: pointer;
+            width: 92px;
+            height: 92px;
+        }
+
+        .circulo {
+            position: absolute;
+            border: 2px solid #b6b6b6;
+            top: 10%;
+            left: 25%;
+            width: 50%;
+            height: 40%;
+            border-radius: 100%;
+            color: var(--texto);
+            animation-name: comeco;
+            animation-duration: 4000ms;
+            animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+            animation-fill-mode: forwards;
+        }
+        
+        .nick {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+        }
+        
+        .textos {
+            position: absolute;
+            width: 80%;
+            left: 10%;
+            height: 40%;
+            bottom: 5%;
+            font-family: fodase;
+            color: var(--texto);
+            animation-name: comeco;
+            animation-duration: 4000ms;
+            animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+            animation-fill-mode: forwards;
+        }
+        
+         @keyframes comeco {
+            0% {
+               opacity: 0%;
+            }
+            100% {
+               opacity: 100%;
+            }
+        }
+
+        @keyframes oi {
+            0% {
+                opacity: 100%;
+            }
+            100% {
+                opacity: 0%;
+            }
+        }
+
+        @keyframes desoi {
+            0% {
+                opacity: 0%;
+            }
+            100% {
+                opacity: 100%;
+            }
+        }
+        
+        .nome {
+            position: absolute;
+            width: 100%;
+            height: 10%;
+            font-size: 3em;
+            text-align: center;
+            color: var(--azul);
+            bottom: 95%;
+        }
+        
+        .infos {
+            position: absolute;
+            top: 15%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: space-between;
+            line-height: 150%;
+            margin-left: 7.5%;
+            font-size: 2.5em;
+        }
+
+        .espacol {
+            font-family: fodase;
+            position: absolute;
+            left: 6.5%;
+            top: 2%;
+            width: 10%;
+            height: 2%;
+            z-index: 3;
+            font-size: 2.5em;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .traco, .pt {
+            padding-left: 7.5%;
+        }
+        
+        .traco {
+            color: var(--texto);
+        }
+        
+        .en {
+            cursor: pointer;
+            color: var(--texto);
+        }
+        
+        .pt {
+            cursor: pointer;
+            color: var(--azul);
+        }
+    
+    
+        body {
+            background-color: var(--celular);
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+        }
+    
+        .header {
+            background-color: var(--corpo);
+            position: absolute;
+            left: 2%;
+            width: 96%;
+            border: 1px solid var(--borda);
+            border-radius: 50px;
+            box-shadow: none;
+            animation-duration: 1000ms;
+            animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+            animation-fill-mode: forwards;
+        }
+    
+        .direita {
+            top: 64%;
+            height: 74%;
+            animation-name: crescer;
+            margin-bottom: 2%;
+        }
+        
+        .esquerda {
+            top: 2%;
+            height: 60%;
+            animation-name: segcrescer;
+            z-index: 2;
+        }
+    
+        .downarrow {
+            display: block;
+            position: absolute;
+            top: 3%;
+            right: 5%;
+            width: 5%;
+            height: 5%;
+            z-index: 3;
+            cursor: pointer;
+            opacity: 0%;
+            animation-name: meudeus;
+            animation-delay: 1s;
+            animation-duration: 500ms;
+            animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+            animation-fill-mode: forwards;
+        }
+        
+    .blue {
+        display: block;
+    }
+
+    .yellow {
+        display: none;
+    }
+    
+        @keyframes meudeus {
+            0% {
+                opacity: 0%;
+            }
+            100% {
+                opacity: 100%;
+            }
+        }
+    
+        .buceta {
+            position: absolute;
+            top: 3%;
+            right: 5%;
+            width: 5%;
+            height: 5%;
+            z-index: 3;
+            cursor: pointer;
+            z-index: 4;
+        }
+    
+        @keyframes encolher {
+            0% {
+                rotate: 0deg;
+            }
+            100% {
+                rotate: 180deg;
+            }
+        }
+    
+        @keyframes desencolher {
+            0% {
+                rotate: 180deg;
+            }
+            100% {
+                rotate: 0deg;
+            }
+        }
+    
+        @keyframes diminuir {
+            0% {
+                height: 60%;
+            }
+            100% {
+                height: 20%;
+            }
+        }
+    
+        @keyframes aumentar {
+            0% {
+                height: 20%;
+            }
+            100% {
+                height: 60%;
+            }
+        }
+        
+        @keyframes esquerda {
+            0% {
+                left: -100%;
+            }
+            100% {
+                left: 2%;
+            }
+        }
+        
+        @keyframes crescer {
+            0% {
+                height: 7.4%;
+                width: 9.6%;
+                margin-bottom: 2%;
+            }
+            
+            100% {
+                height: 74%;
+                width: 96%;
+                margin-bottom: 2%;
+            }
+        }
+        
+        @keyframes segcrescer {
+            0% {
+                height: 6%;
+                width: 9.6%;
+            }
+            
+            100% {
+                height: 60%;
+                width: 96%;
+            }
+        }
+    
+        .options {
+            position: absolute;
+            width: 97%;
+            top: 66%;
+            height: 0%;
+            right: 2%;
+            z-index: 1;
+            animation-name: descer;
+            animation-delay: 1000ms;
+            animation-duration: 750ms;
+            animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+            animation-fill-mode: forwards;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            font-family: fodase;
+        }
+        
+        @keyframes descer {
+            0% {
+                height: 0%;
+                border-bottom: 1px solid var(--borda);
+            }
+            100% {
+                height: 7.5%;
+                border-bottom: 1px solid var(--borda);
+            }
+        }
+        
+        .op {
+            margin: 3% 3% 7% 4%;
+            visibility: hidden;
+            cursor: pointer;
+            animation-name: cor;
+            animation-fill-mode: forwards;
+            animation-delay: 1750ms;
+            animation-duration: 2ms;
+            transition: font-size 250ms;
+            text-decoration: none;
+            color: var(--texto);
+            border-bottom: 1px solid;
+            padding-bottom: 4%;
+            user-select: none;
+            font-size: 250%;
+            transition: all 100ms;
+        }
+        
+        .op:hover {
+            font-size: 250%;
+            margin: 2% 2% 6% 2%;
+            padding-bottom: 6%;
+        } 
+        
+        .sumindo {
+            position: absolute;
+            background-color: var(--corpo);
+            border-top: 1px solid var(--corpo);
+            width: 94%;
+            height: 8%;
+            right: 3%;
+            top: 67%;
+            animation-name: subir;
+            animation-delay: 1750ms;
+            animation-duration: 1500ms;
+            animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+            animation-fill-mode: forwards;
+        }
+        
+        @keyframes subir {
+            0% {
+                height: 3%;
+                z-index: 2;
+            }
+            100% {
+                height: 0%;
+            }
+        }
+        
+        @keyframes aparecer {
+            0% {
+                left: -90%;
+            }
+            100% {
+                left: 5%;
+            }
+        }
+        
+        .blank {
+            position: absolute;
+            top: 64%;
+            left: 0%;
+            height: 76%;
+            width: 1.8%;
+            background-color: var(--celular);
+            z-index: 2;
+            animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+            animation-fill-mode: forwards;
+            margin-bottom: 2%;
+        }
+    
+        @keyframes elevar {
+            0% {
+                top: 64%;
+            }
+            100% {
+                top: 24%;
+            }
+        }
+    
+        @keyframes deselevar {
+            0% {
+                top: 24%;
+            }
+            100% {
+                top: 64%;
+            }
+        }
+    
+        @keyframes doiselevar {
+            0% {
+                top: 66%;
+            }
+            100% {
+                top: 26%;
+            }
+        }
+    
+        @keyframes doisdeselevar {
+            0% {
+                top: 26%;
+            }
+            100% {
+                top: 66%;
+            }
+        }
+    
+        .linha {
+            position: absolute;
+            z-index: 1;
+            top: 21.5%;
+            left: 5%;
+            width: 30%;
+            height: 1%;
+            border-radius: 20px;
+            animation-duration: 1500ms;
+            animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+            animation-fill-mode: forwards;
+            z-index: 1;
+            display: none;
+            background-color: var(--azul);
+        }
+    
+        .pri {
+            color: var(--azul);
+            border-bottom-color: var(--azul);
+            font-weight: bolder;
+            font-size: 230%;
+        }
+    
+        .bloco {
+            position: absolute;
+            top: 25%;
+            width: 90%;
+            height: 70%;
+            left: 5%;
+            animation-duration: 1500ms;
+            animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+            animation-fill-mode: forwards;
+            z-index: 1;
+            display: none;
+        }
+        
+        .blocoum {
+            border: 1px solid black; 
+        }
+        
+        .blocodois {
+            border: 1px solid navy;  
+        }
+        
+        .blocotres {
+            border: 1px solid gold;  
+        }
+    
+        #blocoum {
+            display: block;
+        }
+        
+        .title {
+            position: absolute;
+            left: 5%;
+            top: 12.5%;
+            font-family: fodase;
+            color: var(--azul);
+            font-weight: bolder;
+            font-size: 300%;
+            animation-duration: 1500ms;
+            animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+            animation-fill-mode: forwards;
+            z-index: 1;
+            display: none;
+        }
+        
+        .linhaum, #titleum {
+            display: block;
+            animation-name: sim;
+            animation-fill-mode: forwards;
+        }
+        
+    .seletor {
+        position: fixed;
+        right: 35%;
+        top: 2.5%;
+        width: 30%;
+        height: 5%;
+        z-index: 3;
+    }
+    
+    .divisao {
+        position: absolute;
+        background-color: #696969;
+        width: 1%;
+        height: 97.5%;
+        top: 5%;
+        left: 49.5%;
+    }
+    
+    .selecaoum {
+        position: absolute;
+        background-color: white;
+        border-radius: 50px;
+        top: 10%;
+        left: 5%;
+        width: 40%;
+        height: 80%;
+        border: 1px solid black;
+    }
+    
+    .selecaodois {
+        position: absolute;
+        background-color: black;
+        border-radius: 50px;
+        top: 10%;
+        right: 5%;
+        width: 40%;
+        height: 80%;
+        border: 1px solid white;
+    }
+    
+    .invum, .invdois {
+        position: absolute;
+        border-radius: 50px;
+        top: 10%;
+        width: 40%;
+        height: 80%;
+        z-index: 4;
+        cursor: pointer;
+    }
+    
+    .invum {
+        left: 5%;
+    }
+    
+    .invdois {
+        right: 5%;
+    }
+    
+    .lua, .sol {
+        position: absolute;
+        width: 80%;
+        top: 5%;
+        height: 90%;
+        left: 10%;
+    }
+    
+    .luaamarela {
+        display: none;
+    }
+    
+    .luapreta {
+        display: block;
+    }
+    
+    .solazul {
+        display: block;
+    }
+    
+    .solbranco {
+        display: none;
+    }
+}
+
+@media only screen and (aspect-ratio: 1/1) {
+    
+}
+

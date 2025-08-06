@@ -26,6 +26,7 @@ function ladoum() {
     bloco = "blocoum";
     linha = "linhaum";
     title = "titleum";
+    grid = 0;
     selecionado();
 }
 
@@ -35,6 +36,7 @@ function ladodois() {
     bloco = "blocodois";
     linha = "linhadois";
     title = "titledois";
+    grid = 0;
     selecionado();
 }
 
@@ -44,6 +46,7 @@ function ladotres() {
     bloco = "blocotres";
     linha = "linhatres";
     title = "titletres";
+    grid = 1;
     selecionado();
 }
 
@@ -53,6 +56,7 @@ function ladoquatro() {
     bloco = "blocoquatro";
     linha = "linhaquatro";
     title = "titlequatro";
+    grid = 0;
     selecionado();
 }
 
@@ -60,7 +64,11 @@ function selecionado() {
     document.getElementById(texto).style.color = azul;
     document.getElementById(texto).style.borderBottomColor = azul;
     document.getElementById(texto).style.fontWeight = "bolder";
-    document.getElementById(bloco).style.display = "block";
+    if (grid == 1) {
+        document.getElementById(bloco).style.display = "grid";
+    } else {
+        document.getElementById(bloco).style.display = "block";
+    }
     document.getElementById(bloco).style.animationName = "aparecer";
     document.getElementById(linha).style.animationName = "aparecer";
     document.getElementById(linha).style.display = "block";
@@ -190,9 +198,9 @@ function ingles() {
         document.getElementById('titledois').innerHTML = "Resume";
         document.getElementById('testequatro').innerHTML = "Contact";
         document.getElementById('titlequatro').innerHTML = "Contact";
-        document.getElementById('dezessete').innerHTML = "-> 17 years";
-        document.getElementById('curso').innerHTML = "-> Studying Systems Development at Novotec";
-        document.getElementById('estudos').innerHTML = "-> Study at E. E. Canadá (High School)";
+        document.getElementById('dezessete').innerHTML = "-> 18 years";
+        document.getElementById('curso').innerHTML = "-> Studying Computer Engineering";
+        document.getElementById('estudos').innerHTML = "-> Study at Universidade São Judas Tadeu";
         document.getElementById('brazil').innerHTML = "São Paulo, Brazil";
         document.getElementById('phone').innerHTML = "Phone and E-mail";
         document.getElementById('tchau').innerHTML = "Phone: +55 (13) 99185-9107";
@@ -207,12 +215,12 @@ function ingles() {
         document.getElementById('formacao').innerHTML = "Education Background";
         document.getElementById('inicioum').innerHTML = "Start - 2022 | 2024 End";
         document.getElementById('iniciodois').innerHTML = "Start - 2022 | 2024 End";
-        document.getElementById('iniciotres').innerHTML = "Start - 2025";
+        document.getElementById('iniciotres').innerHTML = "Start - 2025 | 2029 End";
         document.getElementById('em').innerHTML = "High School - E. E. Canadá";
         document.getElementById('nvtc').innerHTML = "Systems Development and Analysis - Novotec";
-        document.getElementById('eng').innerHTML = "Software engineering";
-        document.getElementById('conteudoum').innerHTML = "My name is Nicholas Lagareiro, I'm 17 years old, and I currently study at E. E. Canada (Santos) in the 3rd year of high school.<br>I also study at NovoTec (technical course integrated into high school) doing Systems Development and Analysis, ending in 2024. I currently have a temporary job as a Sound Operator/DJ at a buffet, but I'm open and looking for something permanent or freelance.<br>As a DJ, I operate light and sound equipment (soundboard and microphones) and also control the music and ambience of the place.<br>I'm also part of a band (<a class='perdido'>@purplehaze_banda</a>) as a bassist, backing vocalist and founder, I manage social media and also organize events with other bands.";
-        document.getElementById('conteudodois').innerHTML = "My main objective is to graduate and start a Software Engineering college in the first semester of 2025. I also intend to go further in my field, and continue to always learn new languages.";
+        document.getElementById('eng').innerHTML = "Computer engineering - USJT";
+        document.getElementById('conteudoum').innerHTML = "My name is Nicholas Lagareiro, I'm 18 years old, and I'm currently studying Computer Engineering at São Judas Tadeu University (Santos).<br>I was enrolled in NovoTec (a technical course integrated with high school) and studied Systems Development and Analysis, graduating in 2024. I'm currently looking for a permanent job in programming/development, whether front-end, back-end, or full-stack.<br>I have several projects of my own, which can be viewed in the Portfolio tab above, and several others still in development.<br>I'm also part of a band (@purplehaze_banda) as the lead guitarist, backing vocalist, and founder. I manage their social media and organize events with other bands.";
+        document.getElementById('conteudodois').innerHTML = "My current goal is to get a job to enter the job market in this area and gain experience, since my only work in this area has been freelance.";
         document.getElementById('objj').innerHTML = "Objective";
         document.getElementById('apresentacao').innerHTML = "Introduction";
     }
@@ -230,9 +238,9 @@ function portugues() {
         document.getElementById('titledois').innerHTML = "Resumo";
         document.getElementById('testequatro').innerHTML = "Contato";
         document.getElementById('titlequatro').innerHTML = "Contato";
-        document.getElementById('dezessete').innerHTML = "-> 17 anos";
-        document.getElementById('curso').innerHTML = "-> Cursando Desenvolvimento de Sistemas no Novotec";
-        document.getElementById('estudos').innerHTML = "-> Estuda na E. E. Canadá (3° Ano do Ensino Médio)";
+        document.getElementById('dezessete').innerHTML = "-> 18 anos";
+        document.getElementById('curso').innerHTML = "-> Cursando Engenharia da Computação na USJT";
+        document.getElementById('estudos').innerHTML = "-> Estuda na Universidade São Judas Tadeu (2° semestre)";
         document.getElementById('brazil').innnerHTML = "São Paulo, Brasil";
         document.getElementById('phone').innerHTML = "Telefone & E-mail";
         document.getElementById('tchau').innerHTML = "Telefone: +55 (13) 99185-9107";
@@ -245,14 +253,14 @@ function portugues() {
         document.getElementById('bold').innerHTML = "English";
         document.getElementById('intermediate').innerHTML = "(Intermediário avançado)";
         document.getElementById('formacao').innerHTML = "Formação";
-        document.getElementById('inicioum').innerHTML = "Início - 2022 | 2024 Fim";
-        document.getElementById('iniciodois').innerHTML = "Início - 2022 | 2024 Fim";
-        document.getElementById('iniciotres').innerHTML = "Início - 2025";
+        document.getElementById('inicioum').innerHTML = "Início - 2022 | 2024 Término";
+        document.getElementById('iniciodois').innerHTML = "Início - 2022 | 2024 Término";
+        document.getElementById('iniciotres').innerHTML = "Início - 2025 | Término";
         document.getElementById('em').innerHTML = "Ensino Médio - E. E. Canadá";
         document.getElementById('nvtc').innerHTML = "Desenvolvimento e Análise de Sistemas - Novotec";
-        document.getElementById('eng').innerHTML = "Engenharia de Software";
-        document.getElementById('conteudoum').innerHTML = 'Me chamo Nicholas Lagareiro, tenho 17 anos, e atualmente estudo na E. E. Canadá (Santos) cursando o 3° ano do Ensino Médio.<br>Faço parte do NovoTec (curso técnico integrado ao ensino médio) e curso Desenvolvimento e Análise de Sistemas, com término em 2024. Atualmente possuo um emprego temporário como Operador de som/DJ em um buffet, mas estou aberto e à procura de algo fixo.<br>No meu cargo de DJ, opero aparelhos de luz e som (mesa de som e microfones) e também controlo a música e ambientação do local.<br>Faço parte também de uma banda (<a class="perdido">@purplehaze_banda</a>) como baixista, backing vocal e fundador, nela, gerencio as mídias sociais e organizo também eventos com outras bandas.';
-        document.getElementById('conteudodois').innerHTML = "Possuo como objetivo principal me formar e iniciar uma faculdade de Engenharia de Software no primeiro semestre de 2025. Pretendo também ir mais além na minha área, e continuar indo atrás de aprender novas linguagens sempre.";
+        document.getElementById('eng').innerHTML = "Engenharia de Computação - USJT";
+        document.getElementById('conteudoum').innerHTML = 'Me chamo Nicholas Lagareiro, tenho 18 anos, e atualmente estudo na Universidade São Judas Tadeu (Santos) cursando o 2° semestre de Engenharia de Computação.<br>Fiz parte do NovoTec (curso técnico integrado ao ensino médio) cursando Desenvolvimento e Análise de Sistemas, com término em 2024. Atualmente estou à procura de um emprego fixo na área da programação/desenvolvimento seja front-end, back-end ou full stack.<br>Possuo alguns projetos de minha autoria que podem ser visualizados na aba de Portfólio acima, e alguns outros projetos ainda em desenvolvimento.<br>Faço parte também de uma banda (<a class="perdido">@purplehaze_banda</a>) como guitarrista lead, backing vocal e fundador, nela, gerencio as mídias sociais e organizo também eventos com outras bandas.';
+        document.getElementById('conteudodois').innerHTML = "Possuo como objetivo atual, um emprego para me inserir no mercado de trabalho da área e adquirir experiência, visto que meus únicos trabalhos na área foram freelance.";
         document.getElementById('objj').innerHTML = "Objetivo";
         document.getElementById('apresentacao').innerHTML = "Apresentação";
     }
