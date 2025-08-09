@@ -33,165 +33,165 @@
         <div class="ooo">
             <p class="error">TAMANHO DE TELA NÃO SUPORTADO</p>
         </div>
-        <div class="seletor" id="seletor">
-            <div class="invum" onclick="escuro()"></div>
-            <div class="selecaoum" id="selecaoum">
-                <object data="luapreta.svg" class="lua luapreta" id="luapreta"></object>
-                <object data="luaamarelaffe224.svg" class="lua luaamarela" id="luaamarela"></object>
+        <div class="themeSelection">
+            <div class="switchThemeToBlack" onclick="dark()"></div>
+            <div class="divSVGMoon">
+                <object data="luapreta.svg" class="moon blackMoon" id="blackMoon"></object>
+                <object data="luaamarelaffe224.svg" class="moon yellowMoon" id="yellowMoon"></object>
             </div>
-            <div class="divisao" id="divisao"></div>
-            <div class="invdois" onclick="claro()"></div>
-            <div class="selecaodois" id="selecaodois">
-                <object data="solbranco.svg" class="sol solbranco" id="solbranco"></object>
-                <object data="solazul.svg" class="sol solazul" id="solazul"></object>
+            <div class="barBetweenThemeSelector"></div>
+            <div class="switchThemeToWhite" onclick="white()"></div>
+            <div class="divSVGSun">
+                <object data="solbranco.svg" class="sun whiteSun" id="whiteSun"></object>
+                <object data="solazul.svg" class="sun blueSun" id="blueSun"></object>
             </div>
         </div>
-        <div class="espacol" id="espacol">
-            <p class="en" id="en" onclick="ingles()">En</p>
-            <p class="traco" id="traco">|</p>
-            <p class="pt" id="pt" onclick="portugues()">Pt</p>
+        <div class="languageSelector">
+            <p class="en" id="en" onclick="english()">En</p>
+            <p class="barBetweenLanguages">|</p>
+            <p class="pt" id="pt" onclick="portuguese()">Pt</p>
         </div>
         <div class="blank" id="blank"></div>
-        <div class="buceta" onclick="porra2()"></div>
-        <object onclick="porra2()" data="downarrow.svg" class="downarrow blue" id="porraazul"></object>
-        <object onclick="porra2()" data="downarrowyellow.svg" class="downarrow yellow" id="porraamarela"></object>
-        <div class="header esquerda" id="esquerda">
-            <div class="circulo" id="circulo">
-                <img src="nick.JPG" class="nick" id="nick">
+        <div class="openAndCloseMobileHeader" onclick="openAndCloseMobileHeader()"></div>
+        <object data="downarrow.svg" class="downArrow blue" id="blueArrow"></object>
+        <object data="downarrowyellow.svg" class="downArrow yellow" id="yellowArrow"></object>
+        <div class="block leftBlock" id="leftBlock">
+            <div class="imageCircle" id="imageCircle">
+                <img src="nick.JPG" class="imageInside">
             </div>
-            <div class="textos" id="textos">
-                <div class="nome" id="nome">
-                    <span class="nicholas" id="nicholas">Nicholas Lagareiro</span>
+            <div class="headerTextBlock" id="headerTextBlock">
+                <div class="name" id="name">
+                    <p class="nicholas" id="nicholas">Nicholas Lagareiro</p>
                 </div>
                 <div class="infos" id="infos">
-                    <span class="dezessete" id="dezessete">-> 18 anos</span>
-                    <span class="curso" id="curso">-> Cursando Engenharia da Computação na USJT</span>
-                    <span class="estudos" id="estudos">-> Estuda na Universidade São Judas Tadeu (2° semestre)</span>
-                    <span class="linguas" id="linguas">-> HTML, CSS, JavaScript, PHP, Java, SQL, Pyhon, C++ e C#</span>
+                    <p class="age" id="age">-> 18 anos</p>
+                    <p class="graduation" id="graduation">-> Cursando Engenharia da Computação na USJT</p>
+                    <p class="study" id="study">-> Estuda na Universidade São Judas Tadeu (2° semestre)</p>
+                    <p class="language" id="language">-> HTML, CSS, JavaScript, PHP, Java, SQL, Pyhon, C++ e C#</p>
                 </div>
             </div>
         </div> 
-        <div class="sumindo"></div>
-        <div class="options" id="options">
-            <a class="op pri" onclick="ladoum()" id="testeum">Sobre mim</a>
-            <a class="op seg" onclick="ladodois()" id="testedois">Resumo</a>
-            <a class="op ter" onclick="ladotres()" id="testetres">Portfólio</a>
-            <a class="op qua" onclick="ladoquatro()" id="testequatro">Contato</a>
+        <div class="navBarCurtain"></div>
+        <div class="optionsBar" id="options">
+            <a class="option aboutMeNavBar" onclick="aboutMePageCall()" id="aboutMeNavBar">Sobre mim</a>
+            <a class="option" onclick="resumePageCall()" id="resumeNavBar">Resumo</a>
+            <a class="option" onclick="portfolioPageCall()" id="portfolioNavBar">Portfólio</a>
+            <a class="option" onclick="contactPageCall()" id="contactNavBar">Contato</a>
         </div>
-        <div class="header direita" id="direita">
-            <p class="title titleum" id="titleum">Sobre mim</p>
-            <div class="linha linhaum" id="linhaum"></div>
-            <div class="blocoum bloco" id="blocoum">
-                <div class="lore">
-                    <div class="nop">
-                        <div class="gabrielaeuteamo"></div>
-                        <span class="apresentacao" id="apresentacao">Apresentação<br></span>
+        <div class="block rightBlock" id="rightBlock">
+            <p class="title" id="aboutMeTitle">Sobre mim</p>
+            <div class="underLine" id="aboutMeUnderLine"></div>
+            <div class="aboutMeBlock rightBlockContent" id="aboutMeBlock">
+                <div class="introductionContent">
+                    <div class="introductionTitleDiv">
+                        <div class="introductionDot"></div>
+                        <p class="introductionTitle" id="introductionTitle">Apresentação<br></p>
                     </div>
-                    <div class="vagabunda">
-                    <p class="conteudo ctdum" id="conteudoum">Me chamo Nicholas Lagareiro, tenho 18 anos, e atualmente estudo na Universidade São Judas Tadeu (Santos) cursando o 2° semestre de Engenharia de Computação.<br>Fiz parte do NovoTec (curso técnico integrado ao ensino médio) cursando Desenvolvimento e Análise de Sistemas, com término em 2024. Atualmente estou à procura de um emprego fixo na área da programação/desenvolvimento seja front-end, back-end ou full stack.<br>
-                    Possuo alguns projetos de minha autoria que podem ser visualizados na aba de Portfólio acima, e alguns outros projetos ainda em desenvolvimento.<br>
-                    Faço parte também de uma banda (<a class="perdido">@purplehaze_banda</a>) como guitarrista lead, backing vocal e fundador, nela, gerencio as mídias sociais e organizo também eventos com outras bandas.</p>
-                    <!--<img class="txtum" src="TEXTOUM.png">-->
+                    <div class="introductionTextDiv">
+                        <p class="aboutMeText introductionText" id="introductionText">Me chamo Nicholas Lagareiro, tenho 18 anos, e atualmente estudo na Universidade São Judas Tadeu (Santos) cursando o 2° semestre de Engenharia de Computação.<br>Fiz parte do NovoTec (curso técnico integrado ao ensino médio) cursando Desenvolvimento e Análise de Sistemas, com término em 2024. Atualmente estou à procura de um emprego fixo na área da programação/desenvolvimento seja front-end, back-end ou full stack.<br>
+                        Possuo alguns projetos de minha autoria que podem ser visualizados na aba de Portfólio acima, e alguns outros projetos ainda em desenvolvimento.<br>
+                        Faço parte também de uma banda (<a class="purpleMention">@purplehaze_banda</a>) como guitarrista lead, backing vocal e fundador, nela, gerencio as mídias sociais e organizo também eventos com outras bandas.</p>
+                        <!--<img class="txtum" src="TEXTOUM.png">-->
                     </div>
                 </div>
-                <div class="objetivo">
-                    <div class="yes">
-                        <div class="boludo"></div>
-                        <span class="ponto" id="objj">Objetivo</span>
+                <div class="objectiveContent">
+                    <div class="objectiveTitleDiv">
+                        <div class="objectiveTitleDot"></div>
+                        <p class="objectiveTitle" id="objectiveTitle">Objetivo</p>
                     </div>
-                    <p class="conteudo ctddois" id="conteudodois">Possuo como objetivo atual, um emprego para me inserir no mercado de trabalho da área e adquirir experiência, visto que meus únicos trabalhos na área foram freelance.<p>
+                    <p class="aboutMeText objectiveText" id="objectiveText">Possuo como objetivo atual, um emprego para me inserir no mercado de trabalho da área e adquirir experiência, visto que meus únicos trabalhos na área foram freelance.<p>
                     <!--<img class="txtdois" src="TEXTODOIS.png">-->
                 </div>
             </div>
-            <p class="title titleum" id="titledois">Resumo</p>
-            <div class="linha linhadois" id="linhadois"></div>
-            <div class="blocodois bloco" id="blocodois">
-                <div class="formacao">
-                    <div class="gabrielateamo"></div>
-                    <span class="borabill" id="formacao">Formação</span>
-                        <div class="emed">
-                            <p class="umemed" id="inicioum">Início - 2022 | 2024 - Término</p>
-                            <p class="tresemed" id="em">Ensino médio - E. E. Canadá</p>
-                            <div class="emcomum"></div>
+            <p class="title" id="resumeTitle">Resumo</p>
+            <div class="underLine" id="resumeUnderLine"></div>
+            <div class="resumeBlock rightBlockContent" id="resumeBlock">
+                <div class="graduationDiv">
+                    <div class="graduationDot"></div>
+                    <p class="graduationTitle" id="graduationTitle">Formação</p>
+                        <div class="highSchoolDiv">
+                            <p class="highSchoolTime" id="highSchoolTime">Início - 2022 | 2024 - Término</p>
+                            <p class="highSchoolText" id="highSchoolText">Ensino médio - E. E. Canadá</p>
+                            <div class="gruaduationUnderline"></div>
                             <div class="timeline"></div>
                         </div>
-                        <div class="desenvolvimento">
-                            <p class="umdes" id="iniciodois">Início - 2022 | 2024 - Término</p>
-                            <p class="doisdes" id="nvtc">Desenvolvimento e Análise de Sistemas - Novotec</p>
-                            <div class="emcomum"></div>
+                        <div class="ADSDiv">
+                            <p class="ADSTime" id="ADSTime">Início - 2022 | 2024 - Término</p>
+                            <p class="ADSText" id="ADSText">Desenvolvimento e Análise de Sistemas - Novotec</p>
+                            <div class="gruaduationUnderline"></div>
                             <div class="timeline"></div>
                         </div>
-                        <div class="facul">
-                            <p class="umfac" id="iniciotres">Início - 2025 | 2029 - Término</p>
-                            <p class="doisfac" id="eng">Engenharia de Computação - USJT</p>
-                            <div class="emcomum"></div>
-                            <div class="timeline tltres"></div>
+                        <div class="universityDiv">
+                            <p class="universityTime" id="universityTime">Início - 2025 | 2029 - Término</p>
+                            <p class="universityText" id="universityText">Engenharia de Computação - USJT</p>
+                            <div class="gruaduationUnderline"></div>
+                            <div class="timeline incompleteTimeline"></div>
                         </div>
                 </div>
-                <div class="know">
-                    <div class="reseba"></div>
-                    <span class="conhecimentos">Conhecimentos</span>
-                    <div class="enfila">
-                        <div class="fila idioma">
-                            <span class="bold" id="bold">Inglês</span>
-                            <span class="qtd" id="intermediate">(Intermediário-avançado)</span>
+                <div class="knowledgeDiv">
+                    <div class="knowledgeAndToolsDot"></div>
+                    <p class="knowledgeAndToolsTitle" id="knowledgeTitle">Conhecimentos</p>
+                    <div class="knowledgeList">
+                        <div class="knowledgeListItem KnowledgeLanguage">
+                            <span class="boldKnowledgeList" id="knowledgeEnglish">Inglês</span>
+                            <span class="knowledgePercentage" id="intermediate">(Intermediário-avançado)</span>
                         </div>
-                        <div class="fila html">
-                            <span class="bold">HTML</span>
-                            <span class="qtd">100%</span>
-                            <div class="progress pgum"></div>
-                            <div class="tlt ttum"></div>
+                        <div class="knowledgeListItem">
+                            <span class="boldKnowledgeList">HTML</span>
+                            <span class="knowledgePercentage">100%</span>
+                            <div class="progressBarContent progressHTML"></div>
+                            <div class="fullProgressBar ttum"></div>
                         </div>
-                        <div class="fila css">
-                            <span class="bold">CSS</span>
-                            <span class="qtd">80%</span>
-                            <div class="progress pgdois"></div>
-                            <div class="tlt ttdois"></div>
+                        <div class="knowledgeListItem">
+                            <span class="boldKnowledgeList">CSS</span>
+                            <span class="knowledgePercentage">80%</span>
+                            <div class="progressBarContent progressCSS"></div>
+                            <div class="fullProgressBar ttdois"></div>
                         </div>
-                        <div class="fila javascript">
-                            <span class="bold">JavaScript</span>
-                            <span class="qtd">50%</span>
-                            <div class="progress pgtres"></div>
-                            <div class="tlt tttres"></div>
+                        <div class="knowledgeListItem">
+                            <span class="boldKnowledgeList">JavaScript</span>
+                            <span class="knowledgePercentage">50%</span>
+                            <div class="progressBarContent progressJS"></div>
+                            <div class="fullProgressBar tttres"></div>
                         </div>
-                        <div class="fila java">
-                            <span class="bold">Java</span>
-                            <span class="qtd">05%</span>
-                            <div class="progress pgquatro"></div>
-                            <div class="tlt ttquatro"></div>
+                        <div class="knowledgeListItem">
+                            <span class="boldKnowledgeList">Java</span>
+                            <span class="knowledgePercentage">05%</span>
+                            <div class="progressBarContent progressJAVA"></div>
+                            <div class="fullProgressBar ttquatro"></div>
                         </div>
-                        <div class="fila sql">
-                            <span class="bold">SQL (MySQL)</span>
-                            <span class="qtd">50%</span>
-                            <div class="progress pgcinco"></div>
-                            <div class="tlt ttcinco"></div>
+                        <div class="knowledgeListItem">
+                            <span class="boldKnowledgeList">SQL (MySQL)</span>
+                            <span class="knowledgePercentage">50%</span>
+                            <div class="progressBarContent progressSQL"></div>
+                            <div class="fullProgressBar ttcinco"></div>
                         </div>
-                        <div class="fila php">
-                            <span class="bold">PHP</span>
-                            <span class="qtd">25%</span>
-                            <div class="progress pgseis"></div>
-                            <div class="tlt ttseis"></div>
+                        <div class="knowledgeListItem">
+                            <span class="boldKnowledgeList">PHP</span>
+                            <span class="knowledgePercentage">25%</span>
+                            <div class="progressBarContent progressPHP"></div>
+                            <div class="fullProgressBar ttseis"></div>
                         </div>
-                        <div clas="fila cplusplus">
-                            <span class="bold">C++</span>
-                            <span class="qtd">05%</span>
-                            <div class="progress pgsete"></div>
-                            <div class="tlt ttsete"></div>
+                        <div clas="knowledgeListItem">
+                            <span class="boldKnowledgeList">C++</span>
+                            <span class="knowledgePercentage">05%</span>
+                            <div class="progressBarContent progressCplusplus"></div>
+                            <div class="fullProgressBar ttsete"></div>
                         </div>
                     </div>
                 </div>
-                <div class="ferramentas">
-                    <div class="reseba"></div>
-                    <span class="conhecimentos" id="soft">Ferramentas/Softwares</span>
-                    <div class="contagem">
-                        <ul class="ctagemum">
+                <div class="toolsDiv">
+                    <div class="knowledgeAndToolsDot"></div>
+                    <p class="knowledgeAndToolsTitle" id="soft">Ferramentas/Softwares</p>
+                    <div class="toolsListDiv">
+                        <ul class="officeList">
                             <li id="word">Word<br>(Avançado)</li>
                             <li id="excel">Excel (Intermediário)</li>
                             <li id="powerpoint">Power Point (Intermediário)</li>
                             <li id="photoshop">Photoshop (Intermediário)</li>
                         </ul>
-                        <ul class="ctagemdois">
-                            <li class="excluido">VS Code</li>
+                        <ul class="programIDEs">
+                            <li class="exception">VS Code</li>
                             <li>MySQL</li>
                             <li>Apache NetBeans</li>
                             <li>Android Studio</li>
@@ -199,79 +199,80 @@
                     </div>
                 </div>
             </div>
-            <p class="title titleum" id="titletres">Portfólio</p>
-            <div class="linha linhatres" id="linhatres"></div>
-            <div class="blocotres bloco" id="blocotres">
+            <p class="title" id="portfolioTitle">Portfólio</p>
+            <div class="underLine" id="portfolioUnderLine"></div>
+            <div class="portfolioBlock rightBlockContent" id="portfolioBlock">
                 <div class="g1">
-                    <div class="titulo-site"><p>Certificados</p></div>
-                    <div class="template tmpum" onclick="openModal()"></div>
+                    <div class="portfolioContentTitle"><p>Certificados</p></div>
+                    <div class="portfolioContent certificates" onclick="openModal()"></div>
                 </div>
                 <div class="g2">
-                    <div class="titulo-site"><p>G-vote</p></div>
-                    <div class="template tmpdois" onclick="openModal()"></div>
+                    <div class="portfolioContentTitle"><p>G-vote</p></div>
+                    <div class="portfolioContent gvote" onclick="openModal()"></div>
                 </div>
                 <div class="g3">
-                    <div class="titulo-site"><p>Agroexport Solution</p></div>
-                    <div class="template tmptres" onclick="openModal()"></div>
+                    <div class="portfolioContentTitle"><p>Agroexport Solution</p></div>
+                    <div class="portfolioContent agroexport" onclick="openModal()"></div>
                 </div>
                 <div class="g4">
-                    <div class="titulo-site"><p>GC Official Design</p></div>
-                    <div class="template tmpquatro" onclick="openModal()"></div>
+                    <div class="portfolioContentTitle"><p>GC Official Design</p></div>
+                    <div class="portfolioContent gcdesign" onclick="openModal()"></div>
                 </div>
                 <div class="g5">
-                    <div class="titulo-site"><p>Imovel Guide Teste</p></div>
-                    <div class="template tmpcinco" onclick="openModal()"></div>
+                    <div class="portfolioContentTitle"><p>Imovel Guide Teste</p></div>
+                    <div class="portfolioContent imovelguideTest" onclick="openModal()"></div>
                 </div>
                 <div class="g6">
-                    <div class="titulo-site"><p>Code Pen Projects</p></div>
-                    <div class="template tmpseis" onclick="openModal()"></div>
+                    <div class="portfolioContentTitle"><p>Code Pen Projects</p></div>
+                    <div class="portfolioContent codePen" onclick="openModal()"></div>
                 </div>
             </div>
-            <p class="title titleum" id="titlequatro">Contato</p>
-            <div class="linha linhaquatro" id="linhaquatro"></div>
-            <div class="blocoquatro bloco" id="blocoquatro">
-                <div class="socorro">
-                <div class="bolaquatro"></div>
-                <div class="palavra"><span id="address">Endereço</span></div>
-                <div class="easteregg">
-                    <span id="brazil">São Paulo, Brasil</span><br>
-                    <span>Santos - 11030-570</span><br>
-                    <span>Aparecida, Rua General Rondon</span><br>
-                </div>
-                <div class="bolacinco"></div>
-                <div class="tel"><span id="phone">Telefone & E-mail</span></div>
-                <div class="num">
-                    <span id="tchau">Telefone: +55 (13) 99185-9107</span><br>
-                    <span>E-mail: nicholas.lagareiro@hotmail.com</span>
-                </div>
-                <div class="redes">
-                    <div class="fogo">
-                        <img class="rd" onclick="github()" src="github.svg">
-                        <img class="rd" onclick="instagram()" src="instagram.svg">
-                        <img class="rd" onclick="linkedin()" src="linkedin.svg">
+            <p class="title" id="contactTitle">Contato</p>
+            <div class="underLine" id="contactUnderLine"></div>
+            <div class="contactBlock rightBlockContent" id="contactBlock">
+                <div class="contactContent">
+                    <div class="addressDot"></div>
+                    <div class="addressTitle"><p id="address">Endereço</p></div>
+                    <div class="addressContent">
+                        <p id="brazil">São Paulo, Brasil</p><br>
+                        <p>Santos - 11030-570</p><br>
+                        <p>Aparecida, Rua General Rondon</p><br>
                     </div>
-                    <div class="agua">
-                        <a href="https://github.com/NickLag" class="links linkedin">github.com/NickLag</a>
-                        <a href="https://www.instagram.com/tortoruuu" class="links github">instagram.com/tortoruuu</a>
-                        <a href="https://www.linkedin.com/in/nicholaslagareiro/" class="links insta">linkedin.com/in/nicholaslagareiro</a>
+                    <div class="phoneDot"></div>
+                    <div class="phoneTitle"><p id="phone">Telefone & E-mail</p></div>
+                    <div class="phoneContent">
+                        <p id="cellphoneNumber">Telefone: +55 (13) 99185-9107</p><br>
+                        <p>E-mail: nicholas.lagareiro@hotmail.com</p>
                     </div>
-                </div>
+                    <div class="linksContent">
+                        <div class="linksImages">
+                            <img class="linkSVG" onclick="github()" src="github.svg">
+                            <img class="linkSVG" onclick="instagram()" src="instagram.svg">
+                            <img class="linkSVG" onclick="linkedin()" src="linkedin.svg">
+                        </div>
+                        <div class="linksGrade">
+                            <a href="https://github.com/NickLag" class="links linkedin">github.com/NickLag</a>
+                            <a href="https://www.instagram.com/tortoruuu" class="links github">instagram.com/tortoruuu</a>
+                            <a href="https://www.linkedin.com/in/nicholaslagareiro/" class="links insta">linkedin.com/in/nicholaslagareiro</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="fundo-modal" id="fundo-modal">
-                <div class="modal">
-                    <div class="cima">
-                        <img onclick="closeModal()" src="x-symbol-svgrepo-com.svg" class="close-modal">
+            <div class="modalBackground" id="modalBackground">
+                <div class="modalContent">
+                    <div class="modalUpperSpace">
+                        <img onclick="closeModal()" src="x-symbol-svgrepo-com.svg" class="closeModal" id="blackXSymbol">
+                        <img onclick="closeModal()" src="xamarelo.svg" class="closeModal" id="yellowXSymbol">
                     </div>
-                    <div class="baixo">
-                        <div class="todo">
-                            <div class="interativo">
-                                <div class="botoes">
-                                    <div class="previous"><img onclick="previous()" src="arrowleft.svg" class="prev-svg"></div>
-                                    <div class="next"><img onclick="next()" src="arrowright.svg" class="next-svg"></div>
+                    <div class="modalBottomSpace">
+                        <div class="modalBottomContent">
+                            <div class="modalDisplay">
+                                <div class="modalButtons">
+                                    <div class="modalPreviousButton"><img onclick="previous()" src="arrowleft.svg" class="previousImageSVG"></div>
+                                    <div class="modalNextButton"><img onclick="next()" src="arrowright.svg" class="nextImageSVG"></div>
                                 </div>
                             </div>
-                            <button class="pagina">Ir à página</button>
+                            <button class="goToPageModalButton">Ir à página</button>
                         </div>
                     </div>
                 </div>

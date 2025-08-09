@@ -1,5 +1,5 @@
 @media screen and (max-aspect-ratio: 38/100) {
-    .blank, .buceta, .seletor, .espacol, .downarrow, .header, .sumindo, .options {
+    .blank, .buceta, .themeSelection, .languageSelector, .downArrow, .block, .navBarCurtain, .optionsBar {
         display: none;
     }
 
@@ -22,11 +22,11 @@
         --celular: #fffdfd;
     }
 
-    .socorro {
+    .contactContent {
         font-size: 150%;
     }
 
-    .invum, .invdois {
+    .switchThemeToBlack, .switchThemeToWhite {
         position: absolute;
         border-radius: 50px;
         top: 10%;
@@ -36,15 +36,15 @@
         cursor: pointer;
     }
     
-    .invum {
+    .switchThemeToBlack {
         left: 5%;
     }
     
-    .invdois {
+    .switchThemeToWhite {
         right: 5%;
     }
 
-    .header {
+    .block {
         background-color: var(--corpo);
         position: absolute;
         left: 2%;
@@ -57,7 +57,7 @@
         animation-fill-mode: forwards;
     }
 
-    .bolaquatro {
+    .addressDot {
         position: absolute;
         top: 11.8%;
         left: 9%;
@@ -67,7 +67,7 @@
         border-radius: 100%;
     }
     
-    .palavra {
+    .addressTitle {
         position: absolute;
         top: 9%;
         left: 13%;
@@ -79,7 +79,7 @@
         font-size: 225%;
     }
     
-    .tel {
+    .phoneTitle {
         position: absolute;
         top: 38%;
         left: 13%;
@@ -91,7 +91,7 @@
         font-size: 225%;
     }
     
-    .bolacinco {
+    .phoneDot {
         position: absolute;
         top: 40.8%;
         left: 9%;
@@ -101,7 +101,7 @@
         border-radius: 100%;
     }
     
-    .easteregg {
+    .addressContent {
         position: absolute;
         font-family: fodase;
         color: var(--texto);
@@ -111,7 +111,7 @@
         line-height: 175%;
     }
     
-    .num {
+    .phoneContent {
         position: absolute;
         font-family: fodase;
         font-size: 175%;
@@ -121,7 +121,7 @@
         line-height: 175%;
     }
     
-    .redes {
+    .linksContent {
         position: absolute;
         bottom: 5.5%;
         left: 7.5%;
@@ -145,13 +145,13 @@
         bottom: -14%;
     }
     
-    .rd {
+    .linkSVG {
         cursor: pointer;
         width: 92px;
         height: 92px;
     }
 
-    .circulo {
+    .imageCircle {
         position: absolute;
         border: 2px solid #b6b6b6;
         top: 8%;
@@ -165,7 +165,7 @@
         animation-fill-mode: forwards;
     }
     
-    .textos {
+    .headerTextBlock {
         position: absolute;
         width: 80%;
         left: 10%;
@@ -206,7 +206,7 @@
         }
     }
     
-    .nome {
+    .name {
         position: absolute;
         width: 100%;
         height: 10%;
@@ -228,7 +228,7 @@
         margin-left: 7.5%;
     }
 
-    .espacol {
+    .languageSelector {
         left: 5%;
         top: 2%;
         width: 10%;
@@ -241,20 +241,20 @@
         -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
 
-    .direita {
+    .rightBlock {
         top: 71%;
         height: 74%;
         animation-name: crescer;
         margin-bottom: 2%;
     }
     
-    .esquerda {
+    .leftBlock {
         top: 2%;
         height: 60%;
         animation-name: segcrescer;
     }
 
-    .downarrow {
+    .downArrow {
         rotate: 0deg;
         position: absolute;
         top: 3%;
@@ -288,7 +288,7 @@
         }
     }
 
-    .buceta {
+    .openAndCloseMobileHeader {
         position: absolute;
         top: 3%;
         right: 5%;
@@ -335,7 +335,7 @@
         }
     }
     
-    @keyframes esquerda {
+    @keyframes leftBlock {
         0% {
             left: -100%;
         }
@@ -370,7 +370,7 @@
         }
     }
 
-    .options {
+    .optionsBar {
         width: 96%;
         top: 73%;
         height: 0%;
@@ -388,18 +388,18 @@
         }
     }
     
-    .op {
+    .option {
         margin: 3% 3% 5% 3%;
         font-size: 275%;
     }
     
-    .op:hover {
+    .option:hover {
         font-size: 300%;
         margin: 2% 1% 4% 1%;
         padding-bottom: 6%;
     } 
     
-    .sumindo {
+    .navBarCurtain {
         width: 94%;
         height: 8%;
         right: 3%;
@@ -464,17 +464,17 @@
         }
     }
 
-    .linha {
+    .underLine {
         top: 23.5%;
         left: 5%;
         width: 30%;
     }
 
-    .pri {
+    .aboutMeNavBar {
         color: #4772ff;
     }
 
-    .bloco {
+    .rightBlockContent {
         top: 25%;
         width: 90%;
         height: 70%;
@@ -486,7 +486,7 @@
         font-size: 350%;
     }
 
-    .seletor {
+    .themeSelection {
         position: fixed;
         right: 40%;
         top: 1%;
@@ -495,7 +495,7 @@
         z-index: 3;
     }
     
-    .invum, .invdois {
+    .switchThemeToBlack, .switchThemeToWhite {
         position: absolute;
         border-radius: 50px;
         top: 10%;
@@ -504,21 +504,21 @@
         z-index: 4;
     }
 
-    .blocodois {
+    .resumeBlock {
         font-size: 200%;
     }
 
-    .doisdes {
+    .ADSText {
         height: 60%;
         width: 45%;
         margin-top: 0%;
     }
 
-    .objetivo {
+    .objectiveContent {
         margin-top: 15%;
     }
 
-    .yes {
+    .objectiveTitleDiv {
         top: 70%;
     }
 
@@ -526,27 +526,27 @@
         font-size: 80%;
     }
 
-    .tlt {
+    .fullProgressBar {
         margin-top: -6.5%;
         margin-left: 43%;
     }
 
-    .progress {
+    .progressBarContent {
         margin-top: -6.5%;
         margin-left: 43%;
     }
 
-    .reseba, .gabrielaeuteamo, .boludo, .gabrielateamo {
+    .knowledgeAndToolsDot, .introductionDot, .objectiveTitleDot, .graduationDot {
         width: 0.7vh;
         height: 0.75vh;
     }
 
-    .reseba {
+    .knowledgeAndToolsDot {
         left: 4%;
         top: 5%;
     }
 
-    .apresentacao, .ponto {
+    .introductionTitle, .objectiveTitle {
         font-size: 3vw;
     }
 
@@ -567,7 +567,7 @@
         height: 15%;
     }
 
-    .redes {
+    .linksContent {
         position: absolute;
         bottom: 5.5%;
         left: 7.5%;
@@ -575,7 +575,7 @@
         height: 30%;
     }
     
-    .fogo {
+    .linksImages {
         position: absolute;
         left: 0%;
         top: 0%;
@@ -585,7 +585,7 @@
         flex-direction: column;
     }
     
-    .agua {
+    .linksGrade {
         height: 100%;
         position: absolute;
         left: 12.5%;
@@ -598,30 +598,30 @@
         justify-content: center;
     }
     
-    .rd {
+    .linkSVG {
         height: 33%;
         width: 100%;
     }
     
-    .conteudo {
+    .aboutMeText {
         font-size: 200%;
     }
 
-    .perdido {
+    .purpleMention {
         font-size: 100%;
     }
 
-    .ctdum {
+    .introductionText {
         padding-top: 5%;
     }
 
-    .ctddois {
+    .objectiveText {
         padding-top: 0%;
     }
 } /* PRONTO */
 
 @media screen and (min-aspect-ratio: 38/100) and (max-aspect-ratio: 36/74) {
-    .espacol {
+    .languageSelector {
         font-size: 3.5em;
     }
 
@@ -633,7 +633,7 @@
         font-size: 1.75vh;
     }   
 
-    .op {
+    .option {
         font-size: 325%;
     }
 
@@ -641,49 +641,49 @@
         font-size: 450%;
     }
 
-    .apresentacao, .ponto, .borabill {
+    .introductionTitle, .objectiveTitle, .graduationTitle {
         font-size: 2vh;
     }
 
-    .know {
+    .knowledgeDiv {
         left: 0%;
         width: 45%;
     }
 
-    .borabill {
+    .graduationTitle {
         margin-left: 2.5%;
     }
 
-    .formacao {
+    .graduationDiv {
         left: 0%;
         width: 100%;
     }
 
-    .conhecimentos {
+    .knowledgeAndToolsTitle {
         font-size: 1.4vh;
         margin-left: 3%;
     }
 
-    .gabrielateamo {
+    .graduationDot {
         left: -1%;
     }
 
-    .reseba {
+    .knowledgeAndToolsDot {
         left: -4%;
         top: 3.3%;
     }
 
-    .emed, .desenvolvimento, .facul {
+    .highSchoolDiv, .ADSDiv, .universityDiv {
         font-size: 115%;
         width: 100%;
         left: 0%;
     }
 
-    .enfila, .contagem {
+    .knowledgeList, .toolsListDiv {
         font-size: 120%;
     }
 
-    .contagem {
+    .toolsListDiv {
         margin-left: -5%;
     }
 
@@ -691,19 +691,19 @@
         font-size: 75%;
     }
 
-    .conteudo {
+    .aboutMeText {
         font-size: 250%;
     }
 
-    .perdido {
+    .purpleMention {
         font-size: 100%;
     }
 
-    .ctdum {
+    .introductionText {
         padding-top: 14%;
     }
 
-    .ctddois {
+    .objectiveText {
         padding-top: 22%;
     }
 } /* PRONTO */
@@ -712,48 +712,48 @@
     html {
         --celular: #fffdfd;
     }
-    .emed, .desenvolvimento, .facul {
+    .highSchoolDiv, .ADSDiv, .universityDiv {
         font-size: 100%;
         width: 100%;
         left: 0%;
     }
 
-    .gabrielateamo {
+    .graduationDot {
         top: 3.5%;
     }
 
-    .reseba {
+    .knowledgeAndToolsDot {
         top: 4%;
     }
 
-    .conteudo {
+    .aboutMeText {
         font-size: 210%;
     }
 
 
-    .ctdum {
+    .introductionText {
         padding-top: 9%;
     }
 
-    .ctddois {
+    .objectiveText {
         padding-top: 12%;
     }
 } /* PRONTO */
 
 @media screen and (min-aspect-ratio: 55/78) and (max-aspect-ratio: 2/2) {
-    .conteudo {
+    .aboutMeText {
         font-size: 190%;
     }
 
-    .perdido {
+    .purpleMention {
         font-size: 100%;
     }
 
-    .ctdum {
+    .introductionText {
         padding-top: 8%;
     }
 
-    .ctddois {
+    .objectiveText {
         padding-top: 4%;
     }
 
@@ -765,53 +765,53 @@
         font-size: 2.5vw;
     }
 
-    .linha {
+    .underLine {
         top: 25%;
     }
 
-    .tel, .palavra {
+    .phoneTitle, .addressTitle {
         font-size: 200%;
     }
 
-    .bolacinco {
+    .phoneDot {
         top: 44.8%;
     }
 
-    .num {
+    .phoneContent {
         top: 50%;
     }
 
-    .tel {
+    .phoneTitle {
         top: 42%;
     }
 
-    .redes {
+    .linksContent {
         height: 35%;
         bottom: -5%;
     }
 } /* PRONTO */
 
 @media screen and (min-aspect-ratio: 2/2) and (max-aspect-ratio: 5/4) {
-    .borabill {
+    .graduationTitle {
         margin-left: 8%;
     }
 
-    .gabrielateamo {
+    .graduationDot {
         margin-left: 3%;
     }
 
-    .ferramentas, .know {
+    .toolsDiv, .knowledgeDiv {
         top: 60%;
         font-size: 1.5vw;
     }
 
-    .op {
+    .option {
         margin-bottom: 7%;
         margin-left: 0%;
         font-size: 1.3em;
     }
 
-    .pri {
+    .aboutMeNavBar {
         margin-left: 4%;
         white-space: nowrap;
     }
@@ -820,19 +820,19 @@
         font-size: 175%;
     }
 
-    .palavra, .tel {
+    .addressTitle, .phoneTitle {
         font-size: 1.75em;
     }
 
-    .easteregg, .num {
+    .addressContent, .phoneContent {
         font-size: 130%;
     }
 
-    .apresentacao, .ponto, .conhecimentos {
+    .introductionTitle, .objectiveTitle, .knowledgeAndToolsTitle {
         font-size: 1.4em;
     }
     
-    .borabill {
+    .graduationTitle {
         font-size: 1.75em;
     }
 
@@ -840,65 +840,65 @@
         font-size: 1.30vw;
     }
 
-    .conteudo {
+    .aboutMeText {
         margin-top: 5%;
         font-size: 1.6vw;
     }
 
-    .nome {
+    .name {
         text-align: center;
         font-size: 1.50em;
         width: 100%;
         margin-top: -10%;
     }
 
-    .textos {
+    .headerTextBlock {
         font-size: 1.10em;
     }
 
-    .emed, .facul {
+    .highSchoolDiv, .universityDiv {
         font-size: 130%;
     }
 
-    #iniciodois {
+    #ADSTime {
         font-size: 140%;
     }
 
-    .doisdes {
+    .ADSText {
         margin-right: -3%;
         font-size: 110%;
         transform: scale(0.9, 1.4);
         font-weight: 500;
     }
 
-    .formacao {
+    .graduationDiv {
         width: 110%;
         left: -5%;
     }
 
-    .know {
+    .knowledgeDiv {
         left: 0%;
     }
 
-    .objetivo {
+    .objectiveContent {
         margin-top: 10%;
     }
 
-    .linha {
+    .underLine {
         top: 8%;
     }
 } /* PRONTO */
 
 @media screen and (min-aspect-ratio: 5/4) and (max-aspect-ratio: 3/2) {
-    .palavra, .tel {
+    .addressTitle, .phoneTitle {
         font-size: 1.55em;
     }
 
-    .gabrielateamo {
+    .graduationDot {
         margin-left: 4%;
     }
 
-    .easteregg, .num {
+    .addressContent, .phoneContent {
         font-size: 110%;
     }
 
@@ -906,87 +906,87 @@
         font-size: 175%;
     }
 
-    .apresentacao, .ponto, .borabill, .conhecimentos, .address, .phone {
+    .introductionTitle, .objectiveTitle, .graduationTitle, .knowledgeAndToolsTitle, .address, .phone {
         font-size: 150%;
     }
 
-    body, .conteudo {
+    body, .aboutMeText {
         font-size: 1.30vw;
     }
 
-    .nome {
+    .name {
         text-align: center;
         font-size: 1.50em;
         width: 100%;
         margin-top: -10%;
     }
 
-    .textos {
+    .headerTextBlock {
         font-size: 1.10em;
     }
 
-    .emed, .facul {
+    .highSchoolDiv, .universityDiv {
         font-size: 100%;
     }
 
-    #iniciodois {
+    #ADSTime {
         font-size: 110%;
     }
 
-    .formacao {
+    .graduationDiv {
         width: 100%;
         left: 0%;
     }
 
-    .objetivo {
+    .objectiveContent {
         margin-top: 5%;
     }
 
-    .borabill {
+    .graduationTitle {
         margin-left: 9%;
     }
 } /* PRONTO */
 
 @media screen and (min-aspect-ratio: 4/2) and (max-aspect-ratio: 20/9){
-    .yes {
+    .objectiveTitleDiv {
         margin-top: 2%;
     }
 
-    .linha {
+    .underLine {
         top: 12%;
     }
 } /* PRONTO */
 
 @media screen and (min-aspect-ratio: 20/9) and (max-aspect-ratio: 10/4) {
-    .yes {
+    .objectiveTitleDiv {
         margin-top: 5%;
     }
 
-    .objetivo {
+    .objectiveContent {
         margin-top: 5%;
     }
 
-    .linha {
+    .underLine {
         top: 12%;
     }
 
-    .circulo {
+    .imageCircle {
         top: 2.5%;
     }
 
-    .textos {
+    .headerTextBlock {
         bottom: 10%;
     }
 
-    .know, .ferramentas {
+    .knowledgeDiv, .toolsDiv {
         top: 45%;
     }
 
-    .formacao {
+    .graduationDiv {
         top: 0%;
     }
 
-    .emcomum {
+    .gruaduationUnderline {
         top: 90%;
     }
 
@@ -997,7 +997,7 @@
 } /* PRONTO */
 
 @media screen and (min-aspect-ratio: 10/4) {
-    .blank, .buceta, .seletor, .espacol, .downarrow, .header, .sumindo, .options {
+    .blank, .openAndCloseMobileHeader, .themeSelection, .languageSelector, .downArrow, .block, .navBarCurtain, .optionsBar {
         display: none;
     }
 
