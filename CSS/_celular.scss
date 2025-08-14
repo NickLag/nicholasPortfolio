@@ -1014,3 +1014,10 @@
         top: 40%;
     }
 } /* PRONTO */
+
+@media screen and (min-aspect-ratio: 3/2) {
+    .downarrow {
+        width: 0%;
+        height: 0%;
+    }
+}

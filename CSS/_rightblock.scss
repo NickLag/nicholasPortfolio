@@ -1,0 +1,622 @@
+/* Right Block */
+
+.rightBlock {
+    left: 27.5%;
+    width: 67.5%;
+    animation-name: aumentar;
+}
+
+@keyframes aumentar {
+    0% {
+        height: 8.5%;
+        width: 6.75%;
+    }
+    
+    100% {
+        height: 85%;
+        width: 67.5%;
+    }
+}
+
+.title {
+    font-family: fontReddit;
+    color: var(--azul);
+    font-weight: bolder;
+    animation-duration: 1500ms;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+    animation-fill-mode: forwards;
+    z-index: 1;
+    display: none;
+    position: absolute;
+    left: 5%;
+    top: 1%;
+    font-size: 150%;
+}
+
+.underLine {
+    position: absolute;
+    z-index: 1;
+    height: 1%;
+    border-radius: 20px;
+    animation-duration: 1500ms;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+    animation-fill-mode: forwards;
+    z-index: 1;
+    display: none;
+    background-color: var(--azul);
+    top: 10%;
+    left: 5%;
+    width: 15%;
+}
+
+.rightBlockContent {
+    position: absolute;
+    animation-duration: 1500ms;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+    animation-fill-mode: forwards;
+    z-index: 1;
+    display: none;
+    font-family: fontReddit;
+    top: 15%;
+    width: 90%;
+    height: 80%;
+    left: 5%;
+}
+
+/* About me */
+
+#aboutMeUnderLine, #aboutMeTitle {
+    display: block;
+    animation-name: sim;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sim {
+    0% {
+        opacity: 0%;
+    } 
+    100% {
+        opacity: 100%;
+    }
+}
+
+#aboutMeBlock {
+    opacity: 0%;
+    display: block;
+    animation-name: pors;
+    animation-delay: 2000ms;
+    animation-duration: 1500ms;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+}
+
+@keyframes pors {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.introductionContent, .objectiveContent {
+    width: 100%;
+    height: 50%;
+}
+
+.introductionTitleDiv, .objectiveTitleDiv {
+    padding-left: 3.5%;
+    left: 6%;
+    position: absolute;
+}
+
+.introductionTitleDiv {
+    top: 5%;
+}
+
+.objectiveTitleDiv {
+    top: 60%;
+}
+
+.introductionDot, .objectiveTitleDot {
+    position: absolute;
+    background-color: var(--azul);
+    border-radius: 100%;
+    left: 1%;
+    top: 37.5%;
+    height: 0.75vw;
+    width: 0.7vw;
+}
+
+.introductionTitle, .objectiveTitle {
+    font-weight: bolder;
+    color: var(--azul);
+    font-size: 125%;
+}
+
+.aboutMeText, .purpleMention {
+    color: var(--texto);
+    text-indent: 15%;
+    padding-top: 7.5%;
+    font-size: 1.15vw;
+}
+
+/* Resume */
+
+.graduationDiv {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    top: 5%;
+    height: 45%;
+}
+
+.graduationDot {
+    position: absolute;
+    background-color: var(--azul);
+    width: 0.7vw;
+    height: 0.75vw;
+    border-radius: 100%;
+    left: 3%;
+    top: 4.6%;
+}
+
+.graduationTitle, .knowledgeAndToolsTitle {
+    color: var(--azul);
+    font-weight: bolder;
+    margin-left: 6%;
+    font-size: 125%;
+}
+
+.highSchoolDiv {
+    top: 20%;
+}
+
+.highSchoolDiv, .ADSDiv, .universityDiv {
+    font-size: 90%;
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    height: 25%;
+    color: var(--texto);
+}
+
+.highSchoolTime, .ADSTime, .universityTime {
+    display: inline;
+    float: left;
+}
+
+.highSchoolText, .ADSText, .universityText {
+    display: inline;
+    float: right;
+}
+
+.gruaduationUnderline {
+    position: absolute;
+    background-color: var(--azul);
+    width: 100%;
+    height: 1%;
+    top: 80%;
+    left: 0%;
+}
+
+.timeline {
+    position: absolute;
+    background-color: var(--azul);
+    width: 36%;
+    height: 8%;
+    float: left;
+    top: 65%;
+    border-radius: 40px;
+}
+
+.ADSDiv {
+    top: 45%;   
+}
+
+.universityDiv {
+    top: 70%;
+    position: absolute;
+}
+
+.incompleteTimeline {
+    background: linear-gradient(to right, var(--azul), var(--corpo));
+}
+
+.knowledgeDiv, .toolsDiv {
+    position: absolute;
+    width: 42.5%;
+    top: 55%;
+    height: 40%;
+}
+
+.knowledgeDiv {
+    left: 5%;
+}
+
+.knowledgeAndToolsDot {
+    position: absolute;
+    background-color: var(--azul);
+    width: 0.70vw;
+    height: 0.75vw;
+    border-radius: 100%;
+    left: 5%;
+    top: 5%;
+}
+
+.knowledgeAndToolsTitle {
+    margin-left: 10%;
+}
+
+.knowledgeList {
+    margin-top: 4%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--texto)
+}
+
+.knowledgeListItem {
+    width: 100%;
+}
+
+.boldKnowledgeList {
+    font-weight: 600;
+}
+
+.knowledgePercentage {
+    position: absolute;
+    right: 0%;
+}
+
+.progressBarContent {
+    position: absolute;
+    height: 5%;
+    background-color: var(--azul);
+    margin-top: -5%;
+    margin-left: 40%;
+    border-radius: 50px;
+    border: 0.4vw solid var(--azul); 
+}
+
+.progressHTML {
+    width: 40%;
+}
+
+.progressCSS {
+    width: 32%;
+}
+
+.progressJS {
+    width: 20%;
+}
+
+.progressJAVA {
+    width: 2%;
+}
+
+.progressSQL {
+    width: 20%;
+}
+
+.progressPHP {
+    width: 10%;
+}
+
+.progressCplusplus {
+    width: 2%;
+}
+
+.fullProgressBar {
+    position: absolute;
+    width: 40%;
+    height: 5%;
+    border: 0.4vw solid var(--azul);
+    margin-top: -5%;
+    margin-left: 40%;
+    border-radius: 50px;
+}
+
+.toolsDiv {
+    right: 5%;
+}
+
+.toolsListDiv {
+    position: absolute;
+    display: flex;
+}
+
+.officeList, .programIDEs {
+    flex-direction: column;
+    color: var(--texto);
+    padding-left: 5vw;
+}
+
+.programIDEs > li:not(.exception) {
+    margin-top: 15%;
+}
+
+/* Portfolio */
+
+.portfolioBlock {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "g1 g2 g3"
+    "g4 g5 g6";
+}
+
+.portfolioBlock > div {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.g1 { grid-area: g1;}
+.g2 { grid-area: g2;}
+.g3 { grid-area: g3;}
+.g4 { grid-area: g4;}
+.g5 { grid-area: g5;}
+.g6 { grid-area: g6;}
+
+.portfolioContentTitle {
+    padding-left: 5%;
+}
+
+.portfolioContentTitle > p {
+    position: relative;
+    top: 40%;
+    color: var(--texto);
+}
+
+.portfolioContent {
+    width: 80%;
+    height: 60%;
+    margin: 10% 10% 10% 10%;
+    border: 1px solid black;
+    flex: 1 0 auto;
+    transition: 400ms;
+    cursor: pointer;
+}
+
+.portfolioContent:hover {
+    width: 90%;
+    height: 70%;
+    margin: 5% 5% 5% 5%;
+}
+
+.modalBackground {
+    display: none;
+    position: fixed;
+    z-index: 990;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.116);
+}
+
+.modalContent {
+    position: fixed;
+    z-index: 999;
+    height: 80%;
+    width: 80%;
+    left: 10%;
+    top: 10%;
+    background-color: var(--fundo);
+    border-radius: 20px;
+    box-shadow: 0px 1px 20px 1px var(--sombra);
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.modalUpperSpace {
+    height: 10%;
+    align-content: center;
+}
+
+.closeModal {
+    position: relative;
+    left: 96%;
+    width: 2%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+#yellowXSymbol {
+    display: none;
+}
+
+.modalBottomSpace {
+    height: 90%;
+    border-top: 1px solid var(--azul);
+    align-content: center;
+}
+
+.modalBottomContent {
+    height: 80%;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.modalDisplay {
+    width: 80%;
+    margin-left: 10%;
+    height: 80%;
+    background-image: url('368747905_618447380391939_899445883402682981_n.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.modalButtons {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modalPreviousButton, .modalNextButton {
+    height: 20%;
+    aspect-ratio: 1/1;
+    background-color: #7c7c7c73;
+    cursor: pointer;
+}
+
+.modalPreviousButton:active, .modalNextButton:active {
+    background-color: #49494973;
+}
+
+.previousImageSVG, .nextImageSVG {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 60%;
+    margin: 20% 20% 20% 20%;
+    cursor: pointer;
+}
+
+.goToPageModalButton {
+    margin: 4% 42.5% 0% 42.5%;
+    height: 10%;
+    width: 15%;
+    cursor: pointer;
+    border: none;
+    background-color: var(--azul);
+    color: var(--corpo);
+    font-family: fontReddit;
+    border-radius: 5px;
+}
+
+.goToPageModalButton:active {
+    background-color: var(--piscada);
+}
+
+/* Contact */
+
+.contactContent {
+    position: absolute;
+    left: 0%;
+    top: -3.8%;
+    width: 100%;
+    height: 100%;
+}
+
+.addressDot {
+    position: absolute;
+    top: 11%;
+    left: 9%;
+    height: 0.75vw;
+    width: 0.7vw;
+    background-color: var(--azul);
+    border-radius: 100%;
+}
+
+.addressTitle {
+    position: absolute;
+    top: 9%;
+    left: 11%;
+    width: 10%;
+    height: 5%;
+    font-family: fontReddit;
+    color: var(--azul);
+    font-weight: bolder;
+    font-size: 125%;
+}
+
+.addressContent {
+    position: absolute;
+    font-family: fontReddit;
+    color: var(--texto);
+    top: 17%;
+    left: 12%;
+    line-height: 175%;
+}
+
+.phoneDot {
+    position: absolute;
+    top: 40%;
+    left: 9%;
+    height: 0.75vw;
+    width: 0.7vw;
+    background-color: var(--azul);
+    border-radius: 100%;
+}
+
+.phoneTitle {
+    position: absolute;
+    top: 38%;
+    left: 11%;
+    width: 50%;
+    height: 5%;
+    font-family: fontReddit;
+    color: var(--azul);
+    font-weight: bolder;
+    font-size: 125%;
+}
+
+.phoneContent {
+    position: absolute;
+    font-family: fontReddit;
+    color: var(--texto);
+    top: 46%;
+    left: 12%;
+    line-height: 175%;
+}
+
+.linksContent {
+    position: absolute;
+    bottom: 5.5%;
+    left: 7.5%;
+    width: 85%;
+    height: 30%;
+}
+
+.linksImages {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.linksGrade {
+    height: 100%;
+    position: absolute;
+    left: 12.5%;
+    top: 0%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 22%;
+    justify-content: center;
+}
+
+.links {
+    font-family: fontReddit;
+    color: var(--azul);
+    cursor: pointer;
+}
+
+.links:visited {
+    color: var(--azul);
+}
+
+.links:active {
+    color: lightblue;
+}
+
+.linkSVG {
+    height: 33%;
+    width: 100%;
+}

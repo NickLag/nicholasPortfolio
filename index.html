@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="CSS/style.css">
-        <link rel="stylesheet" href="CSS/celular.css">
         <title>My Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="apple-touch-icon-precomposed" sizes="57x57" href="Icons/apple-touch-icon-57x57.png" />
@@ -54,8 +53,8 @@
         <object data="SVGs/downarrow.svg" class="downArrow blue" id="blueArrow"></object>
         <object data="SVGs/downarrowyellow.svg" class="downArrow yellow" id="yellowArrow"></object>
         <div class="block leftBlock" id="leftBlock">
-            <div class="imageCircle" id="imageCircle">
-                <img src="Images/nick.JPG" class="imageInside">
+            <div class="imageBlock">
+                <div class="imageCircle" id="imageCircle"></div>
             </div>
             <div class="headerTextBlock" id="headerTextBlock">
                 <div class="name" id="name">
@@ -223,6 +222,25 @@
                     <div class="portfolioContent codePen" onclick="openModal()"></div>
                 </div>
             </div>
+            <div class="modalBackground" id="modalBackground">
+                <div class="modalContent">
+                    <div class="modalUpperSpace">
+                        <img onclick="closeModal()" src="SVGs/x-symbol-svgrepo-com.svg" class="closeModal" id="blackXSymbol">
+                        <img onclick="closeModal()" src="SVGs/xamarelo.svg" class="closeModal" id="yellowXSymbol">
+                    </div>
+                    <div class="modalBottomSpace">
+                        <div class="modalBottomContent">
+                            <div class="modalDisplay">
+                                <div class="modalButtons">
+                                    <div class="modalPreviousButton"><img onclick="previous()" src="SVGs/arrowleft.svg" class="previousImageSVG"></div>
+                                    <div class="modalNextButton"><img onclick="next()" src="SVGs/arrowright.svg" class="nextImageSVG"></div>
+                                </div>
+                            </div>
+                            <button class="goToPageModalButton">Ir à página</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <p class="title" id="contactTitle">Contato</p>
             <div class="underLine" id="contactUnderLine"></div>
             <div class="contactBlock rightBlockContent" id="contactBlock">
@@ -250,25 +268,6 @@
                             <a href="https://github.com/NickLag" class="links linkedin">github.com/NickLag</a>
                             <a href="https://www.instagram.com/tortoruuu" class="links github">instagram.com/tortoruuu</a>
                             <a href="https://www.linkedin.com/in/nicholaslagareiro/" class="links insta">linkedin.com/in/nicholaslagareiro</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modalBackground" id="modalBackground">
-                <div class="modalContent">
-                    <div class="modalUpperSpace">
-                        <img onclick="closeModal()" src="SVGs/x-symbol-svgrepo-com.svg" class="closeModal" id="blackXSymbol">
-                        <img onclick="closeModal()" src="SVGs/xamarelo.svg" class="closeModal" id="yellowXSymbol">
-                    </div>
-                    <div class="modalBottomSpace">
-                        <div class="modalBottomContent">
-                            <div class="modalDisplay">
-                                <div class="modalButtons">
-                                    <div class="modalPreviousButton"><img onclick="previous()" src="SVGs/arrowleft.svg" class="previousImageSVG"></div>
-                                    <div class="modalNextButton"><img onclick="next()" src="SVGs/arrowright.svg" class="nextImageSVG"></div>
-                                </div>
-                            </div>
-                            <button class="goToPageModalButton">Ir à página</button>
                         </div>
                     </div>
                 </div>

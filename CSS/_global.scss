@@ -1,0 +1,168 @@
+/* Page content */
+
+html {
+    --fundo: snow;
+    --corpo: white;
+    --borda: #696969;
+    --sombra: #696969;
+    --azul: #4772ff;
+    --texto: black;
+    --piscada: #2447bb;
+}
+ 
+body {
+    background-color: var(--fundo);
+    font-size: 1.15vw;
+}
+
+@font-face {
+    font-family:'fontReddit';
+    src: url("../Fonts/RedditMono-VariableFont_wght.ttf");
+}
+
+.error {
+    display: none;
+}
+
+.themeSelection {
+    position: absolute;
+    right: 5%;
+    top: 1%;
+    width: 8%;
+    height: 6%;
+}
+
+.switchThemeToBlack, .switchThemeToWhite {
+    position: absolute;
+    border-radius: 50px;
+    top: 10%;
+    width: 40%;
+    height: 80%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.switchThemeToBlack {
+    left: 5%;
+}
+
+.switchThemeToWhite {
+    right: 5%;
+}
+
+.divSVGMoon, .divSVGSun {
+    position: absolute;
+    border-radius: 50px;
+    top: 10%;
+    width: 40%;
+    height: 80%;
+}
+
+.divSVGMoon {
+    background-color: white;
+    left: 5%;
+    border: 0.1vw solid black;
+}
+
+.divSVGSun {
+    background-color: black;
+    right: 5%;
+    border: 0.1vw solid white;
+}
+
+.barBetweenThemeSelector {
+    position: absolute;
+    background-color: #696969;
+    width: 1%;
+    height: 97.5%;
+    top: 5%;
+    left: 49.5%;
+}
+
+.moon, .sun {
+    position: absolute;
+    width: 80%;
+    top: 5%;
+    height: 90%;
+    left: 10%;
+}
+
+.yellowMoon {
+    display: none;
+}
+
+.blackMoon {
+    display: block;
+}
+
+.blueSun {
+    display: block;
+}
+
+.whiteSun {
+    display: none;
+}
+
+.languageSelector {
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    font-family: fontReddit;
+    position: absolute;
+    left: 1%;
+    top: 1%;
+    width: 5%;
+    top: 2%;
+}
+
+.en {
+    cursor: pointer;
+    color: var(--texto);
+}
+
+.barBetweenLanguages {
+    color: var(--texto);
+    padding-left: 7.5%;
+}
+
+.pt {
+    cursor: pointer;
+    color: var(--azul);
+    padding-left: 7.5%;
+}
+
+.blank {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 27.5%;
+    background-color: var(--fundo);
+    z-index: 2;
+}
+
+.downArrow {
+    display: none;
+}
+
+.block {
+    background-color: var(--corpo);
+    position: absolute;
+    top: 10%;
+    height: 85%;
+    border: 0.1vw solid var(--borda);
+    border-radius: 0.5vw;
+    box-shadow: 0.5vw 0.5vw 0.5vw var(--sombra);
+    animation-duration: 1000ms;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+    animation-fill-mode: forwards;
+}
+
+@keyframes selectedRightBlockContentAppearing {
+    0% {
+        left: -90%;
+    }
+    100% {
+        left: 5%;
+    }
+}

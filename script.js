@@ -69,10 +69,10 @@ function selecionado() {
     } else {
         document.getElementById(bloco).style.display = "block";
     }
-    document.getElementById(bloco).style.animationName = "aparecer";
-    document.getElementById(linha).style.animationName = "aparecer";
+    document.getElementById(bloco).style.animationName = "selectedRightBlockContentAppearing";
+    document.getElementById(linha).style.animationName = "selectedRightBlockContentAppearing";
     document.getElementById(linha).style.display = "block";
-    document.getElementById(title).style.animationName = "aparecer";
+    document.getElementById(title).style.animationName = "selectedRightBlockContentAppearing";
     document.getElementById(title).style.display = "block";
 }
 
