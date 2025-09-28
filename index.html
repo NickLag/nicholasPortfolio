@@ -27,6 +27,7 @@
         <meta name="msapplication-square310x310logo" content="Icons/mstile-310x310.png" />
     </head>
     <body>
+        <DIV class="teste">oi</DIV>
         <div class="ooo">
             <p class="error">TAMANHO DE TELA NÃO SUPORTADO</p>
         </div>
@@ -76,13 +77,15 @@
             <a class="option" onclick="contactPageCall()" id="contactNavBar">Contato</a>
         </div>
         <div class="block rightBlock" id="rightBlock">
-            <p class="title" id="aboutMeTitle">Sobre mim</p>
-            <div class="underLine" id="aboutMeUnderLine"></div>
+            <div>
+                <p class="title" id="aboutMeTitle">Sobre mim</p>
+                <div class="underLine" id="aboutMeUnderLine"></div>
+            </div>
             <div class="aboutMeBlock rightBlockContent" id="aboutMeBlock">
                 <div class="introductionContent">
                     <div class="introductionTitleDiv">
                         <div class="introductionDot"></div>
-                        <p class="introductionTitle" id="introductionTitle">Apresentação<br></p>
+                        <p class="introductionTitle" id="introductionTitle">Apresentação</p>
                     </div>
                     <div class="introductionTextDiv">
                         <p class="aboutMeText introductionText" id="introductionText">Me chamo Nicholas Lagareiro, tenho 18 anos, e atualmente estudo na Universidade São Judas Tadeu (Santos) cursando o 2° semestre de Engenharia de Computação.<br>Fiz parte do NovoTec (curso técnico integrado ao ensino médio) cursando Desenvolvimento e Análise de Sistemas, com término em 2024. Atualmente estou à procura de um emprego fixo na área da programação/desenvolvimento seja front-end, back-end ou full stack.<br>
@@ -95,102 +98,123 @@
                         <div class="objectiveTitleDot"></div>
                         <p class="objectiveTitle" id="objectiveTitle">Objetivo</p>
                     </div>
-                    <p class="aboutMeText objectiveText" id="objectiveText">Possuo como objetivo atual, um emprego para me inserir no mercado de trabalho da área e adquirir experiência, visto que meus únicos trabalhos na área foram freelance.<p>
+                    <div class="objectiveTextDiv">
+                        <p class="aboutMeText objectiveText" id="objectiveText">Possuo como objetivo atual, um emprego para me inserir no mercado de trabalho da área e adquirir experiência, visto que meus únicos trabalhos na área foram freelance.<p>
+                    </div>
                 </div>
             </div>
-            <p class="title" id="resumeTitle">Resumo</p>
-            <div class="underLine" id="resumeUnderLine"></div>
+            <div>
+                <p class="title" id="resumeTitle">Resumo</p>
+                <div class="underLine" id="resumeUnderLine"></div>
+            </div>
             <div class="resumeBlock rightBlockContent" id="resumeBlock">
-                <div class="graduationDiv">
-                    <div class="graduationDot"></div>
-                    <p class="graduationTitle" id="graduationTitle">Formação</p>
+                <div class="resumeContent">
+                    <div class="graduationDiv">
+                        <div class="graduationTitleDiv">
+                            <div class="graduationDot"></div>
+                            <p class="graduationTitle" id="graduationTitle">Formação</p>
+                        </div>
                         <div class="highSchoolDiv">
                             <p class="highSchoolTime" id="highSchoolTime">Início - 2022 | 2024 - Término</p>
                             <p class="highSchoolText" id="highSchoolText">Ensino médio - E. E. Canadá</p>
-                            <div class="gruaduationUnderline"></div>
                             <div class="timeline"></div>
+                            <div class="gruaduationUnderline"></div>
                         </div>
                         <div class="ADSDiv">
                             <p class="ADSTime" id="ADSTime">Início - 2022 | 2024 - Término</p>
                             <p class="ADSText" id="ADSText">Desenvolvimento e Análise de Sistemas - Novotec</p>
-                            <div class="gruaduationUnderline"></div>
                             <div class="timeline"></div>
+                            <div class="gruaduationUnderline"></div>
                         </div>
                         <div class="universityDiv">
                             <p class="universityTime" id="universityTime">Início - 2025 | 2029 - Término</p>
                             <p class="universityText" id="universityText">Engenharia de Computação - USJT</p>
-                            <div class="gruaduationUnderline"></div>
                             <div class="timeline incompleteTimeline"></div>
-                        </div>
-                </div>
-                <div class="knowledgeDiv">
-                    <div class="knowledgeAndToolsDot"></div>
-                    <p class="knowledgeAndToolsTitle" id="knowledgeTitle">Conhecimentos</p>
-                    <div class="knowledgeList">
-                        <div class="knowledgeListItem KnowledgeLanguage">
-                            <span class="boldKnowledgeList" id="knowledgeEnglish">Inglês</span>
-                            <span class="knowledgePercentage" id="intermediate">(Intermediário-avançado)</span>
-                        </div>
-                        <div class="knowledgeListItem">
-                            <span class="boldKnowledgeList">HTML</span>
-                            <span class="knowledgePercentage">100%</span>
-                            <div class="progressBarContent progressHTML"></div>
-                            <div class="fullProgressBar ttum"></div>
-                        </div>
-                        <div class="knowledgeListItem">
-                            <span class="boldKnowledgeList">CSS</span>
-                            <span class="knowledgePercentage">80%</span>
-                            <div class="progressBarContent progressCSS"></div>
-                            <div class="fullProgressBar ttdois"></div>
-                        </div>
-                        <div class="knowledgeListItem">
-                            <span class="boldKnowledgeList">JavaScript</span>
-                            <span class="knowledgePercentage">50%</span>
-                            <div class="progressBarContent progressJS"></div>
-                            <div class="fullProgressBar tttres"></div>
-                        </div>
-                        <div class="knowledgeListItem">
-                            <span class="boldKnowledgeList">Java</span>
-                            <span class="knowledgePercentage">05%</span>
-                            <div class="progressBarContent progressJAVA"></div>
-                            <div class="fullProgressBar ttquatro"></div>
-                        </div>
-                        <div class="knowledgeListItem">
-                            <span class="boldKnowledgeList">SQL (MySQL)</span>
-                            <span class="knowledgePercentage">50%</span>
-                            <div class="progressBarContent progressSQL"></div>
-                            <div class="fullProgressBar ttcinco"></div>
-                        </div>
-                        <div class="knowledgeListItem">
-                            <span class="boldKnowledgeList">PHP</span>
-                            <span class="knowledgePercentage">25%</span>
-                            <div class="progressBarContent progressPHP"></div>
-                            <div class="fullProgressBar ttseis"></div>
-                        </div>
-                        <div clas="knowledgeListItem">
-                            <span class="boldKnowledgeList">C++</span>
-                            <span class="knowledgePercentage">05%</span>
-                            <div class="progressBarContent progressCplusplus"></div>
-                            <div class="fullProgressBar ttsete"></div>
+                            <div class="gruaduationUnderline"></div>
                         </div>
                     </div>
-                </div>
-                <div class="toolsDiv">
-                    <div class="knowledgeAndToolsDot"></div>
-                    <p class="knowledgeAndToolsTitle" id="soft">Ferramentas/Softwares</p>
-                    <div class="toolsListDiv">
-                        <ul class="officeList">
-                            <li id="word">Word<br>(Avançado)</li>
-                            <li id="excel">Excel (Intermediário)</li>
-                            <li id="powerpoint">Power Point (Intermediário)</li>
-                            <li id="photoshop">Photoshop (Intermediário)</li>
-                        </ul>
-                        <ul class="programIDEs">
-                            <li class="exception">VS Code</li>
-                            <li>MySQL</li>
-                            <li>Apache NetBeans</li>
-                            <li>Android Studio</li>
-                        </ul>
+                    <div class="resumeBottomBlock">
+                        <div class="knowledgeDiv">
+                            <div class="knowledgeTitleDiv">
+                                <div class="knowledgeAndToolsDot"></div>
+                                <p class="knowledgeAndToolsTitle" id="knowledgeTitle">Conhecimentos</p>
+                            </div>
+                            <div class="knowledgeList">
+                                <div class="knowledgeListItem KnowledgeLanguage">
+                                    <span class="boldKnowledgeList" id="knowledgeEnglish">Inglês</span>
+                                    <span class="knowledgePercentage" id="intermediate">(Intermediário-avançado)</span>
+                                </div>
+                                <div class="knowledgeListItem">
+                                    <span class="boldKnowledgeList">HTML</span>
+                                    <div class="fullProgressBar ttum">
+                                        <div class="progressBarContent progressHTML"></div>
+                                    </div>
+                                    <span class="knowledgePercentage">100%</span>
+                                </div>
+                                <div class="knowledgeListItem">
+                                    <span class="boldKnowledgeList">CSS</span>
+                                    <div class="fullProgressBar ttdois">
+                                        <div class="progressBarContent progressCSS"></div>
+                                    </div>
+                                    <span class="knowledgePercentage">80%</span>
+                                </div>
+                                <div class="knowledgeListItem">
+                                    <span class="boldKnowledgeList">JavaScript</span>
+                                    <div class="fullProgressBar tttres">    
+                                        <div class="progressBarContent progressJS"></div>
+                                    </div>
+                                    <span class="knowledgePercentage">50%</span>
+                                </div>
+                                <div class="knowledgeListItem">
+                                    <span class="boldKnowledgeList">Java</span>
+                                    <div class="fullProgressBar ttquatro">
+                                        <div class="progressBarContent progressJAVA"></div>
+                                    </div>
+                                    <span class="knowledgePercentage">05%</span>
+                                </div>
+                                <div class="knowledgeListItem">
+                                    <span class="boldKnowledgeList">SQL (MySQL)</span>
+                                    <div class="fullProgressBar ttcinco">
+                                        <div class="progressBarContent progressSQL"></div>
+                                    </div>
+                                    <span class="knowledgePercentage">50%</span>
+                                </div>
+                                <div class="knowledgeListItem">
+                                    <span class="boldKnowledgeList">PHP</span>
+                                    <div class="fullProgressBar ttseis">
+                                        <div class="progressBarContent progressPHP"></div>
+                                    </div>
+                                    <span class="knowledgePercentage">40%</span>
+                                </div>
+                                <div class="knowledgeListItem">
+                                    <span class="boldKnowledgeList">C++</span>
+                                    <div class="fullProgressBar ttsete">
+                                        <div class="progressBarContent progressCplusplus"></div>
+                                    </div>
+                                    <span class="knowledgePercentage">05%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toolsDiv">
+                            <div class="toolsTitleDiv">
+                                <div class="knowledgeAndToolsDot"></div>
+                                <p class="knowledgeAndToolsTitle" id="soft">Ferramentas/Softwares</p>
+                            </div>
+                            <div class="toolsListDiv">
+                                <ul class="officeList">
+                                    <li id="word">Word<br>(Avançado)</li>
+                                    <li id="excel">Excel (Intermediário)</li>
+                                    <li id="powerpoint">Power Point (Intermediário)</li>
+                                    <li id="photoshop">Photoshop (Intermediário)</li>
+                                </ul>
+                                <ul class="programIDEs">
+                                    <li class="exception">VS Code</li>
+                                    <li>MySQL</li>
+                                    <li>Apache NetBeans</li>
+                                    <li>Android Studio</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -245,29 +269,41 @@
             <div class="underLine" id="contactUnderLine"></div>
             <div class="contactBlock rightBlockContent" id="contactBlock">
                 <div class="contactContent">
-                    <div class="addressDot"></div>
-                    <div class="addressTitle"><p id="address">Endereço</p></div>
-                    <div class="addressContent">
-                        <p id="brazil">São Paulo, Brasil</p><br>
-                        <p>Santos - 11030-570</p><br>
-                        <p>Aparecida, Rua General Rondon</p><br>
-                    </div>
-                    <div class="phoneDot"></div>
-                    <div class="phoneTitle"><p id="phone">Telefone & E-mail</p></div>
-                    <div class="phoneContent">
-                        <p id="cellphoneNumber">Telefone: +55 (13) 99185-9107</p><br>
-                        <p>E-mail: nicholas.lagareiro@hotmail.com</p>
-                    </div>
-                    <div class="linksContent">
-                        <div class="linksImages">
-                            <img class="linkSVG" onclick="github()" src="SVGs/github.svg">
-                            <img class="linkSVG" onclick="instagram()" src="SVGs/instagram.svg">
-                            <img class="linkSVG" onclick="linkedin()" src="SVGs/linkedin.svg">
+                    <div class="addressDiv">
+                        <div class="addressTitleDiv">
+                            <div class="addressDot"></div>
+                            <div class="addressTitle"><p id="address">Endereço</p></div>
                         </div>
-                        <div class="linksGrade">
-                            <a href="https://github.com/NickLag" class="links linkedin">github.com/NickLag</a>
-                            <a href="https://www.instagram.com/tortoruuu" class="links github">instagram.com/tortoruuu</a>
-                            <a href="https://www.linkedin.com/in/nicholaslagareiro/" class="links insta">linkedin.com/in/nicholaslagareiro</a>
+                        <div class="addressContent">
+                            <p id="brazil">São Paulo, Brasil</p>
+                            <p>Santos - 11030-570</p>
+                            <p>Aparecida, Rua General Rondon</p>
+                        </div>
+                    </div>
+                    <div class="phoneDiv">                    
+                        <div class="phoneTitleDiv">
+                            <div class="phoneDot"></div>
+                            <div class="phoneTitle"><p id="phone">Telefone & E-mail</p></div>
+                        </div>
+                        <div class="phoneContent">
+                            <p id="cellphoneNumber">Telefone: +55 (13) 99185-9107</p>
+                            <p>E-mail: nicholas.lagareiro@hotmail.com</p>
+                        </div>
+                    </div>
+                    <div class="linksDiv">
+                        <div class="linksContent">
+                            <div class="linksGithub">
+                                <img class="linkSVG" onclick="github()" src="SVGs/github.svg">
+                                <a href="https://github.com/NickLag" class="links linkedin">github.com/NickLag</a>
+                            </div>
+                            <div class="linksInstagram">
+                                <img class="linkSVG" onclick="instagram()" src="SVGs/instagram.svg">
+                                <a href="https://www.instagram.com/tortoruuu" class="links github">instagram.com/tortoruuu</a>
+                            </div>
+                            <div class="linksLinkedin">
+                                <img class="linkSVG" onclick="linkedin()" src="SVGs/linkedin.svg">
+                                <a href="https://www.linkedin.com/in/nicholaslagareiro/" class="links insta">linkedin.com/in/nicholaslagareiro</a>
+                            </div>
                         </div>
                     </div>
                 </div>

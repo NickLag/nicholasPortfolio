@@ -19,7 +19,6 @@
 }
 
 .imageBlock {
-    border: 1px solid black;
     width: 100%;
     height: 35%;
     display: flex;
@@ -43,7 +42,6 @@
 .headerTextBlock {
     width: 100%;
     height: 50%;
-    border: 1px solid black;
     font-family: fontReddit;
     color: var(--texto);
     display: flex;
@@ -53,7 +51,6 @@
 }
 
 .name {
-    border: 1px solid black;
     width: 100%;
     height: 20%;
     color: var(--azul);
@@ -66,7 +63,6 @@
 }
 
 .infos {
-    border: 1px solid black;
     width: 75%;
     height: 80%;
     display: flex;

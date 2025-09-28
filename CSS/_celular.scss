@@ -1,3 +1,5 @@
+/* CELULARES */
+
 @media screen and (max-aspect-ratio: 38/100) {
     .blank, .buceta, .themeSelection, .languageSelector, .downArrow, .block, .navBarCurtain, .optionsBar {
         display: none;
@@ -14,6 +16,183 @@
         width: 50%;
         left: 25%;
         top: 40%;
+    }
+} /* PRONTO */
+
+@media screen and (min-aspect-ratio: 38/100) and (max-aspect-ratio: 36/74) {
+    .languageSelector {
+        font-size: 3.5em;
+    }
+
+    .nicholas {
+        font-size: 2.5vh;
+    }
+
+    .infos {
+        font-size: 1.75vh;
+    }   
+
+    .option {
+        font-size: 325%;
+    }
+
+    .title {
+        font-size: 450%;
+    }
+
+    .introductionTitle, .objectiveTitle, .graduationTitle {
+        font-size: 2vh;
+    }
+
+    .knowledgeDiv {
+        left: 0%;
+        width: 45%;
+    }
+
+    .graduationTitle {
+        margin-left: 2.5%;
+    }
+
+    .graduationDiv {
+        left: 0%;
+        width: 100%;
+    }
+
+    .knowledgeAndToolsTitle {
+        font-size: 1.4vh;
+        margin-left: 3%;
+    }
+
+    .graduationDot {
+        left: -1%;
+    }
+
+    .knowledgeAndToolsDot {
+        left: -4%;
+        top: 3.3%;
+    }
+
+    .highSchoolDiv, .ADSDiv, .universityDiv {
+        font-size: 115%;
+        width: 100%;
+        left: 0%;
+    }
+
+    .knowledgeList, .toolsListDiv {
+        font-size: 120%;
+    }
+
+    .toolsListDiv {
+        margin-left: -5%;
+    }
+
+    #intermediate {
+        font-size: 75%;
+    }
+
+    .aboutMeText {
+        font-size: 250%;
+    }
+
+    .purpleMention {
+        font-size: 100%;
+    }
+
+    .introductionText {
+        padding-top: 14%;
+    }
+
+    .objectiveText {
+        padding-top: 22%;
+    }
+} /* PRONTO */
+
+@media screen and (min-aspect-ratio: 36/74) and (max-aspect-ratio: 55/78) {
+    .teste {
+        background-color: #ffe119;
+    }
+    html {
+        --celular: #fffdfd;
+    }
+    .highSchoolDiv, .ADSDiv, .universityDiv {
+        font-size: 100%;
+        width: 100%;
+        left: 0%;
+    }
+
+    .graduationDot {
+        top: 3.5%;
+    }
+
+    .knowledgeAndToolsDot {
+        top: 4%;
+    }
+
+    .aboutMeText {
+        font-size: 210%;
+    }
+
+
+    .introductionText {
+        padding-top: 9%;
+    }
+
+    .objectiveText {
+        padding-top: 12%;
+    }
+} /* PRONTO */
+
+@media screen and (min-aspect-ratio: 55/78) and (max-aspect-ratio: 2/2) {
+    .teste {
+        background-color: #bfef45;
+    }
+    .aboutMeText {
+        font-size: 190%;
+    }
+
+    .purpleMention {
+        font-size: 100%;
+    }
+
+    .introductionText {
+        padding-top: 8%;
+    }
+
+    .objectiveText {
+        padding-top: 4%;
+    }
+
+    body {
+        font-size: 1vw;
+    }
+
+    .infos {
+        font-size: 2.5vw;
+    }
+
+    .underLine {
+        top: 25%;
+    }
+
+    .phoneTitle, .addressTitle {
+        font-size: 200%;
+    }
+
+    .phoneDot {
+        top: 44.8%;
+    }
+
+    .phoneContent {
+        top: 50%;
+    }
+
+    .phoneTitle {
+        top: 42%;
+    }
+
+    .linksContent {
+        height: 35%;
+        bottom: -5%;
     }
 } /* PRONTO */
 
@@ -620,178 +799,12 @@
     }
 } /* PRONTO */
 
-@media screen and (min-aspect-ratio: 38/100) and (max-aspect-ratio: 36/74) {
-    .languageSelector {
-        font-size: 3.5em;
-    }
-
-    .nicholas {
-        font-size: 2.5vh;
-    }
-
-    .infos {
-        font-size: 1.75vh;
-    }   
-
-    .option {
-        font-size: 325%;
-    }
-
-    .title {
-        font-size: 450%;
-    }
-
-    .introductionTitle, .objectiveTitle, .graduationTitle {
-        font-size: 2vh;
-    }
-
-    .knowledgeDiv {
-        left: 0%;
-        width: 45%;
-    }
-
-    .graduationTitle {
-        margin-left: 2.5%;
-    }
-
-    .graduationDiv {
-        left: 0%;
-        width: 100%;
-    }
-
-    .knowledgeAndToolsTitle {
-        font-size: 1.4vh;
-        margin-left: 3%;
-    }
-
-    .graduationDot {
-        left: -1%;
-    }
-
-    .knowledgeAndToolsDot {
-        left: -4%;
-        top: 3.3%;
-    }
-
-    .highSchoolDiv, .ADSDiv, .universityDiv {
-        font-size: 115%;
-        width: 100%;
-        left: 0%;
-    }
-
-    .knowledgeList, .toolsListDiv {
-        font-size: 120%;
-    }
-
-    .toolsListDiv {
-        margin-left: -5%;
-    }
-
-    #intermediate {
-        font-size: 75%;
-    }
-
-    .aboutMeText {
-        font-size: 250%;
-    }
-
-    .purpleMention {
-        font-size: 100%;
-    }
-
-    .introductionText {
-        padding-top: 14%;
-    }
-
-    .objectiveText {
-        padding-top: 22%;
-    }
-} /* PRONTO */
-
-@media screen and (min-aspect-ratio: 36/74) and (max-aspect-ratio: 55/78) {
-    html {
-        --celular: #fffdfd;
-    }
-    .highSchoolDiv, .ADSDiv, .universityDiv {
-        font-size: 100%;
-        width: 100%;
-        left: 0%;
-    }
-
-    .graduationDot {
-        top: 3.5%;
-    }
-
-    .knowledgeAndToolsDot {
-        top: 4%;
-    }
-
-    .aboutMeText {
-        font-size: 210%;
-    }
-
-
-    .introductionText {
-        padding-top: 9%;
-    }
-
-    .objectiveText {
-        padding-top: 12%;
-    }
-} /* PRONTO */
-
-@media screen and (min-aspect-ratio: 55/78) and (max-aspect-ratio: 2/2) {
-    .aboutMeText {
-        font-size: 190%;
-    }
-
-    .purpleMention {
-        font-size: 100%;
-    }
-
-    .introductionText {
-        padding-top: 8%;
-    }
-
-    .objectiveText {
-        padding-top: 4%;
-    }
-
-    body {
-        font-size: 1vw;
-    }
-
-    .infos {
-        font-size: 2.5vw;
-    }
-
-    .underLine {
-        top: 25%;
-    }
-
-    .phoneTitle, .addressTitle {
-        font-size: 200%;
-    }
-
-    .phoneDot {
-        top: 44.8%;
-    }
-
-    .phoneContent {
-        top: 50%;
-    }
-
-    .phoneTitle {
-        top: 42%;
-    }
-
-    .linksContent {
-        height: 35%;
-        bottom: -5%;
-    }
-} /* PRONTO */
+/* NÃO CELULARES */
 
 @media screen and (min-aspect-ratio: 2/2) and (max-aspect-ratio: 5/4) {
+    .teste {
+        background-color: #42d4f4;
+    }
     .graduationTitle {
         margin-left: 8%;
     }
@@ -890,6 +903,9 @@
 } /* PRONTO */
 
 @media screen and (min-aspect-ratio: 5/4) and (max-aspect-ratio: 3/2) {
+    .teste {
+        background-color: #4363d8;
+    }
     .addressTitle, .phoneTitle {
         font-size: 1.55em;
     }
@@ -947,7 +963,19 @@
     }
 } /* PRONTO */
 
+@media screen and (min-aspect-ratio: 3/2) {
+    .downarrow {
+        width: 0%;
+        height: 0%;
+    }
+}
+
+/* PRETO */
+
 @media screen and (min-aspect-ratio: 4/2) and (max-aspect-ratio: 20/9){
+    .teste {
+        background-color: #911eb4;
+    }
     .objectiveTitleDiv {
         margin-top: 2%;
     }
@@ -958,6 +986,9 @@
 } /* PRONTO */
 
 @media screen and (min-aspect-ratio: 20/9) and (max-aspect-ratio: 10/4) {
+    .teste {
+        background-color: #f032e6;
+    }
     .objectiveTitleDiv {
         margin-top: 5%;
     }
@@ -997,6 +1028,9 @@
 } /* PRONTO */
 
 @media screen and (min-aspect-ratio: 10/4) {
+    .teste {
+        background-color: white;
+    }
     .blank, .openAndCloseMobileHeader, .themeSelection, .languageSelector, .downArrow, .block, .navBarCurtain, .optionsBar {
         display: none;
     }
@@ -1014,10 +1048,3 @@
         top: 40%;
     }
 } /* PRONTO */
-
-@media screen and (min-aspect-ratio: 3/2) {
-    .downarrow {
-        width: 0%;
-        height: 0%;
-    }
-}
