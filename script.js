@@ -4,6 +4,7 @@ texto = "aboutMeNavBar";
 bloco = "aboutMeBlock";
 linha = "aboutMeUnderLine";
 title = "aboutMeTitle";
+titleDiv = "aboutMeTitleDiv";
 giro = 0;
 azul = '#4772ff';
 preto = 'black';
@@ -26,6 +27,7 @@ function aboutMePageCall() {
     bloco = "aboutMeBlock";
     linha = "aboutMeUnderLine";
     title = "aboutMeTitle";
+    titleDiv = "aboutMeTitleDiv";
     grid = 0;
     selecionado();
 }
@@ -36,6 +38,7 @@ function resumePageCall() {
     bloco = "resumeBlock";
     linha = "resumeUnderLine";
     title = "resumeTitle";
+    titleDiv = "resumeTitleDiv";
     grid = 0;
     selecionado();
 }
@@ -46,6 +49,7 @@ function portfolioPageCall() {
     bloco = "portfolioBlock";
     linha = "portfolioUnderLine";
     title = "portfolioTitle";
+    titleDiv = "portfolioTitleDiv";
     grid = 1;
     selecionado();
 }
@@ -56,6 +60,7 @@ function contactPageCall() {
     bloco = "contactBlock";
     linha = "contactUnderLine";
     title = "contactTitle";
+    titleDiv = "contactTitleDiv";
     grid = 0;
     selecionado();
 }
@@ -67,13 +72,14 @@ function selecionado() {
     if (grid == 1) {
         document.getElementById(bloco).style.display = "grid";
     } else {
-        document.getElementById(bloco).style.display = "block";
+        document.getElementById(bloco).style.display = "flex";
     }
     document.getElementById(bloco).style.animationName = "selectedRightBlockContentAppearing";
     document.getElementById(linha).style.animationName = "selectedRightBlockContentAppearing";
     document.getElementById(linha).style.display = "block";
     document.getElementById(title).style.animationName = "selectedRightBlockContentAppearing";
     document.getElementById(title).style.display = "block";
+    document.getElementById(titleDiv).style.display = "block";
 }
 
 function normal() {
@@ -86,6 +92,7 @@ function normal() {
     document.getElementById(linha).style.display = "none";
     document.getElementById(title).style.animationName = "none";
     document.getElementById(title).style.display = "none";
+    document.getElementById(titleDiv).style.display = "none";
 }
 
 

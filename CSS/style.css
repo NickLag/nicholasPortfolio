@@ -157,7 +157,6 @@ body {
   background-color: var(--corpo);
   position: absolute;
   top: 10%;
-  height: 85%;
   border: 0.1vw solid var(--borda);
   border-radius: 0.5vw;
   box-shadow: 0.5vw 0.5vw 0.5vw var(--sombra);
@@ -166,6 +165,11 @@ body {
   animation-fill-mode: forwards;
 }
 
+@media not screen and (max-aspect-ratio: 2/2) {
+  .block {
+    height: 85%;
+  }
+}
 @keyframes selectedRightBlockContentAppearing {
   0% {
     left: -90%;
@@ -396,6 +400,7 @@ body {
 }
 
 .rightBlockContent {
+  border: 1px solid black;
   position: absolute;
   animation-duration: 1500ms;
   animation-timing-function: cubic-bezier(0.2, 0.8, 2);
@@ -425,8 +430,9 @@ body {
   }
 }
 #aboutMeBlock {
+  flex-flow: column nowrap;
   opacity: 0%;
-  display: block;
+  display: flex;
   animation-name: pors;
   animation-delay: 2000ms;
   animation-duration: 1500ms;
@@ -995,6 +1001,9 @@ body {
   }
 } /* PRONTO */
 @media screen and (min-aspect-ratio: 38/100) and (max-aspect-ratio: 36/74) {
+  .teste {
+    background-color: white;
+  }
   .languageSelector {
     font-size: 3.5em;
   }
@@ -1003,12 +1012,6 @@ body {
   }
   .infos {
     font-size: 1.75vh;
-  }
-  .option {
-    font-size: 325%;
-  }
-  .title {
-    font-size: 450%;
   }
   .introductionTitle, .objectiveTitle, .graduationTitle {
     font-size: 2vh;
@@ -1049,23 +1052,11 @@ body {
   #intermediate {
     font-size: 75%;
   }
-  .aboutMeText {
-    font-size: 250%;
-  }
   .purpleMention {
     font-size: 100%;
   }
-  .introductionText {
-    padding-top: 14%;
-  }
-  .objectiveText {
-    padding-top: 22%;
-  }
 } /* PRONTO */
 @media screen and (min-aspect-ratio: 36/74) and (max-aspect-ratio: 55/78) {
-  .teste {
-    background-color: #ffe119;
-  }
   html {
     --celular: #fffdfd;
   }
@@ -1080,40 +1071,19 @@ body {
   .knowledgeAndToolsDot {
     top: 4%;
   }
-  .aboutMeText {
-    font-size: 210%;
-  }
-  .introductionText {
-    padding-top: 9%;
-  }
-  .objectiveText {
-    padding-top: 12%;
-  }
 } /* PRONTO */
 @media screen and (min-aspect-ratio: 55/78) and (max-aspect-ratio: 2/2) {
   .teste {
     background-color: #bfef45;
   }
-  .aboutMeText {
-    font-size: 190%;
-  }
   .purpleMention {
     font-size: 100%;
-  }
-  .introductionText {
-    padding-top: 8%;
-  }
-  .objectiveText {
-    padding-top: 4%;
   }
   body {
     font-size: 1vw;
   }
   .infos {
     font-size: 2.5vw;
-  }
-  .underLine {
-    top: 25%;
   }
   .phoneTitle, .addressTitle {
     font-size: 200%;
@@ -1248,40 +1218,6 @@ body {
     width: 92px;
     height: 92px;
   }
-  .imageCircle {
-    position: absolute;
-    border: 2px solid #b6b6b6;
-    top: 8%;
-    left: 30%;
-    width: 40%;
-    height: 40%;
-    border-radius: 100%;
-    animation-name: comeco;
-    animation-duration: 4000ms;
-    animation-timing-function: cubic-bezier(0.2, 0.8, 2);
-    animation-fill-mode: forwards;
-  }
-  .headerTextBlock {
-    position: absolute;
-    width: 80%;
-    left: 10%;
-    height: 40%;
-    bottom: 7%;
-    font-family: fodase;
-    color: var(--texto);
-    animation-name: comeco;
-    animation-duration: 4000ms;
-    animation-timing-function: cubic-bezier(0.2, 0.8, 2);
-    animation-fill-mode: forwards;
-  }
-  @keyframes comeco {
-    0% {
-      opacity: 0%;
-    }
-    100% {
-      opacity: 100%;
-    }
-  }
   @keyframes oi {
     0% {
       opacity: 100%;
@@ -1298,47 +1234,209 @@ body {
       opacity: 100%;
     }
   }
-  .name {
-    position: absolute;
-    width: 100%;
-    height: 10%;
-    font-size: 4vw;
-    text-align: center;
-    color: var(--azul);
-    bottom: 95%;
-  }
-  .infos {
-    position: absolute;
-    top: 15%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5vh;
-    justify-content: space-between;
-    font-size: 3vw;
-    line-height: 150%;
-    margin-left: 7.5%;
+  .nicholas {
+    font-size: 2.7vh;
   }
   .languageSelector {
-    left: 5%;
+    left: 6%;
     top: 2%;
-    width: 10%;
-    height: 2%;
-    font-size: 2em;
+    width: 20%;
+    height: 6%;
+    font-size: 3.5em;
   }
   body {
     background-color: var(--celular);
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   .rightBlock {
+    display: flex;
     top: 71%;
-    height: 74%;
+    max-height: 7.4%;
     animation-name: crescer;
     margin-bottom: 2%;
+    flex-flow: column nowrap;
+  }
+  #aboutMeTitleDiv {
+    display: flex;
+  }
+  .titleDiv {
+    width: 100%;
+    margin-top: 12.5vh;
+    height: 10vh;
+    display: none;
+    flex-flow: column nowrap;
+  }
+  .title {
+    position: relative;
+    font-size: 2.7vh;
+    margin-bottom: 0;
+  }
+  .underLine {
+    position: relative;
+    width: 45%;
+    top: 0;
+    height: 1vh;
+  }
+  @keyframes crescer {
+    0% {
+      height: 0;
+      min-height: 7.4%;
+      width: 9.6%;
+      margin-bottom: 2%;
+    }
+    100% {
+      max-height: 1000%;
+      min-height: 74%;
+      width: 96%;
+      margin-bottom: 2%;
+    }
+  }
+  .introductionContent {
+    min-height: auto !important;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    flex-grow: 2;
+  }
+  #aboutMeBlock {
+    height: auto;
+  }
+  .objectiveContent {
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-shrink: 1;
+  }
+  .introductionTextDiv, .objectiveTextDiv, .introductionTitleDiv, .objectiveTitleDiv {
+    width: 100%;
+    height: auto;
+  }
+  @keyframes deselevar {
+    0% {
+      max-height: 1000%;
+      min-height: 74%;
+      width: 96%;
+      margin-bottom: 2%;
+      top: 24%;
+      z-index: 9;
+    }
+    100% {
+      max-height: 1000%;
+      min-height: 74%;
+      width: 96%;
+      margin-bottom: 2%;
+      top: 71%;
+      z-index: 9;
+    }
+  }
+  @keyframes doisdeselevar {
+    0% {
+      top: 26%;
+      height: 7.5%;
+      border-bottom: 1px solid var(--borda);
+      z-index: 999;
+    }
+    100% {
+      top: 73%;
+      height: 7.5%;
+      border-bottom: 1px solid var(--borda);
+      z-index: 999;
+    }
+  }
+  @keyframes doiselevar {
+    0% {
+      top: 66%;
+      height: 7.5%;
+      border-bottom: 1px solid var(--borda);
+      z-index: 999;
+    }
+    100% {
+      top: 26%;
+      height: 7.5%;
+      border-bottom: 1px solid var(--borda);
+      z-index: 999;
+    }
+  }
+  @keyframes elevar {
+    0% {
+      top: 64%;
+      max-height: 1000%;
+      min-height: 74%;
+      width: 96%;
+      margin-bottom: 2%;
+      z-index: 9;
+    }
+    100% {
+      top: 24%;
+      max-height: 1000%;
+      min-height: 74%;
+      width: 96%;
+      margin-bottom: 2%;
+      z-index: 9;
+    }
   }
   .leftBlock {
     top: 2%;
     height: 60%;
     animation-name: segcrescer;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  .imageCircle {
+    border: 2px solid #b6b6b6;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 100%;
+    animation-name: comeco;
+    animation-duration: 4000ms;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+    animation-fill-mode: forwards;
+  }
+  .imageBlock {
+    padding-bottom: 0%;
+    padding-top: 7.5%;
+    height: 42.5%;
+  }
+  .headerTextBlock {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    height: 50%;
+    padding-bottom: 7%;
+    font-family: fontReddit;
+    color: var(--texto);
+    animation-name: comeco;
+    animation-duration: 4000ms;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 2);
+    animation-fill-mode: forwards;
+  }
+  .name {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    color: var(--azul);
+    font-size: 2.4vh;
+  }
+  .infos {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    justify-content: space-between;
+    font-size: 2vh;
+    line-height: 150%;
+    width: 100%;
+    padding: 0;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  @keyframes comeco {
+    0% {
+      opacity: 0%;
+    }
+    100% {
+      opacity: 100%;
+    }
   }
   .downArrow {
     rotate: 0deg;
@@ -1398,11 +1496,19 @@ body {
   }
   @keyframes diminuir {
     0% {
-      height: 60%;
+      height: 67%;
+      z-index: 10;
     }
     100% {
       height: 20%;
+      z-index: 10;
     }
+  }
+  .themeSelection, .languageSelector, .downArrow {
+    z-index: 11;
+  }
+  .openAndCloseMobileHeader {
+    z-index: 12;
   }
   @keyframes aumentar {
     0% {
@@ -1420,18 +1526,6 @@ body {
       left: 2%;
     }
   }
-  @keyframes crescer {
-    0% {
-      height: 7.4%;
-      width: 9.6%;
-      margin-bottom: 2%;
-    }
-    100% {
-      height: 74%;
-      width: 96%;
-      margin-bottom: 2%;
-    }
-  }
   @keyframes segcrescer {
     0% {
       height: 6%;
@@ -1447,6 +1541,7 @@ body {
     top: 73%;
     height: 0%;
     right: 2%;
+    font-size: 0.58vh;
   }
   @keyframes descer {
     0% {
@@ -1459,19 +1554,18 @@ body {
     }
   }
   .option {
-    margin: 3% 3% 5% 3%;
-    font-size: 275%;
+    font-size: 3vw;
+    margin: 1vh 5% 8% 5%;
   }
   .option:hover {
-    font-size: 300%;
-    margin: 2% 1% 4% 1%;
-    padding-bottom: 6%;
+    font-size: 3.5vw;
+    margin: 0% 5% 7% 5%;
   }
   .navBarCurtain {
     width: 94%;
     height: 8%;
     right: 3%;
-    top: 75%;
+    top: 73%;
   }
   @keyframes aparecer {
     0% {
@@ -1493,63 +1587,44 @@ body {
     animation-fill-mode: forwards;
     margin-bottom: 2%;
   }
-  @keyframes elevar {
-    0% {
-      top: 64%;
-    }
-    100% {
-      top: 24%;
-    }
-  }
-  @keyframes deselevar {
-    0% {
-      top: 24%;
-    }
-    100% {
-      top: 71%;
-    }
-  }
-  @keyframes doiselevar {
-    0% {
-      top: 66%;
-    }
-    100% {
-      top: 26%;
-    }
-  }
-  @keyframes doisdeselevar {
-    0% {
-      top: 26%;
-    }
-    100% {
-      top: 73%;
-    }
-  }
-  .underLine {
-    top: 23.5%;
-    left: 5%;
-    width: 30%;
-  }
   .aboutMeNavBar {
     color: #4772ff;
   }
   .rightBlockContent {
-    top: 25%;
     width: 90%;
     height: 70%;
-    left: 5%;
+    gap: 2%;
+    flex-grow: 1;
+    position: relative;
+    margin-bottom: 5%;
   }
-  .title {
-    top: 15%;
-    font-size: 350%;
+  .portfolioBlock {
+    flex-grow: 1;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "g1 g2" "g3 g4" "g5 g6";
+  }
+  .portfolioContent {
+    aspect-ratio: 2/1;
+    max-width: 80%;
+    width: auto;
+    height: auto;
+  }
+  .portfolioContentTitle {
+    height: 20%;
+    width: 80%;
+    display: flex;
+  }
+  .portfolioContentTitle > p {
+    top: 0%;
+    font-size: 3vw;
   }
   .themeSelection {
     position: fixed;
-    right: 40%;
+    right: 35%;
     top: 1%;
-    width: 20%;
+    width: 30%;
     height: 6%;
-    z-index: 3;
+    z-index: 12;
   }
   .switchThemeToBlack, .switchThemeToWhite {
     position: absolute;
@@ -1557,7 +1632,7 @@ body {
     top: 10%;
     width: 40%;
     height: 80%;
-    z-index: 4;
+    z-index: 13;
   }
   .resumeBlock {
     font-size: 200%;
@@ -1566,9 +1641,6 @@ body {
     height: 60%;
     width: 45%;
     margin-top: 0%;
-  }
-  .objectiveContent {
-    margin-top: 15%;
   }
   .objectiveTitleDiv {
     top: 70%;
@@ -1593,7 +1665,7 @@ body {
     top: 5%;
   }
   .introductionTitle, .objectiveTitle {
-    font-size: 3vw;
+    font-size: 2.25vh;
   }
   .txtum, .txtdois {
     display: block;
@@ -1642,16 +1714,10 @@ body {
     width: 100%;
   }
   .aboutMeText {
-    font-size: 200%;
+    font-size: 1.75vh;
   }
   .purpleMention {
     font-size: 100%;
-  }
-  .introductionText {
-    padding-top: 5%;
-  }
-  .objectiveText {
-    padding-top: 0%;
   }
 } /* PRONTO */
 /* NÃO CELULARES */
@@ -1678,9 +1744,6 @@ body {
     margin-left: 4%;
     white-space: nowrap;
   }
-  .title {
-    font-size: 175%;
-  }
   .addressTitle, .phoneTitle {
     font-size: 1.75em;
   }
@@ -1696,18 +1759,11 @@ body {
   body {
     font-size: 1.3vw;
   }
-  .aboutMeText {
-    margin-top: 5%;
-    font-size: 1.6vw;
-  }
   .name {
     text-align: center;
     font-size: 1.5em;
     width: 100%;
     margin-top: -10%;
-  }
-  .headerTextBlock {
-    font-size: 1.1em;
   }
   .highSchoolDiv, .universityDiv {
     font-size: 130%;
@@ -1731,9 +1787,6 @@ body {
   .objectiveContent {
     margin-top: 10%;
   }
-  .underLine {
-    top: 8%;
-  }
 } /* PRONTO */
 @media screen and (min-aspect-ratio: 5/4) and (max-aspect-ratio: 3/2) {
   .teste {
@@ -1748,13 +1801,10 @@ body {
   .addressContent, .phoneContent {
     font-size: 110%;
   }
-  .title {
-    font-size: 175%;
-  }
   .introductionTitle, .objectiveTitle, .graduationTitle, .knowledgeAndToolsTitle, .address, .phone {
     font-size: 150%;
   }
-  body, .aboutMeText {
+  body {
     font-size: 1.3vw;
   }
   .name {
@@ -1797,9 +1847,6 @@ body {
   .objectiveTitleDiv {
     margin-top: 2%;
   }
-  .underLine {
-    top: 12%;
-  }
 } /* PRONTO */
 @media screen and (min-aspect-ratio: 20/9) and (max-aspect-ratio: 10/4) {
   .teste {
@@ -1810,9 +1857,6 @@ body {
   }
   .objectiveContent {
     margin-top: 5%;
-  }
-  .underLine {
-    top: 12%;
   }
   .imageCircle {
     top: 2.5%;

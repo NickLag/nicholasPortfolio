@@ -50,6 +50,7 @@
 }
 
 .rightBlockContent {
+    border: 1px solid black;
     position: absolute;
     animation-duration: 1500ms;
     animation-timing-function: cubic-bezier(0.2, 0.8, 2);
@@ -81,8 +82,9 @@
 }
 
 #aboutMeBlock {
+    flex-flow: column nowrap;
     opacity: 0%;
-    display: block;
+    display: flex;
     animation-name: pors;
     animation-delay: 2000ms;
     animation-duration: 1500ms;

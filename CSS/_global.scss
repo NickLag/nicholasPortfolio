@@ -158,13 +158,18 @@ body {
     background-color: var(--corpo);
     position: absolute;
     top: 10%;
-    height: 85%;
     border: 0.1vw solid var(--borda);
     border-radius: 0.5vw;
     box-shadow: 0.5vw 0.5vw 0.5vw var(--sombra);
     animation-duration: 1000ms;
     animation-timing-function: cubic-bezier(0.2, 0.8, 2);
     animation-fill-mode: forwards;
+}
+
+@media not screen and (max-aspect-ratio: 2/2) {
+    .block {
+        height: 85%;
+    }
 }
 
 @keyframes selectedRightBlockContentAppearing {
