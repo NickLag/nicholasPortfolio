@@ -981,133 +981,13 @@ body {
 .linkSVG {
   height: 100%;
   aspect-ratio: 1/1;
+  cursor: pointer;
 }
 
 /* CELULARES */
-@media screen and (max-aspect-ratio: 38/100) {
-  .blank, .buceta, .themeSelection, .languageSelector, .downArrow, .block, .navBarCurtain, .optionsBar {
-    display: none;
-  }
-  .error {
-    display: block;
-    color: var(--texto);
-    text-align: center;
-  }
-  .ooo {
-    position: absolute;
-    width: 50%;
-    left: 25%;
-    top: 40%;
-  }
-} /* PRONTO */
-@media screen and (min-aspect-ratio: 38/100) and (max-aspect-ratio: 36/74) {
-  .teste {
-    background-color: white;
-  }
-  .languageSelector {
-    font-size: 3.5em;
-  }
-  .nicholas {
-    font-size: 2.5vh;
-  }
-  .infos {
-    font-size: 1.75vh;
-  }
-  .introductionTitle, .objectiveTitle, .graduationTitle {
-    font-size: 2vh;
-  }
-  .knowledgeDiv {
-    left: 0%;
-    width: 45%;
-  }
-  .graduationTitle {
-    margin-left: 2.5%;
-  }
-  .graduationDiv {
-    left: 0%;
-    width: 100%;
-  }
-  .knowledgeAndToolsTitle {
-    font-size: 1.4vh;
-    margin-left: 3%;
-  }
-  .graduationDot {
-    left: -1%;
-  }
-  .knowledgeAndToolsDot {
-    left: -4%;
-    top: 3.3%;
-  }
-  .highSchoolDiv, .ADSDiv, .universityDiv {
-    font-size: 115%;
-    width: 100%;
-    left: 0%;
-  }
-  .knowledgeList, .toolsListDiv {
-    font-size: 120%;
-  }
-  .toolsListDiv {
-    margin-left: -5%;
-  }
-  #intermediate {
-    font-size: 75%;
-  }
-  .purpleMention {
-    font-size: 100%;
-  }
-} /* PRONTO */
-@media screen and (min-aspect-ratio: 36/74) and (max-aspect-ratio: 55/78) {
-  html {
-    --celular: #fffdfd;
-  }
-  .highSchoolDiv, .ADSDiv, .universityDiv {
-    font-size: 100%;
-    width: 100%;
-    left: 0%;
-  }
-  .graduationDot {
-    top: 3.5%;
-  }
-  .knowledgeAndToolsDot {
-    top: 4%;
-  }
-} /* PRONTO */
-@media screen and (min-aspect-ratio: 55/78) and (max-aspect-ratio: 2/2) {
-  .teste {
-    background-color: #bfef45;
-  }
-  .purpleMention {
-    font-size: 100%;
-  }
-  body {
-    font-size: 1vw;
-  }
-  .infos {
-    font-size: 2.5vw;
-  }
-  .phoneTitle, .addressTitle {
-    font-size: 200%;
-  }
-  .phoneDot {
-    top: 44.8%;
-  }
-  .phoneContent {
-    top: 50%;
-  }
-  .phoneTitle {
-    top: 42%;
-  }
-  .linksContent {
-    height: 35%;
-    bottom: -5%;
-  }
-} /* PRONTO */
 @media screen and (max-aspect-ratio: 2/2) {
   html {
     --celular: #fffdfd;
-  }
-  .contactContent {
-    font-size: 150%;
   }
   .switchThemeToBlack, .switchThemeToWhite {
     position: absolute;
@@ -1136,87 +1016,58 @@ body {
     animation-timing-function: cubic-bezier(0.2, 0.8, 2);
     animation-fill-mode: forwards;
   }
-  .addressDot {
-    position: absolute;
-    top: 11.8%;
-    left: 9%;
+  .contactContent {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: auto;
+    bottom: 0%;
+    padding: 0%;
+  }
+  .addressDot, .phoneDot {
     height: 0.75vh;
     width: 0.7vh;
     background-color: var(--azul);
     border-radius: 100%;
   }
-  .addressTitle {
-    position: absolute;
-    top: 9%;
-    left: 13%;
-    width: 10%;
-    height: 5%;
-    font-family: fodase;
+  .addressTitle, .phoneTitle {
+    width: auto;
+    height: auto;
     color: var(--azul);
     font-weight: bolder;
-    font-size: 225%;
+    font-size: 2.25vh;
+    margin: 0;
+    line-height: 0%;
   }
-  .phoneTitle {
-    position: absolute;
-    top: 38%;
-    left: 13%;
-    width: 50%;
-    height: 5%;
-    font-family: fodase;
-    color: var(--azul);
-    font-weight: bolder;
-    font-size: 225%;
-  }
-  .phoneDot {
-    position: absolute;
-    top: 40.8%;
-    left: 9%;
-    height: 0.75vh;
-    width: 0.7vh;
-    background-color: var(--azul);
-    border-radius: 100%;
-  }
-  .addressContent {
-    position: absolute;
-    font-family: fodase;
+  .addressContent, .phoneContent {
     color: var(--texto);
-    font-size: 175%;
-    top: 17%;
-    left: 13%;
-    line-height: 175%;
-  }
-  .phoneContent {
-    position: absolute;
-    font-family: fodase;
-    font-size: 175%;
-    color: var(--texto);
-    top: 46%;
-    left: 13%;
-    line-height: 175%;
+    line-height: 100%;
+    font-size: 1.75vh;
+    height: auto;
+    padding-left: 12%;
   }
   .linksContent {
+    width: 100%;
+    height: 100%;
+  }
+  .linksImages {
     position: absolute;
-    bottom: 5.5%;
-    left: 7.5%;
+    left: 0%;
+    top: 0%;
     width: 10%;
-    height: 30%;
-  }
-  .links {
-    font-size: 175%;
-  }
-  .linkedin {
-    top: 11%;
-  }
-  .github {
-    top: 53%;
-  }
-  .insta {
-    bottom: -14%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   .linkSVG {
-    cursor: pointer;
-    width: 92px;
-    height: 92px;
+    height: 90%;
+  }
+  .links {
+    font-size: 1.75vh;
+  }
+  .insta {
+    font-size: 1.4vh;
   }
   @keyframes oi {
     0% {
@@ -1634,27 +1485,48 @@ body {
     height: 80%;
     z-index: 13;
   }
-  .resumeBlock {
-    font-size: 200%;
-  }
-  .ADSText {
-    height: 60%;
-    width: 45%;
-    margin-top: 0%;
-  }
   .objectiveTitleDiv {
     top: 70%;
   }
-  #intermediate {
-    font-size: 80%;
+  .resumeContent {
+    position: relative;
+    top: 0%;
+    bottom: 0%;
+    height: auto;
+    margin: 0%;
   }
-  .fullProgressBar {
-    margin-top: -6.5%;
-    margin-left: 43%;
+  .graduationTitle, .knowledgeAndToolsTitle {
+    font-size: 2.25vh !important;
   }
-  .progressBarContent {
-    margin-top: -6.5%;
-    margin-left: 43%;
+  .highSchoolDiv, .ADSDiv, .universityDiv {
+    font-size: 1.4vh;
+    line-height: 0%;
+    margin: 0%;
+    height: auto;
+    margin: auto;
+  }
+  .ADSText {
+    font-size: 1.3vh;
+  }
+  .highSchoolText, .ADSText, .universityText {
+    float: none;
+  }
+  .highSchoolTime, .ADSTime, .universityTime {
+    display: block;
+    float: none;
+  }
+  .timeline {
+    margin-top: 2.2%;
+  }
+  .resumeBottomBlock {
+    flex-flow: column nowrap;
+    margin-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+  }
+  .knowledgeAndToolsTitle {
+    margin-left: 0%;
   }
   .knowledgeAndToolsDot, .introductionDot, .objectiveTitleDot, .graduationDot {
     width: 0.7vh;
@@ -1663,6 +1535,30 @@ body {
   .knowledgeAndToolsDot {
     left: 4%;
     top: 5%;
+  }
+  .knowledgeDiv, .toolsDiv {
+    width: 100%;
+    height: 50%;
+  }
+  .knowledgeList {
+    font-size: 1.4vh;
+  }
+  .officeList, .programIDEs {
+    font-size: 1.4vh;
+    padding-left: 30px;
+    margin-top: auto;
+  }
+  .officeList {
+    width: 60%;
+  }
+  .programIDEs {
+    width: 40%;
+  }
+  .hide {
+    display: none;
+  }
+  .officeList > li, .programIDEs > li {
+    margin-top: 0% !important;
   }
   .introductionTitle, .objectiveTitle {
     font-size: 2.25vh;
@@ -1681,38 +1577,6 @@ body {
     width: 100%;
     height: 15%;
   }
-  .linksContent {
-    position: absolute;
-    bottom: 5.5%;
-    left: 7.5%;
-    width: 85%;
-    height: 30%;
-  }
-  .linksImages {
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    width: 10%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .linksGrade {
-    height: 100%;
-    position: absolute;
-    left: 12.5%;
-    top: 0%;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 22%;
-    justify-content: center;
-  }
-  .linkSVG {
-    height: 33%;
-    width: 100%;
-  }
   .aboutMeText {
     font-size: 1.75vh;
   }
@@ -1720,6 +1584,43 @@ body {
     font-size: 100%;
   }
 } /* PRONTO */
+@media screen and (max-aspect-ratio: 75/173) {
+  .option {
+    font-size: 4vw;
+    margin: 1vh 3% 8% 3%;
+    padding-bottom: 2%;
+  }
+  .option:hover {
+    font-size: 4.5vw;
+    margin: 0% 3% 7% 3%;
+  }
+}
+@media screen and (max-aspect-ratio: 3.55/8) {
+  .ADSText {
+    font-size: 1.12vh;
+  }
+}
+@media screen and (max-aspect-ratio: 38/100) {
+  .blank, .buceta, .themeSelection, .languageSelector, .downArrow, .block, .navBarCurtain, .optionsBar {
+    display: none;
+  }
+  .error {
+    display: block;
+    color: var(--texto);
+    text-align: center;
+  }
+  .ooo {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 40%;
+  }
+} /* PRONTO */
+@media screen and (min-aspect-ratio: 5/8) and (max-aspect-ratio: 2/2) {
+  .highSchoolDiv, .ADSDiv, .universityDiv, .officeList, .programIDEs, .knowledgeList, .ADSText {
+    font-size: 1.75vh;
+  }
+}
 /* NÃO CELULARES */
 @media screen and (min-aspect-ratio: 2/2) and (max-aspect-ratio: 5/4) {
   .teste {
