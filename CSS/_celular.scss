@@ -695,6 +695,21 @@
     .purpleMention {
         font-size: 100%;
     }
+
+    .closeModal {
+        left: 90%;
+        width: 5vw;
+    }
+
+    .goToPageModalButton {
+        width: 40%;
+        margin: 4% 30% 0% 30%;
+    }
+
+    .modalPreviousButton, .modalNextButton {
+        height: 7.5vh;
+    }
+
 } /* PRONTO */
 
 @media screen and (max-aspect-ratio: 75/173) {
