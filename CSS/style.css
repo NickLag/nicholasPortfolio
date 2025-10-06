@@ -1120,6 +1120,7 @@ body {
     position: relative;
     font-size: 2.7vh;
     margin-bottom: 0;
+    width: 80%;
   }
   .underLine {
     position: relative;
