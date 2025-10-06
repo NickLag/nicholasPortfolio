@@ -400,7 +400,6 @@ body {
 }
 
 .rightBlockContent {
-  border: 1px solid black;
   position: absolute;
   animation-duration: 1500ms;
   animation-timing-function: cubic-bezier(0.2, 0.8, 2);
@@ -1542,11 +1541,12 @@ body {
   }
   .knowledgeList {
     font-size: 1.4vh;
+    gap: 4%;
   }
   .officeList, .programIDEs {
     font-size: 1.4vh;
     padding-left: 30px;
-    margin-top: auto;
+    margin-top: 5%;
   }
   .officeList {
     width: 60%;
@@ -1554,11 +1554,11 @@ body {
   .programIDEs {
     width: 40%;
   }
+  .programIDEs li {
+    margin-top: 0 !important;
+  }
   .hide {
     display: none;
-  }
-  .officeList > li, .programIDEs > li {
-    margin-top: 0% !important;
   }
   .introductionTitle, .objectiveTitle {
     font-size: 2.25vh;

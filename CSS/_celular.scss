@@ -643,28 +643,28 @@
 
     .knowledgeList {
         font-size: 1.4vh;
+        gap: calc(28%/7);
     }
 
     .officeList, .programIDEs {
         font-size: 1.4vh;
         padding-left: 30px;
-        margin-top: auto;
+        margin-top: 5%;
     }
-
+    
     .officeList {
         width: 60%;
     }
 
     .programIDEs {
         width: 40%;
+        li {
+            margin-top: 0 !important;
+        }
     }
 
     .hide {
         display: none;
-    }
-
-    .officeList > li, .programIDEs > li {
-        margin-top: 0% !important;
     }
 
     .introductionTitle, .objectiveTitle {
