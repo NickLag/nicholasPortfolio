@@ -235,10 +235,11 @@ body {
   flex: 1 0 auto;
   display: flex;
   justify-content: center;
-  font-size: 2vw;
+  font-size: 1.8vw;
   margin: auto;
   align-items: center;
   text-align: center;
+  padding-top: 5%;
 }
 
 .infos {
@@ -934,6 +935,10 @@ body {
   width: 92%;
   height: 75%;
   padding-left: 8%;
+}
+
+.phoneDiv {
+  padding-top: 3%;
 }
 
 .phoneDot {
