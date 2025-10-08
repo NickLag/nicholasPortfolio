@@ -145,9 +145,10 @@
 }
 
 .aboutMeText, .purpleMention {
+    text-align: justify;
     color: var(--texto);
     text-indent: 15%;
-    font-size: 1.15vw;
+    font-size: 2.2vh;
 }
 
 /* Resume */
