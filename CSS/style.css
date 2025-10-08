@@ -1756,6 +1756,7 @@ body {
 } /* PRONTO */
 @media screen and (min-aspect-ratio: 3/2) {
   .downarrow {
+    display: none !important;
     width: 0%;
     height: 0%;
   }
