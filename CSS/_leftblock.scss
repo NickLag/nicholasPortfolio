@@ -57,9 +57,10 @@
     flex: 1 0 auto;
     display: flex;
     justify-content: center;
-    font-size: 1.5vw;
+    font-size: 2vw;
     margin: auto;
     align-items: center;
+    text-align: center;
 }
 
 .infos {
@@ -71,7 +72,8 @@
     flex: 1 1 auto;
     padding: 0% 12.5% 5% 12.5%;
     margin: auto;
-    gap: 7.5%;
+    gap: 6%;
+    font-size: 2vh;
 }
 
 .infos > p, .nicholas  {
